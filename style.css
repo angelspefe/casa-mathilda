@@ -1,0 +1,696 @@
+/*----------- CSS Reset -----------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+[class*=grid-], [class*=grid_], [class~=grid], [class*=col-], [class*=col_], [class~=col] {
+  margin: 0 !important;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------- Universal Styles -----------*/
+
+/* Eg padding on your sections, utility classes, etc. */
+
+header, section {
+  padding: 0 0 0 100px;
+}
+
+footer {
+  padding: 5% 0 5% 100px;
+}
+
+/*----------- Paddings & Positionings -----------*/
+
+.mob-nav {
+  display: none;
+}
+
+.mob-show {
+  display: none;
+}
+
+header {
+  min-height: 100vh;
+}
+
+.padded-10 {
+  padding: 10%;
+}
+
+.padded-8 {
+  padding: 8%;
+}
+
+.padded-5 {
+  padding: 5% !important;
+}
+
+.padded-2 {
+  padding: 2%
+}
+
+.padded-top {
+  padding-top: 10%;
+}
+
+.padded-left {
+  padding-left: 8%
+}
+
+.padded-bottom {
+  padding-bottom: 10%;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 10%;
+}
+
+.margin-bottom {
+  margin-bottom: 10%;
+}
+
+.bump-right {
+  padding-left: 5%;
+}
+
+.banner {
+  max-width: 70%;
+  margin-top: 60vh;
+  right: 0;
+  position: absolute;
+}
+
+.narrow-width {
+  width: 60%;
+}
+
+/*----------- Backgrounds & Images -----------*/
+
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/casa-mathilda-banner.jpg);
+  background-attachment: fixed;
+}
+
+.bg-box {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/casa-mathilda-banner.jpg);
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.slider-rooms {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/room-mathilda.jpg);
+  min-height: 80vh;
+}
+
+.logo {
+  width: 200px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 2% 2% 2% 2%;
+}
+
+.transbox {
+  background-color: rgba(255, 255, 255, 0.6)
+}
+
+.bg-beige {
+  background-color: #F7F5F0;
+  padding-bottom: 10%;
+}
+
+.address-box {
+  background-color: #F7F5F0;
+}
+
+.bg-teal {
+  background-color: #879D99;
+}
+
+.postal-mathilda {
+  width: 80%;
+}
+
+.gallery img {
+  padding: 2%;
+}
+
+/*----------- Typography -----------*/
+
+.link-menu li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+.link-menu p {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding-bottom: 0;
+}
+
+.link-menu a {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.link-menu a:hover {
+  color: #DEBD31;
+  transition: 0.7s;
+}
+
+h1, h2, h3, a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color: #546461;
+  line-height: 1.6;
+  padding-bottom: 1rem;
+}
+
+p, li {
+  font-family: 'Raleway', sans-serif;
+  color: #546461;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.p-bold {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.bg-teal p, .bg-teal h1, .bg-teal h2, .bg-teal h3 {
+  color: #fff;
+}
+
+.address-box p, .address-box h2 {
+  color: #546461;
+}
+
+/*----------- Navigation -----------*/
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 20vh;
+  padding: 7% 1% 7% 1%;
+  background-color: #FFF;
+  width: 150px;
+  z-index: 100;
+}
+
+.sidebar li, .sidebar a {
+  list-style: none;
+  padding-left: 10%;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar a:hover {
+  color: #DEBD31;
+  transition: 0.7s;
+}
+
+/*----------- Footer -----------*/
+
+.top-arrow img {
+  width: 1em;
+}
+
+.top-arrow {
+  transition:0.2s ease;
+}
+
+.top-arrow:hover {
+  transform: scale(1.02, 1.02);
+}
+
+footer nav li, footer nav a {
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 3%;
+}
+
+footer nav a:hover, .copyright a:hover {
+  color: #DEBD31;
+  transition: 0.7s;
+}
+
+.copyright a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+/*----------- Buttons -----------*/
+
+.button-1, .button-2 {
+  cursor: pointer;
+  position: relative;
+}
+
+.button-1 {
+  background-color: #CECBC2;
+  /* display: inline-block; */
+  padding: .8em 2em .8em;
+  line-height: 1em;
+  transition: 0.2s ease;
+  width: 215px;
+  margin: auto;
+}
+
+.button-ochre {
+  background-color: #DEBD31;
+}
+
+.button-insta {
+  margin: 0;
+}
+
+.button-1 a {
+  text-transform: uppercase;
+  line-height: 1em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-1 img {
+  width: 0.9em;
+  margin-left: 1em;
+}
+
+.button-1:hover, .click-discover:hover, .book-button:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.button-2 {
+  /* display: inline-block; */
+  margin: 1em auto;
+  padding: 0.5em 0em 0.5em;
+  border: 1px solid #fff;
+  width: 120px;
+  transition: 0.2s ease;
+}
+
+.button-2 a {
+  text-transform: uppercase;
+  line-height: 1em;
+  font-size: 0.7em;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.press .button-2,
+.news .button-2 {
+  border: 1px solid #546461;
+
+}
+
+.press .button-2 a,
+.news .button-2 a {
+  color: #546461;
+}
+
+
+.button-2:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.slider-rooms .button-1 {
+  top: 40vh;
+  /* left:40vw; */
+}
+
+.book-button {
+  width: 120px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  margin: 2% 3% 3% 2%;
+  z-index: 100;
+  transition: 0.2s ease;
+}
+
+/*----------- Form -----------*/
+
+form input, form label, form textarea, form p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8em;
+  color: #546461;
+  width: 100%;
+  background: none;
+  padding: 0.5rem;
+  border: 0px;
+  margin-bottom: 10px;
+}
+
+form label {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+form input, form textarea {
+  background-color: #fff;
+}
+
+form input[type="submit"] {
+  background-color: #879D99;
+  width: 40%;
+  font-family: 'Oswald', serif;
+  text-transform: uppercase;
+  line-height: 1em;
+  font-size: 0.7em;
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+
+}
+
+/* form input[type="submit"]:hover {
+  background-color: #fff;
+  color: #546461;
+} */
+
+form textarea {
+  min-height: 20vh;
+}
+
+/*----------- Elements -----------*/
+
+hr {
+  margin: 0 auto 2em;
+  border: 2px solid #fff;
+  width: 60px;
+}
+
+.address-box hr {
+  border: 2px solid #546461;
+}
+
+.click-discover img {
+  width: 0.9em;
+  margin-left: 1em;
+}
+
+.click-discover {
+  transition: 0.2s ease;
+}
+
+.click-discover a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+
+/*----------- News Page -----------*/
+
+.news .padded {
+  padding: 0 15% 0 5%;
+}
+
+.news .padded-bottom {
+  padding-bottom:2%;
+}
+
+.news .button-2 {
+  display:inline-block;
+}
+
+.news img {
+  border-left: 6px solid #546461;
+}
+
+.news .date,
+.news .month {
+  padding: 0 10px;
+  text-align: right;
+  font-family: 'Oswald', sans-serif;
+}
+
+.news .date {
+  display: block;
+  margin: 0;
+  font-size: 2.5em;
+  line-height: .9;
+}
+
+.news .month {
+  font-size:1.5em;
+}
+
+/*----------- MOB NAVIGATION / BURGER MENU -----------*/
+
+.burger-button {
+  position: fixed;
+  top: 2vh;
+  left: 2vh;
+  z-index: 9999999999;
+  padding: 9px;
+  /* background:#CECBC2; */
+}
+
+/*this is where you can change the color of the buttons*/
+
+.burger-button span {
+  width: 25px;
+  border: 1.5px solid #DEBD31;
+  background-color: #DEBD31;
+  display: block;
+}
+
+.burger-button.active span {
+  border-color: #fff;
+  background-color: #fff;
+}
+
+.burger-top, .burger-bottom {
+  position: absolute;
+}
+
+.burger-top {
+  top: 2px;
+}
+
+.burger-bottom {
+  bottom: 2px;
+}
+
+/* make sure this has the same top as the burger button has padding*/
+
+.burger-button.active .burger-top {
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle {
+  border-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom {
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+.burger-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #F7F5F0;
+  padding: 5px;
+  z-index: 99999999;
+}
+
+.burger-menu a {
+  display: block;
+  padding: 5px 15px;
+  text-align: center;
+  font-family: 'Oswald' sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #546461;
+}
+
+.burger-menu a:hover {
+  color: #DEBD31;
+  transition: 0.7s;
+}
+
+.burger-menu li {
+  list-style: none;
+  padding-left: 10%;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+/*----------- RESPONSIVE DESIGN - MEDIA QUERIES -----------*/
+
+@media(max-width:768px) {
+
+.news .mob-hide {
+  display:none;
+}
+
+  header, section {
+    padding: 7px 0px 0px 100px;
+}
+
+  .slider-rooms {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/room-mathilda.jpg);
+    min-height: 40vh;
+  }
+  .slider-rooms .button-1 {
+    top: 20vh;
+  }
+  footer {
+    padding: 5% 0 5% 0px;
+  }
+
+}/* this closes the media query  */
+
+@media(max-width:576px) {
+  .mob-nav {
+    display: block;
+  }
+  .mob-show {
+    display: block;
+  }
+  .mob-hide {
+    display: none;
+  }
+
+  header, section {
+    padding: 30px 5% 0 5%;
+  }
+
+  footer {
+    padding: 5% 10% 2% 10%;
+  }
+  .logo {
+    position: absolute;
+    width: 150px;
+    right: 1%;
+    top: 1%;
+  }
+  .blog-box, .address-box {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .banner {
+    margin-top: 60vh;
+    max-width: 85%
+  }
+  .slider-rooms {
+    min-height: 56vh;
+  }
+  .slider-rooms .button-1 {
+    top: 25vh;
+  }
+  .link-menu a {
+    font-size: 0.8rem;
+  }
+  .link-menu p {
+    font-size: 0.6rem;
+  }
+}
+
+/* this closes the media query  */
+
+@media(max-width:375px) {
+  .book-button {
+    width: 90px;
+  }
+  .banner {
+    margin-top: 50vh;
+    max-width: 85%
+  }
+  .slider-rooms {
+    min-height: 33vh;
+  }
+  .slider-rooms .button-1 {
+    top: 14vh;
+  }
+  .banner h1 {
+    font-size: 1.7rem;
+  }
+  .link-menu li {
+    padding-bottom: 0;
+  }
+  .gallery img {
+    margin-top: 10px;
+  }
+  footer {
+    padding: 5% 10% 25% 10%;
+  }
+
+  .news .padded {
+    padding: 0 5% 0 5%;
+  }
+
+}/* this closes the media query  */
+
+@media(max-width:320px) {
+  footer {
+    padding: 5% 5% 28% 5%;
+  }
+  footer nav li, footer nav a {
+    padding: 2%;
+  }
+  .banner {
+    margin-top: 46vh;
+  }
+}
+
+/* this closes the media query  */
