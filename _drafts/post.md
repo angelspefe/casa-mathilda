@@ -1,5 +1,5 @@
 ---
-title: Post
+title: lalala
 layout: post
 categories:
   - travel
@@ -11,3 +11,5 @@ blurb: >-
   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
 featured_image: /images/blog-photo.jpg
 ---
+
+lalalalalalala
