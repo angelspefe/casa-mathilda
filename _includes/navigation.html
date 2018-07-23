@@ -1,0 +1,106 @@
+<!-- - - - - - - sidebar navigation  - - - - - - - - - --->
+<div class="sidebar mob-hide">
+  <nav>
+
+    {% if page.language == 'en' %}
+
+    <li><a href="/#rooms">Habitaciones</a></li>
+    <li><a href="/#info">Info</a></li>
+    <li><a href="/#gallery">Galería</a></li>
+    <li><a href="/#contact" class="light">Contacto</a></li>
+    <li><a href="/press" class="light">Prensa</a></li>
+    <li><a href="/news" class="light">News</a></li>
+
+    {% elsif page.language == 'fr' %}
+
+    <li><a href="/#rooms">Habitaciones</a></li>
+    <li><a href="/#info">Info</a></li>
+    <li><a href="/#gallery">Galería</a></li>
+    <li><a href="/#contact" class="light">Contacto</a></li>
+    <li><a href="/press" class="light">Prensa</a></li>
+    <li><a href="/news" class="light">News</a></li>
+
+    {% else %} <!-- spanish -->
+
+    <li><a href="/#rooms">Habitaciones</a></li>
+    <li><a href="/#info">Info</a></li>
+    <li><a href="/#gallery">Galería</a></li>
+    <li><a href="/#contact" class="light">Contacto</a></li>
+    <li><a href="/press" class="light">Prensa</a></li>
+    <li><a href="/news" class="light">News</a></li>
+
+    {% endif %}
+  </nav>
+
+  <div class="dropdown">
+
+    {% if page.language == 'en' %}
+
+    <button class="dropbtn">
+      ENG <img class="down-arrow" src="/images/up-arrow.svg" alt="up arrow">
+    </button>
+    <div class="dropdown-content">
+      <a href="/" data-lang="es">ESP</a>
+      <a href="/fr/" data-lang="fr">FRE</a>
+    </div>
+
+    {% elsif page.language == 'fr' %}
+
+    <button class="dropbtn">
+      FRE <img class="down-arrow" src="/images/up-arrow.svg" alt="up arrow">
+    </button>
+    <div class="dropdown-content">
+      <a href="/en/" data-lang="en">ENG</a>
+      <a href="/" data-lang="es">ESP</a>
+    </div>
+
+    {% else %} <!-- spanish -->
+
+    <button class="dropbtn">
+      ESP <img class="down-arrow" src="/images/up-arrow.svg" alt="up arrow">
+    </button>
+    <div class="dropdown-content">
+      <a href="/en/" data-lang="en">ENG</a>
+      <a href="/fr/" data-lang="fr">FRE</a>
+    </div>
+
+    {% endif %}
+
+  </div>
+
+</div>
+
+<!-- mobile navigation -->
+<nav class="mob-nav">
+  <a href="index.html"><img src="images/logo-casa-mathilda.png" alt="casa mathilda logo" class="logo"></a>
+  <div class="burger-button">
+    <span class="burger-top"></span>
+    <span class="burger-middle"></span>
+    <span class="burger-bottom"></span>
+  </div>
+  <div class="burger-menu">
+    <ul>
+
+      <li><a href="/#rooms">Habitaciones</a></li>
+      <li><a href="/#info">Info</a></li>
+      <li><a href="/#gallery">Galería</a></li>
+      <li><a href="/#contact" class="light">Contacto</a></li>
+
+      {% if page.language == 'es' %}
+      <li><a href="/press" class="light">Prensa</a></li
+      {% elsif page.language == 'en' %}
+      <li><a href="/en/press" class="light">Prensa</a></li>
+      {% elsif page.language == 'fr' %}
+      <li><a href="/fr/press" class="light">Prensa</a></li>
+
+      {% endif %}
+
+      <li><a href="/news" class="light">News</a></li>
+        <li>
+          <a href="#googtrans(es|es)" class="lang-es lang-select" data-lang="es">ESP</a>
+          <a href="#googtrans(es|en)" class="lang-en lang-select" data-lang="en">EN</a>
+          <a href="#googtrans(es|fr)" class="lang-fr lang-select" data-lang="fr">FRE</a>
+      </li>
+      <ul>
+  </div>
+</nav>

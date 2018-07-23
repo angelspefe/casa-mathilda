@@ -1,0 +1,316 @@
+---
+layout: default
+---
+
+<!-- Intro Banner -->
+<div class="bg-image-slide bg-slide-1">
+  <div class="padded-2 bump-right transbox">
+    <h1> {{page.intro-banner}}</h1>
+  </div>
+</div>
+<div class="bg-image-slide bg-slide-2">
+  <div class="padded-2 bump-right transbox">
+    <h1>{{page.intro-banner}}</h1>
+  </div>
+</div>
+<div class="bg-image-slide bg-slide-3">
+  <div class="padded-2 bump-right transbox">
+    <h1> {{page.intro-banner}}</h1>
+  </div>
+</div>
+
+
+
+<!-- - - - - - - - - - - SECTION: ROOMS - - - - - - - - - -  -->
+  <section class="bg-beige">
+    <div class="padded-8">
+      <h1>{{page.rooms-title}}</h1>
+      <p class="narrow-width bump-right p-bold">{{page.rooms-description}}</p>
+    </div>
+    <div class="padded-left padded-2 link-menu" id="rooms">
+      <p>{{page.rooms-title-2}}</p>
+
+      {% if page.language == 'es' %}
+      <nav id="rooms-filter">
+        <li><a class="active" href="#" id="terraza">Terraza</a> | </li>
+        <li><a href="#" id="interiores">Interiores</a> | </li>
+        <li><a href="#" id="a-la-calle">A la Calle</a></li>
+      </nav>
+      {% elsif page.language == 'en' %}
+      <nav id="rooms-filter">
+        <li><a class="active" href="#" id="terraza">Terrace</a> | </li>
+        <li><a href="#" id="interiores">Interiores</a> | </li>
+        <li><a href="#" id="a-la-calle">A la Calle</a></li>
+      </nav>
+      {% elsif page.language == 'fr' %}
+      <nav id="rooms-filter">
+        <li><a class="active" href="#" id="terraza">Terraza</a> | </li>
+        <li><a href="#" id="interiores">Interiores</a> | </li>
+        <li><a href="#" id="a-la-calle">A la Calle</a></li>
+      </nav>
+      {% endif %}
+
+    </div>
+    <!-- we need to create one of these for each of the room types -->
+    <!-- we need to create one of these for each of the room types -->
+    <div id="rooms-grid">
+
+    {% for item in page.room-details %}
+
+    <div class="slider-rooms filterable-item {{item.room-type-class}} {% if item.hidden %} hidden {% endif %}">
+      <div class="bg-image-room" style="background-image:url({{item.banner-1_image}})"></div>
+      <div class="bg-image-room" style="background-image:url({{item.banner-2_image}})"></div>
+      <div class="bg-image-room" style="background-image:url({{item.banner-3_image}})"></div>
+
+      <button class="room-left-button mob-hide" onclick="plusRoomGallery(-1)">
+        <img src="/images/right-arrow.svg">
+      </button>
+      <button class="room-right-button mob-hide" onclick="plusRoomGallery(+1)">
+        <img src="/images/right-arrow.svg">
+      </button>
+    <!--this anchor link is the details button which when clicked opens up the popup div. The href corresponds to the id of the div we want to pop-up and the class 'open-room-details' is what initialises the popup in the javascript. The styles of the popup are controlled through the 'room-details-popup class'. -->
+
+      <div class="button-1 button-ochre align-center" id="show-{{item.number}}">
+        <a href="#popup-room-details-{{item.number}}" class="open-room-details-{{item.number}}">
+              <!-- this changes the text within the anchor link based on the language -->
+              {% if page.language == 'es' %}
+                  Detalles
+              {% elsif page.language == 'en' %}
+                  Details
+              {% elsif page.language == 'fr' %}
+                  Details
+              {% endif %}
+              <img src="/images/right-arrow.svg" alt="right arrow">
+        </a>
+      </div>
+
+      <div id="popup-room-details-{{item.number}}" class="room-details-popup">
+        <div class="grid">
+          <div class="col-7_sm-12">
+                <h2> {{item.room-details-title}} </h2>
+                <p> {{item.room-details-description}}</p>
+                <div class="button-left button-ochre left mob-hide">
+                    <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+                </div>
+          </div>
+          <div class="col-5_sm-12">
+            {{item.room-features_html}}
+            <div class="button-left button-ochre left mob-show">
+                <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+            </div>
+          </div>
+          <span class="close-icon" id="hide-{{item.number}}"> X </span>
+        </div>
+      </div>
+      <!-- end popup div -->
+    </div>
+
+    {% endfor %}
+
+    </div>
+  </section>
+
+
+  <!-- - - - - - - - - - - SECTION: INFO - - - - - - - - - -  -->
+  <section class="bg-image bg-box">
+    <div class="grid-middle-spaceBetween bg-beige padded-8" id="info">
+      <div class="col-6_xs-12 padded-8">
+        <h1>{{page.info-title}}</h1>
+        <div class="bump-right p-bold">
+            {{page.info_html}}
+        </div>
+        <h2>{{page.services-title}}</h2>
+        <div class="bump-right padded-bottom">
+            {{page.services_html}}
+        </div>
+
+        <!-- Who is Mathilda - - this is where you change the image for each language -->
+        {% if page.language == 'es' %}
+        <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda.png')";>
+        {% elsif page.language == 'en' %}
+        <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda.png')";>
+        {% elsif page.language == 'fr' %}
+        <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda.png')";>
+        {% endif %}
+
+          <div class="grid-middle show-on-hover">
+            <p class="col-12 align-center">
+              {{page.who-is-mathilda}}
+            </p>
+          </div> <!-- close hover div -->
+          </div> <!-- close mathilda div -->
+          <p class="align-center click-discover padded-bottom">
+
+            {% if page.language == 'es' %}
+                <a href="#">Click for Description</a>
+            {% elsif page.language == 'en' %}
+                <a href="#">Click for Description</a>
+            {% elsif page.language == 'fr' %}
+                <a href="#">Click for Description</a>
+            {% endif %}
+
+            <img src="/images/right-arrow-teal.svg" alt="right arrow">
+          </p>
+
+
+      </div> <!-- closes the column -->
+      <div class="col-5_xs-12">
+
+        <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
+          <h2 class="align-center">{{page.news-title}}</h2>
+          <hr>
+          <img src="/images/blog-photo.jpg" alt="blog-photo" class="padded-bottom align-center">
+          <h3 class="align-center">Blog Title</h3>
+          <p>Blog Text. Lorem ipsum dolor sit amet, conseur adipiscing elit. Phasellus varius sit amet mi viverra hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius sit amet mi viverra hendrerit.</p>
+
+          <div class="align-center button-2">
+
+            {% if page.language == 'es' %}
+                <a href="#">Leer más</a>
+            {% elsif page.language == 'en' %}
+                <a href="#">Read More</a>
+            {% elsif page.language == 'fr' %}
+                <a href="#">Read More</a>
+            {% endif %}
+
+          </div>
+        </div>
+        <div class="button-1 align-center">
+
+          {% if page.language == 'es' %}
+              <a href="#">Todas las News <img src="/images/right-arrow.svg" alt="right arrow"></a>
+          {% elsif page.language == 'en' %}
+              <a href="#">View All News <img src="/images/right-arrow.svg" alt="right arrow"></a>
+          {% elsif page.language == 'fr' %}
+              <a href="#">View All News <img src="/images/right-arrow.svg" alt="right arrow"></a>
+          {% endif %}
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
+    <div class="bg-beige padded-8 margin-top link-menu" id="gallery">
+
+      {% if page.language == 'es' %}
+
+        <h1>Galería</h1>
+        <p>Selecciona</p>
+        <nav id="portfolio-filter">
+          <li><a href="" id="todas">Todas</a> | </li>
+          <li><a href="" id="habitaciones">Habitaciones</a> | </li>
+          <li><a href="" id="desayuno">Desayuno</a> | </li>
+          <li><a href="" id="sala">Sala</a> | </li>
+          <li><a href="" id="entrada">Entrada</a> | </li>
+          <li><a href="" id="terraza">Terraza</a> | </li>
+          <li><a href="" id="arquitectura">Arquitectura</a></li>
+        </nav>
+
+      {% elsif page.language == 'en' %}
+
+        <h1>Galería</h1>
+        <p>Selecciona</p>
+        <nav id="portfolio-filter">
+          <li><a href="" id="todas">Todas</a> | </li>
+          <li><a href="" id="habitaciones">Habitaciones</a> | </li>
+          <li><a href="" id="desayuno">Desayuno</a> | </li>
+          <li><a href="" id="sala">Sala</a> | </li>
+          <li><a href="" id="entrada">Entrada</a> | </li>
+          <li><a href="" id="terraza">Terraza</a> | </li>
+          <li><a href="" id="arquitectura">Arquitectura</a></li>
+        </nav>
+
+      {% elsif page.language =='fr' %}
+
+      <h1>Galería</h1>
+      <p>Selecciona</p>
+      <nav id="portfolio-filter">
+        <li><a href="" id="todas">Todas</a> | </li>
+        <li><a href="" id="habitaciones">Habitaciones</a> | </li>
+        <li><a href="" id="desayuno">Desayuno</a> | </li>
+        <li><a href="" id="sala">Sala</a> | </li>
+        <li><a href="" id="entrada">Entrada</a> | </li>
+        <li><a href="" id="terraza">Terraza</a> | </li>
+        <li><a href="" id="arquitectura">Arquitectura</a></li>
+      </nav>
+
+      {% endif %}
+
+      <div class="grid gallery" id="portfolio-grid">
+        {% for item in site.data.gallery %}
+        <div class="col-4_sm-6_xs-12 filterable-item {{item.category}}" >
+          <img src="{{item.image_path}}" alt="{{item.image_description}}">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <!-- - - - - - - - - - - grid - - - - - - - - - - -  -->
+
+  </section>
+
+
+  <!-- - - - - - - - - - - INSTAGRAM WIDGET - - - - - - - - - -  -->
+  <section class="bg-teal">
+    <div class="padded-8">
+
+      {% if page.language == 'es' %}
+      <h2>Sigue a Casa Mathilda</h2>
+      {% elsif page.language == 'en' %}
+      <h2>Follow Casa Mathilda</h2>
+      {% elsif page.language == 'fr' %}
+      <h2>Sigue a Casa Mathilda</h2>
+      {% endif %}
+
+      <div class="button-1 button-ochre button-insta">
+        <a href="http://instagram.com/casamathilda">Instagram <img src="/images/right-arrow.svg" alt="right arrow"></a>
+
+      </div>
+    </div>
+    <div>
+      <!-- SnapWidget -->
+      <script src="https://snapwidget.com/js/snapwidget.js"></script>
+      <iframe src="https://snapwidget.com/embed/557615" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+    </div>
+
+    <!-- - - - - - - - - - - SECTION: CONTACT - - - - - - - - - -  -->
+    <div class="grid-middle-spaceBetween padded-8" id="contact">
+      <div class="col-6_xs-12 padded-8">
+        <h1>{{page.contact-title}}</h1>
+        <div>
+            <p class="bump-right p-bold">{{page.contact-phone}}</p>
+            <p class="bump-right p-bold">{{page.contact-email}}</p>
+        </div>
+        {{page.contact_html }}
+        <form method="" action="">
+          <!-- <label for="firstname" class="mob-show">Tu nombre</label> -->
+          <input type="firstname" name="firstname" placeholder="Tu nombre" required>
+          <!-- <label for="email" class="mob-show">Tu email</label> -->
+          <input type="email" name="email" placeholder="Tu email" required>
+          <!-- <label for="comment" class="mob-show">Mensaje</label> -->
+          <textarea name="mensaje" form="textarea" placeholder="Mensaje"></textarea>
+          <div class="align-center button-2"><input type="submit" value="Enviar"></input>
+          </div>
+        </form>
+      </div>
+      <div class="col-4_xs-12 address-box padded-5">
+        <h2 class="align-center">{{page.address-title}}</h2>
+        <hr>
+          <p class="p-bold align-center"> {{page.address}}</p>
+          <p class="p-bold align-center"> {{page.city}}</p>
+
+        {{page.directions_html}}
+      </div>
+    </div>
+  </section>
+
+  <!-- normally we wouldn't set a fixed height on a div, but since the only element inside the container already has a fixed height, this ensures there is no gap around the map -->
+  <div style="height:450px">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.9479093214813!2d2.161464915383106!3d41.39693760336602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a294be90cebf%3A0xe80d18c953205613!2sCasa+Mathilda+%7C+Barcelona!5e0!3m2!1sen!2sid!4v1532076689863" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+<!-- This is the magnificPopup Javascript -->
+  <div id="launch-popup" class="launch-popup mfp-hide">
+  Popup Form
+  </div>
+  <!--End magnificPopup  -->

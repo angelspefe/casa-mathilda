@@ -1,0 +1,322 @@
+<!Doctype html>
+<html>
+
+<head>
+  
+  <title>Casa Mathilda - Bed & Breakfast in Barcelona</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <!-- Gridlex, Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,500|Raleway:500,500i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Open Graph Data -->
+  <meta property="og:url" content="http://casamathilda.com" />
+  <meta property="og:title" content="Casa Mathilda" />
+  <meta property="og:image" content="xxxxxxxxx" />
+  <meta property="og:site_name" content="Casa Mathilda" />
+  <meta property="og:description" content="Bed & Breakfast in Barcelona" />
+
+  <!-- Favicons -->
+
+  <!-- Google Analytics -->
+
+</head>
+
+<body class="bg-image">
+
+    <header id="top">
+      <!-- - - - - - - - - - - LOGO - - - - - - - - - -  -->
+      <a href="/index.html"><img src="/images/logo-casa-mathilda.png" alt="casa mathilda logo" class="logo mob-hide"></a>
+
+      <!-- - - - - - - - - - - NAVIGATION BAR - - - - - - - - - -  -->
+      <!-- - - - - - - sidebar navigation  - - - - - - - - - --->
+<div class="sidebar mob-hide">
+  <nav>
+
+     <!-- spanish -->
+
+    <li><a href="/#rooms">Habitaciones</a></li>
+    <li><a href="/#info">Info</a></li>
+    <li><a href="/#gallery">Galería</a></li>
+    <li><a href="/#contact" class="light">Contacto</a></li>
+    <li><a href="/press" class="light">Prensa</a></li>
+    <li><a href="/news" class="light">News</a></li>
+
+    
+  </nav>
+
+  <div class="dropdown">
+
+     <!-- spanish -->
+
+    <button class="dropbtn">
+      ESP <img class="down-arrow" src="/images/up-arrow.svg" alt="up arrow">
+    </button>
+    <div class="dropdown-content">
+      <a href="/en/" data-lang="en">ENG</a>
+      <a href="/fr/" data-lang="fr">FRE</a>
+    </div>
+
+    
+
+  </div>
+
+</div>
+
+<!-- mobile navigation -->
+<nav class="mob-nav">
+  <a href="index.html"><img src="images/logo-casa-mathilda.png" alt="casa mathilda logo" class="logo"></a>
+  <div class="burger-button">
+    <span class="burger-top"></span>
+    <span class="burger-middle"></span>
+    <span class="burger-bottom"></span>
+  </div>
+  <div class="burger-menu">
+    <ul>
+
+      <li><a href="/#rooms">Habitaciones</a></li>
+      <li><a href="/#info">Info</a></li>
+      <li><a href="/#gallery">Galería</a></li>
+      <li><a href="/#contact" class="light">Contacto</a></li>
+
+      
+      <li><a href="/press" class="light">Prensa</a></li
+      
+
+      <li><a href="/news" class="light">News</a></li>
+        <li>
+          <a href="#googtrans(es|es)" class="lang-es lang-select" data-lang="es">ESP</a>
+          <a href="#googtrans(es|en)" class="lang-en lang-select" data-lang="en">EN</a>
+          <a href="#googtrans(es|fr)" class="lang-fr lang-select" data-lang="fr">FRE</a>
+      </li>
+      <ul>
+  </div>
+</nav>
+
+      <!-- - - - - - - - - - - BOOK BUTTON - - - - - - - - - -  -->
+      <a href="#">
+        
+        <img src="/images/book-button.png" alt="book button" class="book-button">
+        
+      </a>
+
+      <!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
+
+
+    </header>
+
+      <section class="bg-beige">
+  <div class="padded-8">
+    <h1></h1>
+    <p class="narrow-width bump-right p-bold"></p>
+  </div>
+  <div class="padded-left padded-2 link-menu" id="rooms">
+    <p></p>
+
+    
+    <nav id="rooms-filter">
+      <li><a href="#" id="terraza">Terraza</a> | </li>
+      <li><a href="#" id="interiores">Interiores</a> | </li>
+      <li><a href="#" id="a-la-calle">A la Calle</a></li>
+    </nav>
+    
+
+  </div>
+
+
+
+  <!-- we need to create one of these for each of the room types -->
+  <div id="rooms-grid">
+
+  
+
+  <div class="slider-rooms filterable-item terraza ">
+    <div class="bg-image-room" style="background-image:url(/images/casa-mathilda-banner.jpg)"></div>
+    <div class="bg-image-room" style="background-image:url(/images/room-mathilda.jpg)"></div>
+    <div class="bg-image-room" style="background-image:url()"></div>
+
+    <button class="room-left-button" onclick="plusRoomGallery(-1)">
+      <img src="/images/right-arrow.svg">
+    </button>
+    <button class="room-right-button" onclick="plusRoomGallery(+1)">
+      <img src="/images/right-arrow.svg">
+    </button>
+  <!--this anchor link is the details button which when clicked opens up the popup div. The href corresponds to the id of the div we want to pop-up and the class 'open-room-details' is what initialises the popup in the javascript. The styles of the popup are controlled through the 'room-details-popup class'. -->
+
+    <div class="button-1 button-ochre align-center" id="show-1">
+      <a href="#popup-room-details-1" class="open-room-details-1">
+            <!-- this changes the text within the anchor link based on the language -->
+            
+                Detalles
+            
+            <img src="/images/right-arrow.svg" alt="right arrow">
+      </a>
+    </div>
+
+    <div id="popup-room-details-1" class="room-details-popup">
+      <div class="grid">
+        <div class="col-7">
+              <h2> Habitaciones </h2>
+              <p> Mathilda te ofrece 3 tipos de habitaciones según su ubicación dentro de la casa.</p>
+              <div class="button-left button-ochre left">
+                  <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              </div>
+        </div>
+        <div class="col-5">
+          <ul> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> </ul>
+        </div>
+        <span class="close-icon" id="hide-1"> X </span>
+      </div>
+    </div>
+    <!-- end popup div -->
+  </div>
+
+  
+
+  <div class="slider-rooms filterable-item interiores ">
+    <div class="bg-image-room" style="background-image:url(/images/room-mathilda.jpg)"></div>
+    <div class="bg-image-room" style="background-image:url(/images/casa-mathilda-banner.jpg)"></div>
+    <div class="bg-image-room" style="background-image:url()"></div>
+
+    <button class="room-left-button" onclick="plusRoomGallery(-1)">
+      <img src="/images/right-arrow.svg">
+    </button>
+    <button class="room-right-button" onclick="plusRoomGallery(+1)">
+      <img src="/images/right-arrow.svg">
+    </button>
+  <!--this anchor link is the details button which when clicked opens up the popup div. The href corresponds to the id of the div we want to pop-up and the class 'open-room-details' is what initialises the popup in the javascript. The styles of the popup are controlled through the 'room-details-popup class'. -->
+
+    <div class="button-1 button-ochre align-center" id="show-2">
+      <a href="#popup-room-details-2" class="open-room-details-2">
+            <!-- this changes the text within the anchor link based on the language -->
+            
+                Detalles
+            
+            <img src="/images/right-arrow.svg" alt="right arrow">
+      </a>
+    </div>
+
+    <div id="popup-room-details-2" class="room-details-popup">
+      <div class="grid">
+        <div class="col-7">
+              <h2> Interiores </h2>
+              <p> Mathilda te ofrece 3 tipos de habitaciones según su ubicación dentro de la casa.</p>
+              <div class="button-left button-ochre left">
+                  <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              </div>
+        </div>
+        <div class="col-5">
+          <ul> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> </ul>
+        </div>
+        <span class="close-icon" id="hide-2"> X </span>
+      </div>
+    </div>
+    <!-- end popup div -->
+  </div>
+
+  
+
+  <div class="slider-rooms filterable-item a-la-calle ">
+    <div class="bg-image-room" style="background-image:url(/images/casa-mathilda-banner.jpg)"></div>
+    <div class="bg-image-room" style="background-image:url(/images/room-mathilda.jpg)"></div>
+    <div class="bg-image-room" style="background-image:url()"></div>
+
+    <button class="room-left-button" onclick="plusRoomGallery(-1)">
+      <img src="/images/right-arrow.svg">
+    </button>
+    <button class="room-right-button" onclick="plusRoomGallery(+1)">
+      <img src="/images/right-arrow.svg">
+    </button>
+  <!--this anchor link is the details button which when clicked opens up the popup div. The href corresponds to the id of the div we want to pop-up and the class 'open-room-details' is what initialises the popup in the javascript. The styles of the popup are controlled through the 'room-details-popup class'. -->
+
+    <div class="button-1 button-ochre align-center" id="show-3">
+      <a href="#popup-room-details-3" class="open-room-details-3">
+            <!-- this changes the text within the anchor link based on the language -->
+            
+                Detalles
+            
+            <img src="/images/right-arrow.svg" alt="right arrow">
+      </a>
+    </div>
+
+    <div id="popup-room-details-3" class="room-details-popup">
+      <div class="grid">
+        <div class="col-7">
+              <h2> A La Calle </h2>
+              <p> Mathilda te ofrece 3 tipos de habitaciones según su ubicación dentro de la casa.</p>
+              <div class="button-left button-ochre left">
+                  <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              </div>
+        </div>
+        <div class="col-5">
+          <ul> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> </ul>
+        </div>
+        <span class="close-icon" id="hide-3"> X </span>
+      </div>
+    </div>
+    <!-- end popup div -->
+  </div>
+
+  
+
+  </div>
+</section>
+
+
+
+      <footer class="align-center bg-beige">
+        <div class="top-arrow"><a href="#top"><img src="/images/up-arrow.svg" alt="up arrow"></a></div>
+        <nav>
+          <li><a href="/#">Contacto</a></li>
+          <li><a href="/#">Privacidad</a></li>
+          <li><a href="/#">Facebook</a></li>
+          <li><a href="/#">Instagram</a></li>
+          <li><a href="/#" class="mob-hide">Reserva</a></li>
+        </nav>
+
+        <div class="copyright">
+          <p>Copyright © 2018 Casa Mathilda | <a href="http://loveiscreative.com">Site Credits</a></p>
+        </div>
+      </footer>
+
+      <!-- - - - - - - - - - - FOOTER - - - - - - - - - -  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+<!-- magnific popup lightbox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+
+  <script>
+  // This is the automatic background slider on the homepage
+
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("bg-image-slide");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+// end background slides
+
+</script>
+
+<script src="/js/main.js"></script>
+
+
+    </body>
+    </html>

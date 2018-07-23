@@ -1,0 +1,105 @@
+---
+layout: default
+---
+<section class="bg-beige margin-top">
+  <div class="padded-8">
+    <h1>Habitaciones</h1>
+    <p class="narrow-width bump-right p-bold">Mathilda te ofrece 3 tipos de habitaciones según su ubicación dentro de la casa.</p>
+  </div>
+  <div class="padded-left padded-2 link-menu" id="rooms">
+    <p>Selecciona Habitación</p>
+    <nav id="portfolio-filter">
+      <li><a href="">Terraza</a> | </li>
+      <li><a href="">Interiores</a> | </li>
+      <li><a href="">A la Calle</a></li>
+    </nav>
+  </div>
+  <!-- we need to create one of these for each of the room types -->
+  <div id="portfolio-grid">
+  <div class="slider-rooms hidden terraza filterable-item">
+    <div class="button-1 button-ochre align-center">
+
+      <!--this anchor link is the details button which when clicked opens up the popup div. The href corresponds to the id of the div we want to pop-up and the class 'open-room-details' is what initialises the popup in the javascript. The styles of the popup are controlled through the 'room-details-popup class'. -->
+
+      <a href="#popup-room-details-1" class="open-room-details-1" title="The Cleaner">Detalles</a>
+
+      <div id="popup-room-details-1" class="mfp-hide room-details-popup">
+        <h2> Room Type Name </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <ul>
+          <li> This is a list item </li>
+          <li> This is a list item </li>
+          <li> This is a list item </li>
+        </ul>
+        <img src="/images/blog-photo.jpg" class="small-image">
+        <img src="/images/blog-photo.jpg" class="small-image">
+        <img src="/images/blog-photo.jpg" class="small-image">
+      </div>
+
+      <img src="/images/right-arrow.svg" alt="right arrow">
+    </div>
+    <!-- end popup div -->
+  </div>
+
+  <!-- popup number 2 -->
+  <div class="slider-rooms hidden interiores filterable-item" style="background-image:url('/images/blog-photo.jpg')">
+    <div class="button-1 button-ochre align-center">
+
+      <!--this anchor link is the details button which when clicked opens up the popup div. The href corresponds to the id of the div we want to pop-up and the class 'open-room-details' is what initialises the popup in the javascript. The styles of the popup are controlled through the 'room-details-popup class'. -->
+
+      <a href="#popup-room-details-2" class="open-room-details-2" title="The Cleaner">Detalles</a>
+
+      <div id="popup-room-details-2" class="mfp-hide room-details-popup">
+        <h2> Room Type 2 </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <ul>
+          <li> This is a list item </li>
+          <li> This is a list item </li>
+          <li> This is a list item </li>
+        </ul>
+        <img src="/images/blog-photo.jpg" class="small-image">
+        <img src="/images/blog-photo.jpg" class="small-image">
+        <img src="/images/blog-photo.jpg" class="small-image">
+      </div>
+
+      <img src="/images/right-arrow.svg" alt="right arrow">
+    </div>
+    <!-- end popup div -->
+  </div>
+  <div class="slider-rooms hidden a-la-calle filterable-item" style="background-image:url('/images/casa-mathilda-banner.jpg')">
+    <div class="button-1 button-ochre align-center">
+
+      <!--this anchor link is the details button which when clicked opens up the popup div. The href corresponds to the id of the div we want to pop-up and the class 'open-room-details' is what initialises the popup in the javascript. The styles of the popup are controlled through the 'room-details-popup class'. -->
+
+      <a href="#popup-room-details-3" class="open-room-details-3" title="The Cleaner">Detalles</a>
+
+      <div id="popup-room-details-3" class="mfp-hide room-details-popup">
+        <h2> Room Type 3 </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <ul>
+          <li> This is a list item </li>
+          <li> This is a list item </li>
+          <li> This is a list item </li>
+        </ul>
+        <img src="/images/blog-photo.jpg" class="small-image">
+        <img src="/images/blog-photo.jpg" class="small-image">
+        <img src="/images/blog-photo.jpg" class="small-image">
+      </div>
+
+      <img src="/images/right-arrow.svg" alt="right arrow">
+    </div>
+    <!-- end popup div -->
+  </div>
+</section>
+
+
+<section>
+
+  <div class="slider" id="slider">
+  <div class="holder">
+    <div class="slide" id="slide-0"> Test 1</div>
+    <div class="slide" id="slide-1"> Test 2</div>
+    <div class="slide" id="slide-2"> Test 3 </div>
+  </div>
+</div>
+</section>

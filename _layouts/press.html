@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<!-- - - - - - - - - - - HEADER - - - - - - - - - -  -->
+<div class="body-content">
+<section class="bg-beige margin-top press">
+  <div>
+    <div class="padded-top">
+      <h1>{{page.heading}}</h1>
+      <p class="narrow-width bump-right p-bold">{{page.intro-paragraph}}</p>
+    </div>
+  </div>
+
+
+<!-- - - - - - - - - - - MAIN - - - - - - - - - -  -->
+  <div class="bg-beige grid-spaceBetween">
+
+    {% for press in site.data.media %}
+
+    <div class="col-4_sm-6_xs-12 padded-5">
+      <img src="{{press.featured_image}}" alt="{{press.title}}">
+      <div class="align-center button-2"><a href="{{press.pdf_path}}" target="_blank">Ver</a></div>
+    </div>
+
+    {% endfor %}
+
+  </div>
+
+
+
+<!-- - - - - - - - - - - Bottom Button - - - - - - - - - -  -->
+  <div class="button-1 align-center">
+    <a href="#" onclick="goBack()">Atrás
+    <img src="/images/right-arrow.svg" alt="right arrow">
+    </a>
+  </div>
+
+</section>
+</div>

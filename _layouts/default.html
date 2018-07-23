@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body class="bg-image">
+
+    <header id="top">
+      <!-- - - - - - - - - - - LOGO - - - - - - - - - -  -->
+      <a href="/index.html"><img src="/images/logo-casa-mathilda.png" alt="casa mathilda logo" class="logo mob-hide"></a>
+
+      <!-- - - - - - - - - - - NAVIGATION BAR - - - - - - - - - -  -->
+      {% include navigation.html %}
+      <!-- - - - - - - - - - - BOOK BUTTON - - - - - - - - - -  -->
+      <a href="#">
+        {% if page.language == 'es' %}
+        <img src="/images/book-button.png" alt="book button" class="book-button">
+        {% elsif page.language == 'en' %}
+        <img src="/images/book-button.png" alt="book button" class="book-button">
+        {% elsif page.language == 'fr' %}
+        <img src="/images/book-button.png" alt="book button" class="book-button">
+        {% endif %}
+      </a>
+
+      <!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
+
+
+    </header>
+
+      {{content}}
+
+
+      <footer class="align-center bg-beige">
+        <div class="top-arrow"><a href="#top"><img src="/images/up-arrow.svg" alt="up arrow"></a></div>
+        <nav>
+          <li><a href="/#">Contacto</a></li>
+          <li><a href="/#">Privacidad</a></li>
+          <li><a href="/#">Facebook</a></li>
+          <li><a href="/#">Instagram</a></li>
+          <li><a href="/#" class="mob-hide">Reserva</a></li>
+        </nav>
+
+        <div class="copyright">
+          <p>Copyright © 2018 Casa Mathilda | <a href="http://loveiscreative.com">Site Credits</a></p>
+        </div>
+      </footer>
+
+      {% include body-scripts.html %}
+
+    </body>
+    </html>

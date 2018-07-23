@@ -1,0 +1,117 @@
+---
+layout: default
+language: es
+room-details:
+  - room-type-class: terraza
+    number: 1
+    banner-1_image: /images/casa-mathilda-banner.jpg
+    banner-2_image: /images/room-mathilda.jpg
+    room-details-title: Habitaciones
+    room-details-description: Mathilda te ofrece 3 tipos de habitaciones según su ubicación dentro de la casa.
+    room-features_html: >-
+      <ul> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> </ul>
+  - room-type-class: interiores
+    number: 2
+    hidden: true
+    banner-1_image: /images/room-mathilda.jpg
+    banner-2_image: /images/casa-mathilda-banner.jpg
+    room-details-title: Interiores
+    room-details-description: Mathilda te ofrece 3 tipos de habitaciones según su ubicación dentro de la casa.
+    room-features_html: >-
+      <ul> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> </ul>
+  - room-type-class: a-la-calle
+    number: 3
+    hidden: true
+    banner-1_image: /images/casa-mathilda-banner.jpg
+    banner-2_image: /images/room-mathilda.jpg
+    room-details-title: A La Calle
+    room-details-description: Mathilda te ofrece 3 tipos de habitaciones según su ubicación dentro de la casa.
+    room-features_html: >-
+      <ul> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> <li> Test 123 </li> </ul>
+---
+<section class="bg-beige">
+  <div class="padded-8">
+    <h1>{{page.rooms-title}}</h1>
+    <p class="narrow-width bump-right p-bold">{{page.rooms-description}}</p>
+  </div>
+  <div class="padded-left padded-2 link-menu" id="rooms">
+    <p>{{page.rooms-title-2}}</p>
+
+    {% if page.language == 'es' %}
+    <nav id="rooms-filter">
+      <li><a href="#" id="terraza">Terraza</a> | </li>
+      <li><a href="#" id="interiores">Interiores</a> | </li>
+      <li><a href="#" id="a-la-calle">A la Calle</a></li>
+    </nav>
+    {% elsif page.language == 'en' %}
+    <nav id="rooms-filter">
+      <li><a href="#" id="terraza">Terrace</a> | </li>
+      <li><a href="#" id="interiores">Interiores</a> | </li>
+      <li><a href="#" id="a-la-calle">A la Calle</a></li>
+    </nav>
+    {% elsif page.language == 'fr' %}
+    <nav id="rooms-filter">
+      <li><a href="#" id="terraza">Terraza</a> | </li>
+      <li><a href="#" id="interiores">Interiores</a> | </li>
+      <li><a href="#" id="a-la-calle">A la Calle</a></li>
+    </nav>
+    {% endif %}
+
+  </div>
+
+
+
+  <!-- we need to create one of these for each of the room types -->
+  <div id="rooms-grid">
+
+  {% for item in page.room-details %}
+
+  <div class="slider-rooms filterable-item {{item.room-type-class}} {% if item.hidden == 'true' %} hidden {% endif %}">
+    <div class="bg-image-room" style="background-image:url({{item.banner-1_image}})"></div>
+    <div class="bg-image-room" style="background-image:url({{item.banner-2_image}})"></div>
+    <div class="bg-image-room" style="background-image:url({{item.banner-3_image}})"></div>
+
+    <button class="room-left-button" onclick="plusRoomGallery(-1)">
+      <img src="/images/right-arrow.svg">
+    </button>
+    <button class="room-right-button" onclick="plusRoomGallery(+1)">
+      <img src="/images/right-arrow.svg">
+    </button>
+  <!--this anchor link is the details button which when clicked opens up the popup div. The href corresponds to the id of the div we want to pop-up and the class 'open-room-details' is what initialises the popup in the javascript. The styles of the popup are controlled through the 'room-details-popup class'. -->
+
+    <div class="button-1 button-ochre align-center" id="show-{{item.number}}">
+      <a href="#popup-room-details-{{item.number}}" class="open-room-details-{{item.number}}">
+            <!-- this changes the text within the anchor link based on the language -->
+            {% if page.language == 'es' %}
+                Detalles
+            {% elsif page.language == 'en' %}
+                Details
+            {% elsif page.language == 'fr' %}
+                Details
+            {% endif %}
+            <img src="/images/right-arrow.svg" alt="right arrow">
+      </a>
+    </div>
+
+    <div id="popup-room-details-{{item.number}}" class="room-details-popup">
+      <div class="grid">
+        <div class="col-7">
+              <h2> {{item.room-details-title}} </h2>
+              <p> {{item.room-details-description}}</p>
+              <div class="button-left button-ochre left">
+                  <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              </div>
+        </div>
+        <div class="col-5">
+          {{item.room-features_html}}
+        </div>
+        <span class="close-icon" id="hide-{{item.number}}"> X </span>
+      </div>
+    </div>
+    <!-- end popup div -->
+  </div>
+
+  {% endfor %}
+
+  </div>
+</section>
