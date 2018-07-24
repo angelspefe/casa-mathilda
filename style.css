@@ -300,8 +300,8 @@ footer {
 
 .launch-popup {
   position: relative;
-  background: teal;
-  color: white;
+  background-color: #879D99;
+  color: #fff;
   padding: 20px;
   width: auto;
   max-width: 700px;
