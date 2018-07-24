@@ -734,14 +734,14 @@ hr {
 }
 
 .post-body img {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   display:block;
 }
 
 .tag {
   display: inline-block;
   color: grey;
-  border: 1px solid grey;
+  border: 0px solid grey;
   padding: 3px;
   border-radius: 2px;
   margin: 0.5rem 2px;
