@@ -9,12 +9,12 @@ layout: default
   <section class="bg-beige margin-top">
       <div class="padded-8">
         <h1>News</h1>
-        <p class="narrow-width bump-right p-bold">All rooms bla lorem ipsum dolor sit amet, consectetur adipiscing elit.  Phasellus varius sit amet mi viverra hendrerit. Lorem ipsum dolor sit amet, consectetur. </p>
+        <p class="narrow-width bump-right p-bold">En Casa Mathilda pasa de todo, y queremos compartirlo contigo.</p>
       </div>
 
       {% for post in site.posts %}
       <div class="news grid padded-8">
-        <div class="col-1 padded-2 mob-hide">
+        <div class="col-1 mob-hide">
           <p class="month">{{post.date | date: "%b" }}</p>
           <p class="date">{{post.date | date: "%d"}}</p>
         </div>
