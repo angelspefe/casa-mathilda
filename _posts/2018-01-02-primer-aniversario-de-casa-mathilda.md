@@ -8,7 +8,7 @@ blurb: >-
   las primeras anécdotas de la apertura, unas curiosas , otras divertidas,
   algunas increíbles, mezcladas con ciertos momentos de estrés que al final
   acabaron siempre con unas buenas dosis de risas !!!
-featured_image: /blog-primer-aniversario.jpg
+featured_image: /uploads/blog-primer-aniversario.jpg
 ---
 
 Inauguramos el Blog para celebrar con todos vosotros nuestro 1er. aniversario.
