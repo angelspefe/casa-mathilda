@@ -878,11 +878,11 @@ hr {
   }
 
   .bg-image-slide .transbox {
-    top: 55vh;
+    top: 70vh;
   }
 
   .bg-image-slide .transbox h1 {
-    line-height:1.2;
+    line-height:1.5;
     font-size: 1.5rem;
   }
 
@@ -932,6 +932,9 @@ hr {
   }
   .link-menu p {
     font-size: 0.6rem;
+  }
+  .bg-image-slide .transbox {
+    top: 55vh;
   }
 }
 
