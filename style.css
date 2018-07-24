@@ -389,9 +389,9 @@ h2 {
   position: fixed;
   left: 0;
   top: 20vh;
-  padding: 7% 1% 7% 1%;
+  padding: 7% 2% 7% 2%;
   background-color: #FFF;
-  width: 150px;
+  width: 130px;
   z-index: 100;
 }
 
