@@ -246,7 +246,6 @@ footer {
 
 
 .room-details-popup li {
-  padding-left: 3rem;
   list-style-position: outside;
   padding-bottom: 0.5rem;
 }
@@ -257,7 +256,7 @@ footer {
   top: 0;
   right: 0;
   cursor: pointer;
-  max-width:15px;
+  width:76px;
 }
 
 .slider-rooms .bg-image-room {
