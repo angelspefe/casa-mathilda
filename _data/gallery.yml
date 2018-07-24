@@ -28,15 +28,6 @@
 - category: sala
   image_path: /images/sala-5.jpg
   image_description: sala casa mathilda
-- category: sala
-  image_path: /images/sala-6.jpg
-  image_description: sala casa mathilda
-- category: sala
-  image_path: /images/sala-7.jpg
-  image_description: sala casa mathilda
-- category: sala
-  image_path: /images/sala-8.jpg
-  image_description: sala casa mathilda
 - category: terraza
   image_path: /images/terraza-1.jpg
   image_description: terraza casa mathilda
@@ -117,7 +108,4 @@
   image_description: habitacion casa mathilda
 - category: habitaciones
   image_path: /images/rooms-23.jpg
-  image_description: habitacion casa mathilda
-- category: habitaciones
-  image_path: /images/rooms-24.jpg
   image_description: habitacion casa mathilda
