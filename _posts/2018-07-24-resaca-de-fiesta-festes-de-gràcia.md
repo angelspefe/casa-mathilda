@@ -6,7 +6,7 @@ blurb: >-
   Llegan a su fin las fiestas de Gràcia. Queremos felicitar a todos sus vecinos
   por la creatividad y la impecable realización de los decorados de sus calles
   que se superan de una forma sorprendente cada año.
-featured_image: /uploads/blog-empezamos.jpg
+featured_image: /uploads/blog-festes-gracia.jpg
 ---
 
 Llegan a su fin las fiestas de Gràcia. Queremos felicitar a todos sus vecinos por la creatividad y la impecable realización de los decorados de sus calles que se superan de una forma sorprendente cada año.
