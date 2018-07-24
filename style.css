@@ -257,6 +257,7 @@ footer {
   top: 0;
   right: 0;
   cursor: pointer;
+  max-width:15px;
 }
 
 .slider-rooms .bg-image-room {
