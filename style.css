@@ -247,7 +247,7 @@ footer {
 
 .room-details-popup li {
   padding-left: 3rem;
-  list-style-position: inside;
+  list-style-position: outside;
   padding-bottom: 0.5rem;
 }
 
