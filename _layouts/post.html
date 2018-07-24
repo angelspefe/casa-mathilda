@@ -4,11 +4,11 @@ layout: default
 
 <div class="body-content">
   <section class="bg-beige margin-top post-body">
-    <div class="padded-8 align-center">
-      <h1> {{page.title}} </h1>
+    <div class="padded-8">
+      <h1 class="align-center"> {{page.title}} </h1>
       <p class="small-date align-center"> {{page.date | date_to_string }} </p>
       {% for category in page.categories %}
-      <span class="tag align-center"> {{category}}</span>
+      <span class="tag align-center padded-bottom"> {{category}}</span>
       {% endfor %}
       <img src="{{page.featured_image}}" alt="{{page.title}}">
 
