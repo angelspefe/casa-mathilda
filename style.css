@@ -850,6 +850,7 @@ hr {
 }
 
 .mob-lang li {
+  list-style: none;
   display:inline-block;
   padding:0;
 }
