@@ -748,8 +748,8 @@ hr {
 
 .tag {
   display: inline-block;
-  color: grey;
-  border: 0px solid grey;
+  color: #546461;
+  border: 0px solid #546461;
   padding: 3px;
   border-radius: 2px;
   margin: 0.5rem 2px;
@@ -780,8 +780,8 @@ hr {
 }
 
 .burger-button.active span {
-  border-color: #fff;
-  background-color: #fff;
+  border-color: #DEBD31;
+  background-color: #DEBD31;
 }
 
 .burger-top, .burger-bottom {
