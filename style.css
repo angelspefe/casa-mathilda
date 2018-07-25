@@ -300,9 +300,9 @@ footer {
 
 .launch-popup {
   position: relative;
-  background-color: #879D99;
+  background: white;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   width: auto;
   max-width: 700px;
   margin: 5% auto;
@@ -310,6 +310,10 @@ footer {
 
 .launch-popup:focus {
   outline: none; /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
+}
+
+.launch-popup .bg-image {
+  background-attachment: scroll;
 }
 
 /*----------- Typography -----------*/
@@ -420,6 +424,7 @@ h2 {
     cursor: pointer;
     font-weight: 500;
     font-family: 'Oswald', sans-serif;
+    background-color:transparent;
     color: #546461;
     line-height:1.6;
     font-size: 0.8rem;
