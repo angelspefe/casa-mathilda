@@ -899,7 +899,7 @@ hr {
 
 @media(max-width:576px) {
   .mob-nav {
-    display: block;
+    display: block !important;
   }
   .mob-show {
     display: block;
@@ -915,6 +915,10 @@ hr {
 
   section {
     padding: 30px 5% 0 5%;
+  }
+
+  .body-content {
+    padding:30px 20px 20px 20px;
   }
 
   footer {
