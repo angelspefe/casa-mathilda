@@ -849,13 +849,16 @@ hr {
   text-transform: uppercase;
 }
 
+.mob-lang ul {
+  padding-left: 35%;
+}
+
 
 .mob-lang a {
   font-size: 0.8rem;
   color: #DEBD31;
-  padding-left: 30%;
 }
-
+  
 .mob-lang li {
   list-style: none;
   display:inline-block;
