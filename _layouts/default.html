@@ -9,7 +9,17 @@
 
     <header id="top">
       <!-- - - - - - - - - - - LOGO - - - - - - - - - -  -->
-      <a href="/index.html"><img src="/images/logo-casa-mathilda.png" alt="casa mathilda logo" class="logo mob-hide"></a>
+      {% if page.language == 'en' %}
+      <a href="/en/index.html">
+      {% elsif page.language == 'fr' %}
+      <a href="/fr/index.html">
+      {% else %}
+      <a href="/index.html">
+      {% endif %}
+
+        <img src="/images/logo-casa-mathilda.png" alt="casa mathilda logo" class="logo mob-hide">
+
+      </a>
 
       <!-- - - - - - - - - - - NAVIGATION BAR - - - - - - - - - -  -->
       {% include navigation.html %}

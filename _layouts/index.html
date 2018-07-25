@@ -54,12 +54,13 @@ layout: default
     <!-- we need to create one of these for each of the room types -->
     <div id="rooms-grid">
 
-    {% for item in page.room-details %}
+    {% for item in site.data.room-details %}
 
     <div class="slider-rooms filterable-item {{item.room-type-class}} {% if item.hidden %} hidden {% endif %}">
       <div class="bg-image-room" style="background-image:url({{item.banner-1_image}})"></div>
       <div class="bg-image-room" style="background-image:url({{item.banner-2_image}})"></div>
       <div class="bg-image-room" style="background-image:url({{item.banner-3_image}})"></div>
+      <div class="bg-image-room" style="background-image:url({{item.banner-4_image}})"></div>
 
       <button class="room-left-button mob-hide" onclick="plusRoomGallery(-1)">
         <img src="/images/right-arrow.svg">
@@ -86,17 +87,57 @@ layout: default
       <div id="popup-room-details-{{item.number}}" class="room-details-popup">
         <div class="grid">
           <div class="col-5_sm-12">
-                <h2> {{item.room-details-title}} </h2>
-                <p> {{item.room-details-description}}</p>
-                <div class="button-left button-ochre left mob-hide">
-                    <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
-                </div>
+
+                {% if page.language == 'en' %}
+                    <h2> {{item.room-details-title-en}} </h2>
+                    <p> {{item.room-details-description-en}}</p>
+                    <div class="button-left button-ochre left mob-hide">
+                        <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+                    </div>
+                {% elsif page.language == 'fr' %}
+                    <h2> {{item.room-details-title-fr}} </h2>
+                    <p> {{item.room-details-description-fr}}</p>
+                    <div class="button-left button-ochre left mob-hide">
+                        <a href="#"> Book (fr) <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+                    </div>
+                {% else %}
+                    <h2> {{item.room-details-title-es}} </h2>
+                    <p> {{item.room-details-description-es}}</p>
+                    <div class="button-left button-ochre left mob-hide">
+                        <a href="#"> Book (es) <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+                    </div>
+                {% endif %}
+
           </div>
           <div class="col-7_sm-12 padded-left">
-            {{item.room-features_html}}
+
+            {% if page.language == 'en' %}
+
+            {{item.room-features-en_html}}
+
             <div class="button-left button-ochre left mob-show">
                 <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
+
+            {% elsif page.language == 'fr' %}
+
+            {{item.room-features-fr_html}}
+
+            <div class="button-left button-ochre left mob-show">
+                <a href="#"> Book (fr) <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+            </div>
+
+            {% else %}
+
+            {{item.room-features-es_html}}
+
+            <div class="button-left button-ochre left mob-show">
+                <a href="#"> Book (es) <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+            </div>
+
+            {% endif %}
+
+
           </div>
           <span class="close-icon" id="hide-{{item.number}}"><img src="/images/letter-x.svg"></span>
         </div>
