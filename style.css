@@ -899,7 +899,7 @@ hr {
 
 @media(max-width:576px) {
   .mob-nav {
-    display: block;
+    display: block !important;
   }
   .mob-show {
     display: block;
