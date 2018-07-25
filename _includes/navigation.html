@@ -40,7 +40,7 @@
       ENG <img class="down-arrow" src="/images/down-arrow.svg" alt="down arrow">
     </button>
     <div class="dropdown-content">
-      <a href="/" data-lang="es">ESP</a>
+      <a href="/" data-lang="es">ES</a>
       <a href="/fr/" data-lang="fr">FR</a>
     </div>
 
@@ -51,13 +51,13 @@
     </button>
     <div class="dropdown-content">
       <a href="/en/" data-lang="en">ENG</a>
-      <a href="/" data-lang="es">ESP</a>
+      <a href="/" data-lang="es">ES</a>
     </div>
 
     {% else %} <!-- spanish -->
 
     <button class="dropbtn">
-      ESP <img class="down-arrow" src="/images/down-arrow.svg" alt="down arrow">
+      ES <img class="down-arrow" src="/images/down-arrow.svg" alt="down arrow">
     </button>
     <div class="dropdown-content">
       <a href="/en/" data-lang="en">ENG</a>
@@ -118,24 +118,24 @@
 
   <ul>
   	<li><a class="active" href=“#”>EN</a> | </li>
-    <li><a href=“/” data-lang="es">ES</a> | </li>
-    <li><a href="/" data-lang="fr">FR</a></li>
+    <li><a href=“/es/” data-lang="es">ES</a> | </li>
+    <li><a href="/fr/" data-lang="fr">FR</a></li>
   </ul>
 
           {% elsif page.language == 'fr' %}
 
   <ul>
   	<li><a class="active" href=“#”>FR</a> | </li>
-    <li><a href=“/” data-lang="es">ES</a> | </li>
-    <li><a href=“/“ data-lang=“en”>EN</a></li>
+    <li><a href=“/es/” data-lang="es">ES</a> | </li>
+    <li><a href=“/en/“ data-lang=“en”>EN</a></li>
   </ul>
 
           {% else %} <!-- spanish -->
 
   <ul>
   	<li><a class="active" href=“#”>ES</a> | </li>
-    <li><a href=“/” data-lang="en">EN</a> | </li>
-    <li><a href=“/“ data-lang=“fr”>FR</a></li>
+    <li><a href=“/en/” data-lang="en">EN</a> | </li>
+    <li><a href=“/fr/“ data-lang=“fr”>FR</a></li>
   </ul>
 
           {% endif %}
