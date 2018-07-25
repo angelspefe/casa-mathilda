@@ -246,8 +246,7 @@ footer {
 
 
 .room-details-popup li {
-  padding-left: 3rem;
-  list-style-position: inside;
+  list-style-position: outside;
   padding-bottom: 0.5rem;
 }
 
@@ -257,6 +256,7 @@ footer {
   top: 0;
   right: 0;
   cursor: pointer;
+  width:76px;
 }
 
 .slider-rooms .bg-image-room {
@@ -300,9 +300,9 @@ footer {
 
 .launch-popup {
   position: relative;
-  background: teal;
-  color: white;
-  padding: 20px;
+  background: white;
+  color: #fff;
+  padding: 10px;
   width: auto;
   max-width: 700px;
   margin: 5% auto;
@@ -310,6 +310,10 @@ footer {
 
 .launch-popup:focus {
   outline: none; /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
+}
+
+.launch-popup .bg-image {
+  background-attachment: scroll;
 }
 
 /*----------- Typography -----------*/
@@ -389,9 +393,9 @@ h2 {
   position: fixed;
   left: 0;
   top: 20vh;
-  padding: 7% 1% 7% 1%;
+  padding: 7% 2% 7% 2%;
   background-color: #FFF;
-  width: 150px;
+  width: 140px;
   z-index: 100;
 }
 
@@ -420,6 +424,7 @@ h2 {
     cursor: pointer;
     font-weight: 500;
     font-family: 'Oswald', sans-serif;
+    background-color:transparent;
     color: #546461;
     line-height:1.6;
     font-size: 0.8rem;
@@ -734,14 +739,14 @@ hr {
 }
 
 .post-body img {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   display:block;
 }
 
 .tag {
   display: inline-block;
   color: grey;
-  border: 1px solid grey;
+  border: 0px solid grey;
   padding: 3px;
   border-radius: 2px;
   margin: 0.5rem 2px;
@@ -878,11 +883,11 @@ hr {
   }
 
   .bg-image-slide .transbox {
-    top: 20vh;
+    top: 70vh;
   }
 
   .bg-image-slide .transbox h1 {
-    line-height:1;
+    line-height:1.5;
     font-size: 1.5rem;
   }
 
@@ -933,6 +938,9 @@ hr {
   .link-menu p {
     font-size: 0.6rem;
   }
+  .bg-image-slide .transbox {
+    top: 55vh;
+  }
 }
 
 /* this closes the media query  */
@@ -966,6 +974,10 @@ hr {
 
   .news .padded {
     padding: 0 5% 0 5%;
+  }
+
+  .bg-image-slide .transbox {
+    max-width: 80%;
   }
 
 }/* this closes the media query  */
