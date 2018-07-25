@@ -187,5 +187,5 @@ $('a[href*="#"]')
 // - - - - - - - - BURGER MENU
 $(".burger-button").click(function(){
   $(".burger-button").toggleClass("active");
-  $(".burger-menu").slideToggle();
+  $(".burger-menu").slideToggle("slow");
 });
