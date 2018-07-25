@@ -80,6 +80,38 @@
     <span class="burger-bottom"></span>
   </div>
   <div class="burger-menu">
+
+    <div class="mob-lang" >
+
+              {% if page.language == 'en' %}
+
+      <ul>
+      	<li><a class="active" href=“#”>  EN  </a></li>
+        <li><a href=“/es/” data-lang="es">  ES  </a></li>
+        <li><a href="/fr/" data-lang="fr">  FR  </a></li>
+      </ul>
+
+              {% elsif page.language == 'fr' %}
+
+      <ul>
+      	<li><a class="active" href=“#”>  FR  </a></li>
+        <li><a href=“/es/” data-lang="es">  ES  </a></li>
+        <li><a href=“/en/“ data-lang=“en”>  EN</a></li>
+      </ul>
+
+              {% else %} <!-- spanish -->
+
+      <ul>
+      	<li><a class="active" href=“#”>  ES  </a></li>
+        <li><a href=“/en/” data-lang="en">  EN  </a></li>
+        <li><a href=“/fr/“ data-lang=“fr”>  FR  </a></li>
+      </ul>
+
+              {% endif %}
+
+      </div>
+
+
     <ul>
 
       {% if page.language == 'en' %}
@@ -111,36 +143,6 @@
 
       {% endif %}
       <ul>
-
-<div class="mob-lang" >
-
-          {% if page.language == 'en' %}
-
-  <ul>
-  	<li><a class="active" href=“#”>  EN  </a></li>
-    <li><a href=“/es/” data-lang="es">  ES  </a></li>
-    <li><a href="/fr/" data-lang="fr">  FR  </a></li>
-  </ul>
-
-          {% elsif page.language == 'fr' %}
-
-  <ul>
-  	<li><a class="active" href=“#”>  FR  </a></li>
-    <li><a href=“/es/” data-lang="es">  ES  </a></li>
-    <li><a href=“/en/“ data-lang=“en”>  EN</a></li>
-  </ul>
-
-          {% else %} <!-- spanish -->
-
-  <ul>
-  	<li><a class="active" href=“#”>  ES  </a></li>
-    <li><a href=“/en/” data-lang="en">  EN  </a></li>
-    <li><a href=“/fr/“ data-lang=“fr”>  FR  </a></li>
-  </ul>
-
-          {% endif %}
-
-  </div>
 
   </div>
 </nav>

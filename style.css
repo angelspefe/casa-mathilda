@@ -853,8 +853,19 @@ hr {
   list-style: none;
   display:inline-block;
   padding:0;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
+.mob-lang a {
+  font-size: 0.8rem;
+  color: #DEBD31;
+}
+
+.mob-lang a:hover {
+  color:#546461;
+}
 /* .goog-te-banner-frame.skiptranslate {
     display: none!important;
 } */
