@@ -113,7 +113,7 @@ layout: default
   <!-- - - - - - - - - - - SECTION: INFO - - - - - - - - - -  -->
   <section class="bg-image bg-box">
     <div class="grid-middle-spaceBetween bg-beige" id="info">
-      <div class="col-6_xs-12 padded-8">
+      <div class="col-6_sm-12 padded-8">
         <h1>{{page.info-title}}</h1>
         <div class="bump-right p-bold padded-bottom">
             {{page.info_html}}
@@ -153,7 +153,7 @@ layout: default
 
 
       </div> <!-- closes the column -->
-      <div class="col-5_xs-12">
+      <div class="col-5_sm-12">
 
         <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
           <h2 class="align-center">{{page.news-title}}</h2>
@@ -284,8 +284,12 @@ layout: default
         <form method="" action="">
           <!-- <label for="firstname" class="mob-show">Tu nombre</label> -->
           <input type="firstname" name="firstname" placeholder="Tu nombre" required>
+          <input type="firstname" name="firstname" placeholder="{{page.contact-name-placeholder}}" required>
           <!-- <label for="email" class="mob-show">Tu email</label> -->
+          <input type="email" name="email" placeholder="{{page.contact-email-placeholder}}" required>
           <input type="email" name="email" placeholder="Tu email" required>
+          <textarea name="mensaje" form="textarea" placeholder="{{page.contact-message-placeholder}}"></textarea>
+          <div class="align-center button-2"><input type="submit" value="{{page.contact-send-button}}"></input>
           <!-- <label for="comment" class="mob-show">Mensaje</label> -->
           <textarea name="mensaje" form="textarea" placeholder="Mensaje"></textarea>
           <div class="align-center button-2"><input type="submit" value="Enviar"></input>

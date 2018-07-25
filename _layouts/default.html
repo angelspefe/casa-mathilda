@@ -15,12 +15,12 @@
       {% include navigation.html %}
       <!-- - - - - - - - - - - BOOK BUTTON - - - - - - - - - -  -->
       <a href="#">
-        {% if page.language == 'es' %}
-        <img src="/images/book-button-esp.png" alt="book button" class="book-button">
-        {% elsif page.language == 'en' %}
+        {% if page.language == 'en' %}
         <img src="/images/book-button-eng.png" alt="book button" class="book-button">
-        {% elsif page.language == 'fr' %}
+        {% elsif page.language == 'en' %}
         <img src="/images/book-button-fr.png" alt="book button" class="book-button">
+        {% else %}
+        <img src="/images/book-button-esp.png" alt="book button" class="book-button">
         {% endif %}
       </a>
 
