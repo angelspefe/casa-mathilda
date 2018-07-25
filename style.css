@@ -399,12 +399,14 @@ h2 {
   z-index: 100;
 }
 
-.sidebar li {
+.sidebar li,
+.mob-nav li {
   list-style: none;
   padding-bottom: 0;
 }
 
-.sidebar a {
+.sidebar a,
+.mob-nav a {
   list-style: none;
   padding-left: 0.5rem;
   text-decoration: none;
@@ -413,7 +415,8 @@ h2 {
   display: block;
 }
 
-.sidebar a:hover {
+.sidebar a:hover,
+.mob-nav a:hover {
   color: #DEBD31;
   transition: 0.7s;
 }
@@ -847,6 +850,11 @@ hr {
   text-decoration: none;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
+}
+
+.mob-nav {
+
+
 }
 
 /* .goog-te-banner-frame.skiptranslate {
