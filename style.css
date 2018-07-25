@@ -824,7 +824,7 @@ hr {
   left: 0;
   right: 0;
   background-color: #F7F5F0;
-  padding: 5px;
+  padding: 15px;
   z-index: 99999999;
 }
 
@@ -849,6 +849,13 @@ hr {
   text-transform: uppercase;
 }
 
+
+.mob-lang a {
+  font-size: 0.8rem;
+  color: #DEBD31;
+  padding-left: 30%;
+}
+
 .mob-lang li {
   list-style: none;
   display:inline-block;
@@ -856,11 +863,6 @@ hr {
   text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.mob-lang a {
-  font-size: 0.8rem;
-  color: #DEBD31;
 }
 
 .mob-lang a:hover {
