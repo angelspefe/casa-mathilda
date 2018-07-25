@@ -850,7 +850,7 @@ hr {
 }
 
 .mob-lang ul {
-  padding-left: 35%;
+  padding-left: 30%;
 }
 
 
@@ -858,7 +858,7 @@ hr {
   font-size: 0.8rem;
   color: #DEBD31;
 }
-  
+
 .mob-lang li {
   list-style: none;
   display:inline-block;
