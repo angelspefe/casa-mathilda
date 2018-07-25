@@ -891,6 +891,10 @@ hr {
     font-size: 1.5rem;
   }
 
+  .postal-mathilda .show-on-hover {
+    min-height:22rem;
+  }
+
 }/* this closes the media query  */
 
 @media(max-width:576px) {
@@ -902,6 +906,11 @@ hr {
   }
   .mob-hide {
     display: none;
+  }
+
+  .postal-mathilda .show-on-hover:hover {
+    opacity: 0;
+    display:none;
   }
 
   section {

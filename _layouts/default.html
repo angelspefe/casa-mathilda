@@ -34,19 +34,44 @@
 
       <footer class="align-center bg-beige">
         <div class="top-arrow"><a href="#top"><img src="/images/up-arrow.svg" alt="up arrow"></a></div>
+
+        {% if page.language == 'en'%}
         <nav>
-          <li><a href="/#contacto">Contacto</a></li>
-          <li><a href="/#">Privacidad</a></li>
-          <li><a href="https://www.facebook.com/casamathilda/">Facebook</a></li>
-          <li><a href="https://www.instagram.com/casamathilda/">Instagram</a></li>
-          <li><a href="/#" class="mob-hide">Reserva</a></li>
+          <li><a href="/en/#contact">Contact</a></li>
+          <li><a href="/#">Privacy</a></li>
+          <li><a href="/#">Facebook</a></li>
+          <li><a href="/#">Instagram</a></li>
+          <li><a href="/#" class="mob-hide">Reserve</a></li>
         </nav>
+
+      {% elsif page.language == 'fr'%}
+
+      <nav>
+        <li><a href="/fr/#contact">Contacto</a></li>
+        <li><a href="/#">Privacidad</a></li>
+        <li><a href="/#">Facebook</a></li>
+        <li><a href="/#">Instagram</a></li>
+        <li><a href="/#" class="mob-hide">Reserva</a></li>
+      </nav>
+
+      {% else %}
+
+      <nav>
+        <li><a href="/#contact">Contacto</a></li>
+        <li><a href="/#">Privacidad</a></li>
+        <li><a href="/#">Facebook</a></li>
+        <li><a href="/#">Instagram</a></li>
+        <li><a href="/#" class="mob-hide">Reserva</a></li>
+      </nav>
+
+      {% endif %}
 
         <div class="copyright">
           <p>Copyright © 2018 Casa Mathilda | <a href="http://loveiscreative.com">Site Credits</a></p>
         </div>
       </footer>
 
+      {% include pop-up.html %}
       {% include body-scripts.html %}
 
     </body>

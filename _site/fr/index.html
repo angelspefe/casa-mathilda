@@ -43,10 +43,10 @@
 
     
 
-    <li><a href="/#rooms">Chambres</a></li>
-    <li><a href="/#info">Info</a></li>
-    <li><a href="/#gallery">Galerie</a></li>
-    <li><a href="/#contact" class="light">Contact</a></li>
+    <li><a href="/fr/#rooms">Chambres</a></li>
+    <li><a href="/fr/#info">Info</a></li>
+    <li><a href="/fr/#gallery">Galerie</a></li>
+    <li><a href="/fr/#contact" class="light">Contact</a></li>
     <li><a href="/fr/press" class="light">Prensa</a></li>
     <li><a href="/news" class="light">News</a></li>
 
@@ -301,7 +301,7 @@
   <!-- - - - - - - - - - - SECTION: INFO - - - - - - - - - -  -->
   <section class="bg-image bg-box">
     <div class="grid-middle-spaceBetween bg-beige" id="info">
-      <div class="col-6_sm-12 padded-8">
+      <div class="col-6_md-12 padded-8">
         <h1>Info</h1>
         <div class="bump-right p-bold padded-bottom">
             <p>Casa Mathilda est un boutique bed &amp; breakfast situ&eacute; au coeur de l&rsquo;Eixample &agrave; Barcelone, un quartier &eacute;legant proche de la Pedrera et de la Sagrada Familia. L&rsquo;h&ocirc;tel occupe le premier &eacute;tage d&rsquo;un ancien et somptueux batimment particulier ayant appartenu &agrave; une notable famille catalane textile au d&eacute;but du XX&egrave;me si&egrave;cle En 2014 &aacute; &eacute;t&eacute; compl&eacute;t&eacute;ment r&eacute;nove, melangeant modernit&eacute; et touches &ldquo;vintage&rdquo;, aven des finitons de premi&egrave;re qualit&eacute;.</p><p>Nous nous pr&eacute;occupons de tous les d&eacute;tails comme le ferait Mathilda, pour que vous vous sentiez comme chez vous. Nous proposons pour le petit-d&eacute;jeuner une variet&eacute; de propduits frais au quotidien, tels que le pain de la prestigieuse boulangerie Baluard, des fruits frais, un assortiment de fromages, jambons et charcuterie, yaourts, c&eacute;r&eacute;ales, tortilla et oeufs, th&eacute;s, infusions et nous mettons &agrave; disposition une cafeti&egrave;re Nespresso pour commencer la journ&eacute;e avec &eacute;nergie.</p><p>Nous proposons aussi la possibilit&eacute; d&rsquo; un booking complet qui vous permet de louer toute la maison, uniquement pour vous. *Selon disponibilit&eacute;, veuillez nous faire part de vos besoins ou souhaits par e-mail ou t&eacute;l&eacute;phone.</p><p>La r&eacute;ception est ouverte de 8h30 &agrave; 20h30 | Check-in &agrave; partir de 15h. Check-out jusqu&rsquo;&agrave; 12h</p>
@@ -319,11 +319,15 @@
           <div class="grid-middle show-on-hover">
             <p class="col-12 align-center">
               Casa Mathilda est un projet personnel fruit de ma passion pour les voyages, la rencontre d’autres modes de vie.
-De manière presque inconsciente, on peut precevoir l’ emprente que Mathilda a laissé en moi tout du long. Sa manière de mettre du coeur dans tout ce qu’elle fait, son désir de rendre les autres heureux, et sa générosité infinie. 
+De manière presque inconsciente, on peut precevoir l’ emprente que Mathilda a laissé en moi tout du long. Sa manière de mettre du coeur dans tout ce qu’elle fait, son désir de rendre les autres heureux, et sa générosité infinie.
 C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personnalisant au maximum leur expérience, en y mettant tout notre coeur pour qu’ils se sentent comme à la maison, comme à la maison de Mathilda.
             </p>
           </div> <!-- close hover div -->
           </div> <!-- close mathilda div -->
+
+          <p class="mob-show"> Casa Mathilda est un projet personnel fruit de ma passion pour les voyages, la rencontre d’autres modes de vie.
+De manière presque inconsciente, on peut precevoir l’ emprente que Mathilda a laissé en moi tout du long. Sa manière de mettre du coeur dans tout ce qu’elle fait, son désir de rendre les autres heureux, et sa générosité infinie.
+C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personnalisant au maximum leur expérience, en y mettant tout notre coeur pour qu’ils se sentent comme à la maison, comme à la maison de Mathilda. </p>
           <!-- <p class="align-center click-discover padded-bottom">
 
             
@@ -334,8 +338,9 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
           </p> -->
 
 
-      </div> <!-- closes the column -->
-      <div class="col-5_sm-12">
+      </div> <!-- closes the container -->
+
+      <div class="col-5_md-12">
 
         <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
           <h2 class="align-center">Dernières News</h2>
@@ -371,7 +376,7 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
       <h1>Galería</h1>
       <p>Selecciona</p>
       <nav id="portfolio-filter">
-        <li><a href="" class="active">Toutes</a> | </li>
+        <li><a href="" id="all" class="active">Toutes</a> | </li>
         <li><a href="" id="habitaciones">Chambres</a> | </li>
         <li><a href="" id="desayuno">Petit Déjenuer</a> | </li>
         <li><a href="" id="sala">Salon</a> | </li>
@@ -386,151 +391,151 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
 
       <div class="grid gallery" id="portfolio-grid">
         
-        <div class="col-4_sm-6_xs-12 filterable-item desayuno" >
+        <div class="col-4_sm-6_xs-12 filterable-item desayuno all" >
           <img src="/images/desayuno-1.jpg" alt="desayuno casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item entrada" >
+        <div class="col-4_sm-6_xs-12 filterable-item entrada all" >
           <img src="/images/entrada-1.jpg" alt="entrada casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item entrada" >
+        <div class="col-4_sm-6_xs-12 filterable-item entrada all" >
           <img src="/images/entrada-2.jpg" alt="entrada casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item entrada" >
+        <div class="col-4_sm-6_xs-12 filterable-item entrada all" >
           <img src="/images/entrada-3.jpg" alt="entrada casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item entrada" >
+        <div class="col-4_sm-6_xs-12 filterable-item entrada all" >
           <img src="/images/entrada-4.jpg" alt="entrada casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item sala" >
+        <div class="col-4_sm-6_xs-12 filterable-item sala all" >
           <img src="/images/sala-1.jpg" alt="sala casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item sala" >
+        <div class="col-4_sm-6_xs-12 filterable-item sala all" >
           <img src="/images/sala-2.jpg" alt="sala casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item sala" >
+        <div class="col-4_sm-6_xs-12 filterable-item sala all" >
           <img src="/images/sala-3.jpg" alt="sala casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item sala" >
+        <div class="col-4_sm-6_xs-12 filterable-item sala all" >
           <img src="/images/sala-4.jpg" alt="sala casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item sala" >
+        <div class="col-4_sm-6_xs-12 filterable-item sala all" >
           <img src="/images/sala-5.jpg" alt="sala casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item terraza" >
+        <div class="col-4_sm-6_xs-12 filterable-item terraza all" >
           <img src="/images/terraza-1.jpg" alt="terraza casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item terraza" >
+        <div class="col-4_sm-6_xs-12 filterable-item terraza all" >
           <img src="/images/terraza-2.jpg" alt="terraza casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item terraza" >
+        <div class="col-4_sm-6_xs-12 filterable-item terraza all" >
           <img src="/images/terraza-3.jpg" alt="terraza casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item terraza" >
+        <div class="col-4_sm-6_xs-12 filterable-item terraza all" >
           <img src="/images/terraza-4.jpg" alt="terraza casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-1.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-2.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-3.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-4.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-5.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-6.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-7.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-8.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-9.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-10.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-11.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-12.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-13.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-14.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-15.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-16.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-17.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-18.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-19.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-20.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-21.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-22.jpg" alt="habitacion casa mathilda">
         </div>
         
-        <div class="col-4_sm-6_xs-12 filterable-item habitaciones" >
+        <div class="col-4_sm-6_xs-12 filterable-item habitaciones all" >
           <img src="/images/rooms-23.jpg" alt="habitacion casa mathilda">
         </div>
         
@@ -566,19 +571,19 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
             <p class="bump-right p-bold">Teléphone: +34 935321600</p>
             <p class="bump-right p-bold">Email: info@casamathilda.com</p>
         </div>
-        <p>N&rsquo;h&eacute;sitez pas &agrave; nous contacter pour toute demande d&rsquo;information, en cas de doutes, de besoins sp&eacute;cifiques ou toute autre question qui vous viendrait &agrave; l&rsquo;esprit. Veuillez remplir le formulaire ci-joint ou bien nous appeler</p><p>Nous serons ravis de pouvoir vous servir et ferons en sorte de vous r&eacute;pondre dans les meilleurs d&eacute;lais.</p>
+        <p>Si tienes alguna duda, sugerencia o petici&oacute;n, por favor, no dudes en ponerte en contacto con nosotros. Estaremos encantados de saber de ti y de tener la oportunidad de ayudarte o de mejorar.</p>
         <form method="" action="">
           <!-- <label for="firstname" class="mob-show">Tu nombre</label> -->
-          <input type="firstname" name="firstname" placeholder="Tu nombre" required>
-          <input type="firstname" name="firstname" placeholder="" required>
+
+          <input type="firstname" name="firstname" placeholder="Name" required>
           <!-- <label for="email" class="mob-show">Tu email</label> -->
-          <input type="email" name="email" placeholder="" required>
-          <input type="email" name="email" placeholder="Tu email" required>
-          <textarea name="mensaje" form="textarea" placeholder=""></textarea>
-          <div class="align-center button-2"><input type="submit" value=""></input>
+          <input type="email" name="email" placeholder="Email" required>
+
+          <textarea name="mensaje" form="textarea" placeholder="Message"></textarea>
+
           <!-- <label for="comment" class="mob-show">Mensaje</label> -->
-          <textarea name="mensaje" form="textarea" placeholder="Mensaje"></textarea>
-          <div class="align-center button-2"><input type="submit" value="Enviar"></input>
+          <div class="align-center button-2">
+            <input type="submit" value="Send"></input>
           </div>
         </form>
       </div>
@@ -613,18 +618,32 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
 
       <footer class="align-center bg-beige">
         <div class="top-arrow"><a href="#top"><img src="/images/up-arrow.svg" alt="up arrow"></a></div>
-        <nav>
-          <li><a href="/#contacto">Contacto</a></li>
-          <li><a href="/#">Privacidad</a></li>
-          <li><a href="https://www.facebook.com/casamathilda/">Facebook</a></li>
-          <li><a href="https://www.instagram.com/casamathilda/">Instagram</a></li>
-          <li><a href="/#" class="mob-hide">Reserva</a></li>
-        </nav>
+
+        
+
+      <nav>
+        <li><a href="/fr/#contact">Contacto</a></li>
+        <li><a href="/#">Privacidad</a></li>
+        <li><a href="/#">Facebook</a></li>
+        <li><a href="/#">Instagram</a></li>
+        <li><a href="/#" class="mob-hide">Reserva</a></li>
+      </nav>
+
+      
 
         <div class="copyright">
           <p>Copyright © 2018 Casa Mathilda | <a href="http://loveiscreative.com">Site Credits</a></p>
         </div>
       </footer>
+
+      <!-- This is the magnificPopup Javascript -->
+  <div id="launch-popup" class="launch-popup mfp-hide">
+    <div class="bg-image padded-8" style="background-image:url(/images/blog-photo.jpg);">
+        <h2> This is my sexy pop-up </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+  <!--End magnificPopup  -->
 
       <!-- - - - - - - - - - - FOOTER - - - - - - - - - -  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>

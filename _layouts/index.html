@@ -113,7 +113,7 @@ layout: default
   <!-- - - - - - - - - - - SECTION: INFO - - - - - - - - - -  -->
   <section class="bg-image bg-box">
     <div class="grid-middle-spaceBetween bg-beige" id="info">
-      <div class="col-6_sm-12 padded-8">
+      <div class="col-6_md-12 padded-8">
         <h1>{{page.info-title}}</h1>
         <div class="bump-right p-bold padded-bottom">
             {{page.info_html}}
@@ -138,6 +138,8 @@ layout: default
             </p>
           </div> <!-- close hover div -->
           </div> <!-- close mathilda div -->
+
+          <p class="mob-show"> {{page.who-is-mathilda}} </p>
           <!-- <p class="align-center click-discover padded-bottom">
 
             {% if page.language == 'es' %}
@@ -152,8 +154,9 @@ layout: default
           </p> -->
 
 
-      </div> <!-- closes the column -->
-      <div class="col-5_sm-12">
+      </div> <!-- closes the container -->
+
+      <div class="col-5_md-12">
 
         <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
           <h2 class="align-center">{{page.news-title}}</h2>
@@ -197,7 +200,7 @@ layout: default
         <h1>Galería</h1>
         <p>Selecciona</p>
         <nav id="portfolio-filter">
-          <li><a href="" class="active">Todas</a> | </li>
+          <li><a href="" id="all" class="active">Todas</a> | </li>
           <li><a href="" id="habitaciones">Habitaciones</a> | </li>
           <li><a href="" id="desayuno">Desayuno</a> | </li>
           <li><a href="" id="sala">Sala</a> | </li>
@@ -211,7 +214,7 @@ layout: default
         <h1>Galería</h1>
         <p>Selecciona</p>
         <nav id="portfolio-filter">
-          <li><a href="" class="active">All</a> | </li>
+          <li><a href="" id="all" class="active">All</a> | </li>
           <li><a href="" id="habitaciones">Rooms</a> | </li>
           <li><a href="" id="desayuno">Breakfast</a> | </li>
           <li><a href="" id="sala">Living Room</a> | </li>
@@ -225,7 +228,7 @@ layout: default
       <h1>Galería</h1>
       <p>Selecciona</p>
       <nav id="portfolio-filter">
-        <li><a href="" class="active">Toutes</a> | </li>
+        <li><a href="" id="all" class="active">Toutes</a> | </li>
         <li><a href="" id="habitaciones">Chambres</a> | </li>
         <li><a href="" id="desayuno">Petit Déjenuer</a> | </li>
         <li><a href="" id="sala">Salon</a> | </li>
@@ -240,7 +243,7 @@ layout: default
 
       <div class="grid gallery" id="portfolio-grid">
         {% for item in site.data.gallery %}
-        <div class="col-4_sm-6_xs-12 filterable-item {{item.category}}" >
+        <div class="col-4_sm-6_xs-12 filterable-item {{item.category}} all" >
           <img src="{{item.image_path}}" alt="{{item.image_description}}">
         </div>
         {% endfor %}
@@ -283,16 +286,16 @@ layout: default
         {{page.contact_html }}
         <form method="" action="">
           <!-- <label for="firstname" class="mob-show">Tu nombre</label> -->
-          <input type="firstname" name="firstname" placeholder="Tu nombre" required>
+
           <input type="firstname" name="firstname" placeholder="{{page.contact-name-placeholder}}" required>
           <!-- <label for="email" class="mob-show">Tu email</label> -->
           <input type="email" name="email" placeholder="{{page.contact-email-placeholder}}" required>
-          <input type="email" name="email" placeholder="Tu email" required>
+
           <textarea name="mensaje" form="textarea" placeholder="{{page.contact-message-placeholder}}"></textarea>
-          <div class="align-center button-2"><input type="submit" value="{{page.contact-send-button}}"></input>
+
           <!-- <label for="comment" class="mob-show">Mensaje</label> -->
-          <textarea name="mensaje" form="textarea" placeholder="Mensaje"></textarea>
-          <div class="align-center button-2"><input type="submit" value="Enviar"></input>
+          <div class="align-center button-2">
+            <input type="submit" value="{{page.contact-send-button}}"></input>
           </div>
         </form>
       </div>
