@@ -849,6 +849,9 @@ hr {
   text-transform: uppercase;
 }
 
+.mob-lang li {
+  display:inline-block;
+}
 
 /* .goog-te-banner-frame.skiptranslate {
     display: none!important;
