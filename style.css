@@ -917,6 +917,10 @@ hr {
     padding: 30px 5% 0 5%;
   }
 
+  .body-content {
+    padding:10px 20px 20px 20px;
+  }
+
   footer {
     padding: 5% 10% 2% 10%;
   }
