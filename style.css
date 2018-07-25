@@ -849,7 +849,7 @@ hr {
   text-transform: uppercase;
 }
 
-.mob-lang a {
+.mob-lang li {
   display:inline-block;
   padding:0;
 }
