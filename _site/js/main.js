@@ -183,3 +183,9 @@ $('a[href*="#"]')
   function goBack() {
     window.history.back();
   }
+
+// - - - - - - - - BURGER MENU
+$(".burger-button").click(function(){
+  $(".burger-button").toggleClass("active");
+  $(".burger-menu").slideToggle();
+});
