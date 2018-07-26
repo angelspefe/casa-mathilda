@@ -29,6 +29,10 @@ footer {
   padding: 5% 0 5% 100px;
 }
 
+header {
+  height: 0; /* this fixes a bug where there is a small gap in between the slider and the top of the page */
+}
+
 /*----------- Paddings & Positionings -----------*/
 
 .mob-nav {
@@ -399,12 +403,14 @@ h2 {
   z-index: 100;
 }
 
-.sidebar li {
+.sidebar li,
+.mob-nav li {
   list-style: none;
   padding-bottom: 0;
 }
 
-.sidebar a {
+.sidebar a,
+.mob-nav a {
   list-style: none;
   padding-left: 0.5rem;
   text-decoration: none;
@@ -413,7 +419,8 @@ h2 {
   display: block;
 }
 
-.sidebar a:hover {
+.sidebar a:hover,
+.mob-nav a:hover {
   color: #DEBD31;
   transition: 0.7s;
 }
@@ -745,8 +752,8 @@ hr {
 
 .tag {
   display: inline-block;
-  color: grey;
-  border: 0px solid grey;
+  color: #546461;
+  border: 0px solid #546461;
   padding: 3px;
   border-radius: 2px;
   margin: 0.5rem 2px;
@@ -777,8 +784,8 @@ hr {
 }
 
 .burger-button.active span {
-  border-color: #fff;
-  background-color: #fff;
+  border-color: #DEBD31;
+  background-color: #DEBD31;
 }
 
 .burger-top, .burger-bottom {
@@ -821,7 +828,7 @@ hr {
   left: 0;
   right: 0;
   background-color: #F7F5F0;
-  padding: 5px;
+  padding: 15px;
   z-index: 99999999;
 }
 
@@ -829,7 +836,6 @@ hr {
   display: block;
   padding: 5px 15px;
   text-align: center;
-  font-family: 'Oswald' sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 1rem;
@@ -843,12 +849,32 @@ hr {
 
 .burger-menu li {
   list-style: none;
-  padding-left: 10%;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.mob-lang ul {
+  padding-left: 30%;
+}
+
+
+.mob-lang a {
+  font-size: 0.8rem;
+  color: #DEBD31;
+}
+
+.mob-lang li {
+  list-style: none;
+  display:inline-block;
+  padding:0;
+  text-align: center;
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
+.mob-lang a:hover {
+  color:#546461;
+}
 /* .goog-te-banner-frame.skiptranslate {
     display: none!important;
 } */
