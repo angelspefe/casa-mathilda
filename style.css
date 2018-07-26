@@ -29,6 +29,10 @@ footer {
   padding: 5% 0 5% 100px;
 }
 
+header {
+  height: 0; /* this fixes a bug where there is a small gap in between the slider and the top of the page */
+}
+
 /*----------- Paddings & Positionings -----------*/
 
 .mob-nav {
