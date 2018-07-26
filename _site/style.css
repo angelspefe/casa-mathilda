@@ -148,6 +148,7 @@ header {
 
 .address-box {
   background-color: #F7F5F0;
+  margin-bottom: 10%!important;
 }
 
 .bg-teal {
@@ -263,7 +264,7 @@ header {
   width:76px;
 }
 
-.slider-rooms .bg-image-room {
+.slider-rooms [class*=bg-image-room] {
     background-size: cover;
     background-position:center;
     position: absolute;

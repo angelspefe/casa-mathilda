@@ -264,7 +264,7 @@ header {
   width:76px;
 }
 
-.slider-rooms .bg-image-room {
+.slider-rooms [class*=bg-image-room] {
     background-size: cover;
     background-position:center;
     position: absolute;
