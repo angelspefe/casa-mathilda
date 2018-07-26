@@ -673,6 +673,93 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
 <!--End magnificPopup  -->
 
 
+<!-- This is javascript specifically for this page -->
+
+<script>
+// OLD CODE
+  var slideIndex1 = 1;
+  showRoomGallery1(slideIndex);
+
+  function plusRoomGallery1(n) {
+      showRoomGallery1(slideIndex1 += n);
+  }
+  function showRoomGallery1(n) {
+      var i;
+      var x = document.getElementsByClassName("bg-image-room-1");
+      if (n > x.length) {slideIndex1 = 1}
+      if (n < 1) {slideIndex1 = x.length} ;
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      x[slideIndex1-1].style.display = "block";
+
+}
+
+// OLD CODE
+  var slideIndex2 = 1;
+  showRoomGallery2(slideIndex2);
+
+  function plusRoomGallery2(n) {
+      showRoomGallery2(slideIndex2 += n);
+  }
+  function showRoomGallery2(n) {
+      var i;
+      var x = document.getElementsByClassName("bg-image-room-2");
+      if (n > x.length) {slideIndex2 = 1}
+      if (n < 1) {slideIndex2 = x.length} ;
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      x[slideIndex2-1].style.display = "block";
+
+}
+// Slide 2
+
+
+
+// OLD CODE
+  var slideIndex3 = 1;
+  showRoomGallery3(slideIndex3);
+
+  function plusRoomGallery3(n) {
+      showRoomGallery3(slideIndex3 += n);
+  }
+  function showRoomGallery3(n) {
+      var i;
+      var x = document.getElementsByClassName("bg-image-room-3");
+      if (n > x.length) {slideIndex3 = 1}
+      if (n < 1) {slideIndex3 = x.length} ;
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      x[slideIndex3-1].style.display = "block";
+
+}
+
+</script>
+
+<script>
+  // This is the automatic background slider on the homepage
+
+ var slideIndex = 0;
+ carousel();
+
+ function carousel() {
+     var i;
+     var x = document.getElementsByClassName("bg-image-slide");
+     for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+     }
+     slideIndex++;
+     if (slideIndex > x.length) {slideIndex = 1}
+     x[slideIndex-1].style.display = "block";
+     setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+// end background slides
+
+</script>
+
+
 
       <footer class="align-center bg-beige">
         <div class="top-arrow"><a href="#top"><img src="/images/up-arrow.svg" alt="up arrow"></a></div>
@@ -709,27 +796,6 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
 <!-- magnific popup lightbox -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
-
- <script>
-   // This is the automatic background slider on the homepage
-
-  var slideIndex = 0;
-  carousel();
-
-  function carousel() {
-      var i;
-      var x = document.getElementsByClassName("bg-image-slide");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > x.length) {slideIndex = 1}
-      x[slideIndex-1].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-// end background slides
-
-</script>
 
 <script src="/js/main.js"></script>
 

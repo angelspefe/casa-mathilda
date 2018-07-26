@@ -162,65 +162,7 @@ $('a[href*="#"]')
 
 
 
-// OLD CODE
-  var slideIndex1 = 1;
-  showRoomGallery1(slideIndex);
 
-  function plusRoomGallery1(n) {
-      showRoomGallery1(slideIndex1 += n);
-  }
-  function showRoomGallery1(n) {
-      var i;
-      var x = document.getElementsByClassName("bg-image-room-1");
-      if (n > x.length) {slideIndex1 = 1}
-      if (n < 1) {slideIndex1 = x.length} ;
-      for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-      }
-      x[slideIndex1-1].style.display = "block";
-
-}
-
-// OLD CODE
-  var slideIndex2 = 1;
-  showRoomGallery2(slideIndex2);
-
-  function plusRoomGallery2(n) {
-      showRoomGallery2(slideIndex2 += n);
-  }
-  function showRoomGallery2(n) {
-      var i;
-      var x = document.getElementsByClassName("bg-image-room-2");
-      if (n > x.length) {slideIndex2 = 1}
-      if (n < 1) {slideIndex2 = x.length} ;
-      for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-      }
-      x[slideIndex2-1].style.display = "block";
-
-}
-// Slide 2
-
-
-
-// OLD CODE
-  var slideIndex3 = 1;
-  showRoomGallery3(slideIndex3);
-
-  function plusRoomGallery3(n) {
-      showRoomGallery3(slideIndex3 += n);
-  }
-  function showRoomGallery3(n) {
-      var i;
-      var x = document.getElementsByClassName("bg-image-room-3");
-      if (n > x.length) {slideIndex3 = 1}
-      if (n < 1) {slideIndex3 = x.length} ;
-      for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-      }
-      x[slideIndex3-1].style.display = "block";
-
-}
 // Slide 2
 
   // This creates a function that allows a button to take you back to the last page you visited, to use it create a button like this <button onclick="goBack()">Go Back</button>

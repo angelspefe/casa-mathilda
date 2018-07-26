@@ -206,27 +206,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
 
- <script>
-   // This is the automatic background slider on the homepage
-
-  var slideIndex = 0;
-  carousel();
-
-  function carousel() {
-      var i;
-      var x = document.getElementsByClassName("bg-image-slide");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > x.length) {slideIndex = 1}
-      x[slideIndex-1].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-// end background slides
-
-</script>
-
 <script src="/js/main.js"></script>
 
 
