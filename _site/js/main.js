@@ -159,23 +159,45 @@ $('a[href*="#"]')
 });
 
 
-// this gives you left and right buttons to toggle through classes
-  var slideIndex = 1;
-  showRoomGallery(slideIndex);
 
-  function plusRoomGallery(n) {
-      showRoomGallery(slideIndex += n);
+
+
+// // OLD CODE
+//   var slideIndex = 1;
+//   showRoomGallery(slideIndex);
+//
+//   function plusRoomGallery(n) {
+//       showRoomGallery(slideIndex += n);
+//
+//   function showRoomGallery(n) {
+//       var i;
+//       var x = document.getElementsByClassName("bg-image-room-1");
+//       if (n > x.length) {slideIndex = 1}
+//       if (n < 1) {slideIndex = x.length} ;
+//       for (i = 0; i < x.length; i++) {
+//           x[i].style.display = "none";
+//       }
+//       x[slideIndex-1].style.display = "block";
+
+  var slideIndex = [1,1];
+  var slideId = ["bg-image-room-1", "bg-image-room-2"]
+
+  showRoomGallery(1, 0);
+  showRoomGallery(1, 1);
+
+  function plusRoomGallery(n, no) {
+    showRoomGallery(slideIndex[no] += n, no);
   }
 
-  function showRoomGallery(n) {
-      var i;
-      var x = document.getElementsByClassName("bg-image-room");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length} ;
-      for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-      }
-      x[slideIndex-1].style.display = "block";
+  function showRoomGallery (n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = 'none';
+    }
+    x[slideIndex[no]-1].style.display = 'block';
   }
 
   // This creates a function that allows a button to take you back to the last page you visited, to use it create a button like this <button onclick="goBack()">Go Back</button>

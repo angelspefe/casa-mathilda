@@ -57,15 +57,15 @@ layout: default
     {% for item in site.data.room-details %}
 
     <div class="slider-rooms filterable-item {{item.room-type-class}} {% if item.hidden %} hidden {% endif %}">
-      <div class="bg-image-room" style="background-image:url({{item.banner-1_image}})"></div>
-      <div class="bg-image-room" style="background-image:url({{item.banner-2_image}})"></div>
-      <div class="bg-image-room" style="background-image:url({{item.banner-3_image}})"></div>
-      <div class="bg-image-room" style="background-image:url({{item.banner-4_image}})"></div>
+      <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-1_image}})"></div>
+      <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-2_image}})"></div>
+      <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-3_image}})"></div>
+      <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-4_image}})"></div>
 
-      <button class="room-left-button mob-hide" onclick="plusRoomGallery(-1)">
+      <button class="room-left-button mob-hide" onclick="plusRoomGallery(-1, 1)">
         <img src="/images/right-arrow.svg">
       </button>
-      <button class="room-right-button mob-hide" onclick="plusRoomGallery(+1)">
+      <button class="room-right-button mob-hide" onclick="plusRoomGallery(1, 1)">
         <img src="/images/right-arrow.svg">
       </button>
     <!--this anchor link is the details button which when clicked opens up the popup div. The href corresponds to the id of the div we want to pop-up and the class 'open-room-details' is what initialises the popup in the javascript. The styles of the popup are controlled through the 'room-details-popup class'. -->
