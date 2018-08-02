@@ -202,13 +202,11 @@ layout: default
           <h2 class="align-center">{{page.news-title}}</h2>
           <hr>
           {% for post in site.posts limit:1 %}
-            <img src="{{post.featured_image}}" alt="{{post.title}}" class="padded-bottom align-center">
+            <a href="{{post.url}}"><img src="{{post.featured_image}}" alt="{{post.title}}" class="padded-bottom align-center"></a>
             <h3 class="align-center">{{post.title}}</h3>
             <p>{{post.blurb}}</p>
-          {% endfor %}
 
           <div class="align-center button-2">
-
             {% if page.language == 'es' %}
                 <a href="{{post.url}}">Leer más</a>
             {% elsif page.language == 'en' %}
@@ -216,17 +214,17 @@ layout: default
             {% elsif page.language == 'fr' %}
                 <a href="{{post.url}}">En Savoir Plus</a>
             {% endif %}
-
           </div>
+          {% endfor %}
         </div>
         <div class="button-1 align-center">
 
           {% if page.language == 'es' %}
-              <a href="#">Todas las News <img src="/images/right-arrow.svg" alt="right arrow"></a>
+              <a href="/news">Todas las News <img src="/images/right-arrow.svg" alt="right arrow"></a>
           {% elsif page.language == 'en' %}
-              <a href="#">View All News <img src="/images/right-arrow.svg" alt="right arrow"></a>
+              <a href="/news">View All News <img src="/images/right-arrow.svg" alt="right arrow"></a>
           {% elsif page.language == 'fr' %}
-              <a href="#">Toutes les News <img src="/images/right-arrow.svg" alt="right arrow"></a>
+              <a href="/news">Toutes les News <img src="/images/right-arrow.svg" alt="right arrow"></a>
           {% endif %}
 
 
