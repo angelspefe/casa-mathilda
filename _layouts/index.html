@@ -198,22 +198,23 @@ layout: default
       </div> <!-- closes the container -->
 
       <div class="col-5_md-12">
-
         <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
           <h2 class="align-center">{{page.news-title}}</h2>
           <hr>
-          <img src="/uploads/blog-afortunado.jpg" alt="blog-photo" class="padded-bottom align-center">
-          <h3 class="align-center">Presentación de Vino Afortunado</h3>
-          <p>Esta semana en Casa Mathilda tuvimos la fiesta de presentación de la nueva etiqueta , creación de la ilustradora Judit Canela, para vestir una edición limitada de 9.000 botellas “magnum” Special Edition.</p>
+          {% for post in site.posts limit:1 %}
+            <img src="{{post.featured_image}}" alt="{{post.title}}" class="padded-bottom align-center">
+            <h3 class="align-center">{{post.title}}</h3>
+            <p>{{post.blurb}}</p>
+          {% endfor %}
 
           <div class="align-center button-2">
 
             {% if page.language == 'es' %}
-                <a href="http://client-casamathilda.loveiscreative.com/2018/presentación-de-vino-afortunado/">Leer más</a>
+                <a href="{{post.url}}">Leer más</a>
             {% elsif page.language == 'en' %}
-                <a href="http://client-casamathilda.loveiscreative.com/2018/presentación-de-vino-afortunado/">Read More</a>
+                <a href="{{post.url}}">Read More</a>
             {% elsif page.language == 'fr' %}
-                <a href="http://client-casamathilda.loveiscreative.com/2018/presentación-de-vino-afortunado/">En Savoir Plus</a>
+                <a href="{{post.url}}">En Savoir Plus</a>
             {% endif %}
 
           </div>
@@ -247,7 +248,6 @@ layout: default
           <li><a href="" id="sala">Sala</a> | </li>
           <li><a href="" id="entrada">Entrada</a> | </li>
           <li><a href="" id="terraza">Terraza</a> | </li>
-          <li><a href="" id="arquitectura">Arquitectura</a></li>
         </nav>
 
       {% elsif page.language == 'en' %}
@@ -261,7 +261,6 @@ layout: default
           <li><a href="" id="sala">Living Room</a> | </li>
           <li><a href="" id="entrada">Reception</a> | </li>
           <li><a href="" id="terraza">Terrace</a> | </li>
-          <li><a href="" id="arquitectura">Architecture</a></li>
         </nav>
 
       {% elsif page.language =='fr' %}
@@ -275,7 +274,6 @@ layout: default
         <li><a href="" id="sala">Salon</a> | </li>
         <li><a href="" id="entrada">Réception</a> | </li>
         <li><a href="" id="terraza">Terrasse</a> | </li>
-        <li><a href="" id="arquitectura">Architecture</a></li>
       </nav>
 
       {% endif %}
