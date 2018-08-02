@@ -152,6 +152,9 @@ layout: default
 
 
   <!-- - - - - - - - - - - SECTION: INFO - - - - - - - - - -  -->
+
+  <!-- - - Main info & services - -  -->
+
   <section class="bg-image bg-box">
     <div class="grid-middle-spaceBetween bg-beige" id="info">
       <div class="col-6_md-12 padded-8">
@@ -164,7 +167,7 @@ layout: default
             {{page.services_html}}
         </div>
 
-        <!-- Who is Mathilda - - this is where you change the image for each language -->
+  <!-- Who is Mathilda - - this is where you change the image for each language -->
         {% if page.language == 'es' %}
         <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-esp.png')";>
         {% elsif page.language == 'en' %}
@@ -178,24 +181,14 @@ layout: default
               {{page.who-is-mathilda}}
             </p>
           </div> <!-- close hover div -->
+
           </div> <!-- close mathilda div -->
 
           <p class="mob-show padded-top"> {{page.who-is-mathilda}} </p>
-          <!-- <p class="align-center click-discover padded-bottom">
 
-            {% if page.language == 'es' %}
-                <a href="#">Click for Description</a>
-            {% elsif page.language == 'en' %}
-                <a href="#">Click for Description</a>
-            {% elsif page.language == 'fr' %}
-                <a href="#">Click for Description</a>
-            {% endif %}
+    </div><!-- closes the container -->
 
-            <img src="/images/right-arrow-teal.svg" alt="right arrow">
-          </p> -->
-
-
-      </div> <!-- closes the container -->
+      <!-- - - last news article - -  -->
 
       <div class="col-5_md-12">
         <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
@@ -226,11 +219,26 @@ layout: default
           {% elsif page.language == 'fr' %}
               <a href="/news">Toutes les News <img src="/images/right-arrow.svg" alt="right arrow"></a>
           {% endif %}
-
-
         </div>
-      </div>
-    </div>
+
+        <!-- - - client testimonial slider - -  -->
+
+        <h2 class="padded-top">Lo que dicen nuestros huéspedes...</h2>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+        </div>
+
+      </div> <!-- this closes the second column -->
+
+
+
+
+
+  </div>
+</div>
 
     <!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
     <div class="bg-beige padded-8 margin-top link-menu" id="gallery">
@@ -354,10 +362,10 @@ layout: default
 
 <!-- This is the magnificPopup Javascript -->
   <div id="launch-popup" class="launch-popup mfp-hide mob-hide align-center">
-    <h1>Promociónd de Verano</h1>
+    <h1>Promoción de Verano</h1>
     <h2>Explora Barcelona hasta el último rincón.</h2>
     <p>Reserva un mínimo de 4 noches y recibe un 20% de descuento.</p>
-    <div class="button-1 button-ochre button-insta">
+    <div class="button-1 button-ochre button-insta align-center">
       <a href="#" target="_blank">Reserva Ahora<img src="/images/right-arrow.svg" alt="right arrow"></a>
     </div>
   </div>
@@ -447,5 +455,28 @@ layout: default
      setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 // end background slides
+
+// Owl Carousel
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
 
 </script>

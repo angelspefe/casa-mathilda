@@ -8,11 +8,14 @@
 
 
 
-  <!-- Gridlex, Google Fonts -->
+  <!-- Gridlex, Google Fonts, Owl Carousel -->
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,500|Raleway:500,500i" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="/style.css" />
@@ -357,6 +360,9 @@
 
 
   <!-- - - - - - - - - - - SECTION: INFO - - - - - - - - - -  -->
+
+  <!-- - - Main info & services - -  -->
+
   <section class="bg-image bg-box">
     <div class="grid-middle-spaceBetween bg-beige" id="info">
       <div class="col-6_md-12 padded-8">
@@ -369,7 +375,7 @@
             <ul><li>Servicio diario de habitaciones</li><li>WIFI gratuito en todo el establecimiento</li><li>Aire acondicionado / Calefacci&oacute;n en habitaciones y zonas comunes</li><li>C&aacute;maras de seguridad en zonas comunes</li><li>Habitaci&oacute;n adaptada y accesible a minusv&aacute;lidos</li><li>Cunas para beb&eacute;s bajo petici&oacute;n y gratuito para ni&ntilde;os de hasta 2 a&ntilde;os</li><li>Espacio sin humo, con detectores y rociadores anti-incendios</li><li>Servicio de guarda-maletas (horario de recepci&oacute;n)</li><li>Ventanas de m&aacute;ximo aislamiento del ruido exterior</li><li>Tel&eacute;fono en todas las habitaciones para llamadas nacionales y de emergencia</li><li>Alquiler de bicicletas</li></ul>
         </div>
 
-        <!-- Who is Mathilda - - this is where you change the image for each language -->
+  <!-- Who is Mathilda - - this is where you change the image for each language -->
         
         <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-esp.png')";>
         
@@ -377,26 +383,16 @@
           <div class="grid-middle show-on-hover">
             <p class="col-12 align-center">
               Casa Mathilda es un proyecto personal fruto de mi afición a viajar y conocer otras culturas y formas de vida. De una forma casi inconsciente, se puede percibir la huella que Mathilda ha dejado en mí a lo largo de mi vida: su forma de poner el corazón en todo lo que hace, su deseo de hacer felices a los demás y de su generosidad infinita. Este es el espíritu con el que recibimos a nuestros huéspedes, compartiendo y personalizando al máximo su experiencia, haciéndolo con nuestro máximo cariño para que se sientan como en su casa, como en la Casa de Mathilda.
-De una forma casi inconsciente, se puede percibir la huella que Mathilda ha dejado en mí a lo largo de mi vida: su forma de poner el corazón en todo lo que hace, su deseo de hacer felices a los demás y de su generosidad infinita.
-Este es el espíritu con el que recibimos a nuestros huéspedes, compartiendo y personalizando al máximo su experiencia, haciéndolo con nuestro máximo cariño para que se sientan como en su casa, como en la Casa de Mathilda.
             </p>
           </div> <!-- close hover div -->
+
           </div> <!-- close mathilda div -->
 
-          <p class="mob-show padded-top"> Casa Mathilda es un proyecto personal fruto de mi afición a viajar y conocer otras culturas y formas de vida. De una forma casi inconsciente, se puede percibir la huella que Mathilda ha dejado en mí a lo largo de mi vida: su forma de poner el corazón en todo lo que hace, su deseo de hacer felices a los demás y de su generosidad infinita. Este es el espíritu con el que recibimos a nuestros huéspedes, compartiendo y personalizando al máximo su experiencia, haciéndolo con nuestro máximo cariño para que se sientan como en su casa, como en la Casa de Mathilda.
-De una forma casi inconsciente, se puede percibir la huella que Mathilda ha dejado en mí a lo largo de mi vida: su forma de poner el corazón en todo lo que hace, su deseo de hacer felices a los demás y de su generosidad infinita.
-Este es el espíritu con el que recibimos a nuestros huéspedes, compartiendo y personalizando al máximo su experiencia, haciéndolo con nuestro máximo cariño para que se sientan como en su casa, como en la Casa de Mathilda. </p>
-          <!-- <p class="align-center click-discover padded-bottom">
+          <p class="mob-show padded-top"> Casa Mathilda es un proyecto personal fruto de mi afición a viajar y conocer otras culturas y formas de vida. De una forma casi inconsciente, se puede percibir la huella que Mathilda ha dejado en mí a lo largo de mi vida: su forma de poner el corazón en todo lo que hace, su deseo de hacer felices a los demás y de su generosidad infinita. Este es el espíritu con el que recibimos a nuestros huéspedes, compartiendo y personalizando al máximo su experiencia, haciéndolo con nuestro máximo cariño para que se sientan como en su casa, como en la Casa de Mathilda. </p>
 
-            
-                <a href="#">Click for Description</a>
-            
+    </div><!-- closes the container -->
 
-            <img src="/images/right-arrow-teal.svg" alt="right arrow">
-          </p> -->
-
-
-      </div> <!-- closes the container -->
+      <!-- - - last news article - -  -->
 
       <div class="col-5_md-12">
         <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
@@ -419,11 +415,26 @@ Este es el espíritu con el que recibimos a nuestros huéspedes, compartiendo y 
           
               <a href="/news">Todas las News <img src="/images/right-arrow.svg" alt="right arrow"></a>
           
-
-
         </div>
-      </div>
-    </div>
+
+        <!-- - - client testimonial slider - -  -->
+
+        <h2 class="padded-top">Lo que dicen nuestros huéspedes...</h2>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+        </div>
+
+      </div> <!-- this closes the second column -->
+
+
+
+
+
+  </div>
+</div>
 
     <!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
     <div class="bg-beige padded-8 margin-top link-menu" id="gallery">
@@ -661,10 +672,10 @@ Este es el espíritu con el que recibimos a nuestros huéspedes, compartiendo y 
 
 <!-- This is the magnificPopup Javascript -->
   <div id="launch-popup" class="launch-popup mfp-hide mob-hide align-center">
-    <h1>Promociónd de Verano</h1>
+    <h1>Promoción de Verano</h1>
     <h2>Explora Barcelona hasta el último rincón.</h2>
     <p>Reserva un mínimo de 4 noches y recibe un 20% de descuento.</p>
-    <div class="button-1 button-ochre button-insta">
+    <div class="button-1 button-ochre button-insta align-center">
       <a href="#" target="_blank">Reserva Ahora<img src="/images/right-arrow.svg" alt="right arrow"></a>
     </div>
   </div>
@@ -755,6 +766,29 @@ Este es el espíritu con el que recibimos a nuestros huéspedes, compartiendo y 
 }
 // end background slides
 
+// Owl Carousel
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
 </script>
 
 
@@ -794,6 +828,9 @@ Este es el espíritu con el que recibimos a nuestros huéspedes, compartiendo y 
 <!-- magnific popup lightbox -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
+<!-- owl carousel -->
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
 
 <script src="/js/main.js"></script>
 

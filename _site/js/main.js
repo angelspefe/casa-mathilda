@@ -176,3 +176,26 @@ $(".burger-button").click(function(){
   $(".burger-button").toggleClass("active");
   $(".burger-menu").slideToggle("slow");
 });
+
+// Owl Carousel
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
