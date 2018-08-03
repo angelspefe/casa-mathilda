@@ -49,36 +49,28 @@
   </script> -->
 
   <!-- Cookies Consent -->
+  <!-- Cookies Consent -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <script>
-  	// Default Content
-      var customContent = {
-          "href": "http://website/Policy"
-      };
-  	// Language specific translation e.g. German
-  	// Duplicate if block and change regex for other languages
-      if (document.documentElement.lang.match(/^en.*$/)) {
-          customContent = {
-              "message": "Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer Datenschutzerklärung.",
-              "link": "Mehr Erfahren",
-              "dismiss": "Verstanden",
-              "href": "http://website/Datenschutz"
-          }
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#546461",
+        "text": "#ffffff"
+      },
+      "button": {
+        "background": "#cecbc2",
+        "text": "#ffffff"
       }
-      window.addEventListener("load", function() {
-          window.cookieconsent.initialise({
-              "palette": {
-                  "popup": {
-                      "background": "#000",
-                      "text": "#c7c7c7"
-                  },
-                  "button": {
-                      "background": "transparent",
-                      "text": "#c7c7c7",
-                      "border": "#c7c7c7"
-                  }
-              },
-              "content": customContent
-          })
-      });
+    },
+    "position": "top",
+    "content": {
+      "message": "/MESSAGE_IN_CURRENT_LANG",
+      "dismiss": "//DISMISS_BUTTON_IN_CURRENT_LANG",
+      "link": "política de privacidad",
+      "href": "/privacidad"
+    }
+  })});
   </script>
