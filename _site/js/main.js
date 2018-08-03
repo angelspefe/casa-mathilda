@@ -160,9 +160,6 @@ $('a[href*="#"]')
 
 
 
-
-
-
 // Slide 2
 
   // This creates a function that allows a button to take you back to the last page you visited, to use it create a button like this <button onclick="goBack()">Go Back</button>
@@ -177,25 +174,21 @@ $(".burger-button").click(function(){
   $(".burger-menu").slideToggle("slow");
 });
 
-// Owl Carousel
 
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
+// - - - - - - - - TESTIMONIAL SLIDER
+$(document).ready(function($) {
+	//create the slider
+	$('.cd-testimonials-wrapper').flexslider({
+		selector: ".cd-testimonials > li",
+		animation: "slide",
+		controlNav: true,
+		slideshow: false,
+		smoothHeight: true,
+		start: function() {
+			$('.cd-testimonials').children('li').css({
+				'opacity': 1,
+				'position': 'relative'
+			});
+		}
+	});
 });
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
