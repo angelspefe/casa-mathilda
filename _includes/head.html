@@ -52,7 +52,6 @@
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <script>
-  	// Default Content
       var customContent = {
           "href": "/privacidad"
       };
@@ -64,6 +63,23 @@
               "href": "/privacidad"
           }
       }
+      window.addEventListener("load", function() {
+          window.cookieconsent.initialise({
+            "palette": {
+              "popup": {
+                "background": "#546461",
+                "text": "#ffffff"
+              },
+              "button": {
+                "background": "#cecbc2",
+                "text": "#ffffff"
+              }
+            },
+            "position": "top",
+            "content": customContent
+            }
+          })
+      });
       if (document.documentElement.lang.match(/^en.*$/)) {
           customContent = {
               "message": "Text in English",
@@ -72,6 +88,23 @@
               "href": "/privacidad"
           }
       }
+      window.addEventListener("load", function() {
+          window.cookieconsent.initialise({
+            "palette": {
+              "popup": {
+                "background": "#546461",
+                "text": "#ffffff"
+              },
+              "button": {
+                "background": "#cecbc2",
+                "text": "#ffffff"
+              }
+            },
+            "position": "top",
+            "content": customContent
+            }
+          })
+      });
       if (document.documentElement.lang.match(/^fr.*$/)) {
           customContent = {
               "message": "text in french",
