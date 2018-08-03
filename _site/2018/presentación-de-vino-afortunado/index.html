@@ -56,6 +56,9 @@
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <script>
+
+
+
   window.addEventListener("load", function(){
   window.cookieconsent.initialise({
     "palette": {
@@ -71,11 +74,61 @@
     "position": "top",
     "content": {
       "message": "Utilizamos cookies para asegurar que damos la mejor experiencia al usuario en nuestro sitio web. Si continúa utilizando este sitio asumiremos que está de acuerdo con nuestra",
-      "dismiss": "Estoy de acuerdo",
+      "dismiss": "ESTOY DE ACUERDO",
       "link": "política de privacidad",
-      "href": "www.casamathilda.com/privacidad"
+      "href": "/privacidad"
     }
   })});
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <script>
+  	// Default Content
+      var customContent = {
+          "href": "/privacidad"
+      };
+      if (document.documentElement.lang.match(/^es.*$/)) {
+          customContent = {
+              "message": "Utilizamos cookies para asegurar que damos la mejor experiencia al usuario en nuestro sitio web. Si continúa utilizando este sitio asumiremos que está de acuerdo con nuestra",
+              "link": "política de privacidad",
+              "dismiss": "ESTOY DE ACUERDO",
+              "href": "/privacidad"
+          }
+      }
+      if (document.documentElement.lang.match(/^en.*$/)) {
+          customContent = {
+              "message": "Text in English",
+              "link": "privacy policy",
+              "dismiss": "ESTOY DE ACUERDO",
+              "href": "/privacidad"
+          }
+      }
+      if (document.documentElement.lang.match(/^fr.*$/)) {
+          customContent = {
+              "message": "text in french",
+              "link": "confident",
+              "dismiss": "ESTOY DE ACUERDO",
+              "href": "/privacidad"
+          }
+      }
+      window.addEventListener("load", function() {
+          window.cookieconsent.initialise({
+            "palette": {
+              "popup": {
+                "background": "#546461",
+                "text": "#ffffff"
+              },
+              "button": {
+                "background": "#cecbc2",
+                "text": "#ffffff"
+              }
+            },
+            "position": "top",
+            "content": customContent
+            }
+          })
+      });
   </script>
 
 </head>
