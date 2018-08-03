@@ -6,20 +6,22 @@ layout: default
 <div class="body-content">
   <section class="bg-beige margin-top">
     <div class="padded-top">
-      <h1>{{page.privacidad-title}}</h1>
+      <h1>{{page.page-heading}}</h1>
     </div>
 
 <!-- - - - - - - - - - - MAIN - - - - - - - - - -  -->
     <div>
       <p>{{item.privacidad_html}}</p>
     </div>
-    <div class="align-center button-2">
+
+    <div class="button-1 align-center margin-top">
       {% if page.language == 'es' %}
-        <a href="#" onclick="goBack()">Atrás</a>
+        <a href="/#contact">Contacto</a>
       {% elsif page.language == 'en' %}
-        <a href="#" onclick="goBack()">Back</a>
+        <a href="en/#contact">Contact</a>
       {% elsif page.language == 'fr' %}
-        <a href="#" onclick="goBack()">Retourner</a>
+        <a href="en/#contact">Contacter</a>
+
       {% endif %}
     </div>
   </section>
