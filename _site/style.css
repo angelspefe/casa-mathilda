@@ -412,6 +412,9 @@ footer nav a:hover, .copyright a:hover {
   min-height: 100vh;
   display: none;
   position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .bg-image-slide .transbox {
