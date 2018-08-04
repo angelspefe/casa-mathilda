@@ -98,13 +98,13 @@ layout: default
                     <h2> {{item.room-details-title-fr}} </h2>
                     <p> {{item.room-details-description-fr}}</p>
                     <div class="button-left button-ochre left mob-hide">
-                        <a href="#"> Book (fr) <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+                        <a href="#"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
                     </div>
                 {% else %}
                     <h2> {{item.room-details-title-es}} </h2>
                     <p> {{item.room-details-description-es}}</p>
                     <div class="button-left button-ochre left mob-hide">
-                        <a href="#"> Book (es) <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+                        <a href="#"> Reserva <img src="/images/right-arrow.svg" alt="right arrow"> </a>
                     </div>
                 {% endif %}
 
@@ -157,7 +157,7 @@ layout: default
 
   <section class="bg-image bg-box">
     <div class="grid-middle-spaceBetween bg-beige" id="info">
-      <div class="col-6_md-12 padded-8">
+      <div class="col-6_xs-12 padded-8">
         <h1>{{page.info-title}}</h1>
         <div class="bump-right p-bold padded-bottom">
             {{page.info_html}}
@@ -190,7 +190,7 @@ layout: default
 
       <!-- - - last news article - -  -->
 
-      <div class="col-5_md-12">
+      <div class="col-5_xs-12">
         <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
           <h2 class="align-center">{{page.news-title}}</h2>
           <hr>
@@ -280,7 +280,7 @@ layout: default
           <li><a href="" id="desayuno">Desayuno</a> | </li>
           <li><a href="" id="sala">Sala</a> | </li>
           <li><a href="" id="entrada">Entrada</a> | </li>
-          <li><a href="" id="terraza">Terraza</a> | </li>
+          <li><a href="" id="terraza">Terraza</a></li>
         </nav>
 
       {% elsif page.language == 'en' %}
@@ -293,7 +293,7 @@ layout: default
           <li><a href="" id="desayuno">Breakfast</a> | </li>
           <li><a href="" id="sala">Living Room</a> | </li>
           <li><a href="" id="entrada">Reception</a> | </li>
-          <li><a href="" id="terraza">Terrace</a> | </li>
+          <li><a href="" id="terraza">Terrace</a></li>
         </nav>
 
       {% elsif page.language =='fr' %}
@@ -306,7 +306,7 @@ layout: default
         <li><a href="" id="desayuno">Petit Déjenuer</a> | </li>
         <li><a href="" id="sala">Salon</a> | </li>
         <li><a href="" id="entrada">Réception</a> | </li>
-        <li><a href="" id="terraza">Terrasse</a> | </li>
+        <li><a href="" id="terraza">Terrasse</a></li>
       </nav>
 
       {% endif %}

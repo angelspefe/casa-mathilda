@@ -7,10 +7,10 @@
 
 <body class="bg-image">
 
-    <header id="top">
-      <!-- - - - - - - - - - - LOGO - - - - - - - - - -  -->
-      {% if page.language == 'en' %}
-      <a href="/en/index.html">
+  <header id="top">
+    <!-- - - - - - - - - - - LOGO - - - - - - - - - -  -->
+    {% if page.language == 'en' %}
+    <a href="/en/index.html">
       {% elsif page.language == 'fr' %}
       <a href="/fr/index.html">
       {% else %}
@@ -21,10 +21,10 @@
 
       </a>
 
-      <!-- - - - - - - - - - - NAVIGATION BAR - - - - - - - - - -  -->
-      {% include navigation.html %}
-      <!-- - - - - - - - - - - BOOK BUTTON - - - - - - - - - -  -->
-      <a href="#">
+    <!-- - - - - - - - - - - NAVIGATION BAR - - - - - - - - - -  -->
+    {% include navigation.html %}
+    <!-- - - - - - - - - - - BOOK BUTTON - - - - - - - - - -  -->
+    <a href="#">
         {% if page.language == 'en' %}
         <img src="/images/book-button-eng.png" alt="book button" class="book-button">
         {% elsif page.language == 'fr' %}
@@ -34,55 +34,55 @@
         {% endif %}
       </a>
 
-      <!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
+    <!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
 
 
-    </header>
+  </header>
 
-      {{content}}
+  {{content}}
 
 
-      <footer class="align-center bg-beige">
-        <div class="top-arrow"><a href="#top"><img src="/images/up-arrow.svg" alt="up arrow"></a></div>
+  <footer class="align-center bg-beige">
+    <div class="top-arrow"><a href="#top"><img src="/images/up-arrow.svg" alt="up arrow"></a></div>
 
-        {% if page.language == 'en'%}
-        <nav>
-          <li><a href="/en/#contact">Contact</a></li>
-          <li><a href="/en/privacidad">Privacy</a></li>
-          <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
-          <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
-          <li><a href="/#" class="mob-hide">Book</a></li>
-        </nav>
+    {% if page.language == 'en'%}
+    <nav>
+      <li><a href="/en/#contact">Contact</a></li>
+      <li><a href="/en/privacidad">Privacy</a></li>
+      <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
+      <li><a href="/#" class="mob-hide">Book</a></li>
+    </nav>
 
-      {% elsif page.language == 'fr'%}
+    {% elsif page.language == 'fr'%}
 
-      <nav>
-        <li><a href="/fr/#contact">Contact</a></li>
-        <li><a href="/fr/privacidad">Confidentialité</a></li>
-        <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
-        <li><a href="/#" class="mob-hide">Réserve</a></li>
-      </nav>
+    <nav>
+      <li><a href="/fr/#contact">Contact</a></li>
+      <li><a href="/fr/privacidad">Confidentialité</a></li>
+      <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
+      <li><a href="/#" class="mob-hide">Réserve</a></li>
+    </nav>
 
-      {% else %}
+    {% else %}
 
-      <nav>
-        <li><a href="/#contact">Contacto</a></li>
-        <li><a href="/privacidad">Privacidad</a></li>
-        <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
-        <li><a href="/#" class="mob-hide">Reserva</a></li>
-      </nav>
+    <nav>
+      <li><a href="/#contact">Contacto</a></li>
+      <li><a href="/privacidad">Privacidad</a></li>
+      <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
+      <li><a href="/#" class="mob-hide">Reserva</a></li>
+    </nav>
 
-      {% endif %}
+    {% endif %}
 
-        <div class="copyright">
-          <p>Copyright © 2018 Casa Mathilda | <a href="http://loveiscreative.com" target="_blank">Site Credits</a></p>
-        </div>
-      </footer>
+    <div class="copyright">
+      <p>Copyright © 2018 Casa Mathilda | <a href="http://loveiscreative.com" target="_blank">Site Credits</a></p>
+    </div>
+  </footer>
 
-      {% include pop-up.html %}
-      {% include body-scripts.html %}
+  {% include pop-up.html %} {% include body-scripts.html %}
 
-    </body>
-    </html>
+</body>
+
+</html>
