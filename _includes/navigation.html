@@ -20,7 +20,8 @@
     <li><a href="/fr/press" class="light">Presse</a></li>
     <li><a href="/news" class="light">News</a></li>
 
-    {% else %} <!-- spanish -->
+    {% else %}
+    <!-- spanish -->
 
     <li><a href="/#rooms">Habitaciones</a></li>
     <li><a href="/#info">Info</a></li>
@@ -54,7 +55,8 @@
       <a href="/" data-lang="es">ES</a>
     </div>
 
-    {% else %} <!-- spanish -->
+    {% else %}
+    <!-- spanish -->
 
     <button class="dropbtn">
       ES <img class="down-arrow" src="/images/down-arrow.svg" alt="down arrow">
@@ -82,35 +84,36 @@
 
   <div class="burger-menu">
 
-    <div class="mob-lang" >
+    <div class="mob-lang">
 
-          {% if page.language == 'en' %}
+      {% if page.language == 'en' %}
 
       <ul>
-      	<li><a href="#">  EN  </a></li>
+        <li><a href="#">  EN  </a></li>
         <li><a href="/es/" data-lang="es">  ES  </a></li>
         <li><a href="/fr/" data-lang="fr">  FR  </a></li>
       </ul>
 
-              {% elsif page.language == 'fr' %}
+      {% elsif page.language == 'fr' %}
 
       <ul>
-      	<li><a href="#">  FR  </a></li>
+        <li><a href="#">  FR  </a></li>
         <li><a href="/es/" data-lang="es">  ES  </a></li>
         <li><a href="/en/" data-lang="en">  EN</a></li>
       </ul>
 
-              {% else %} <!-- spanish -->
+      {% else %}
+      <!-- spanish -->
 
       <ul>
-      	<li><a href="#">  ES  </a></li>
+        <li><a href="#">  ES  </a></li>
         <li><a href="/en/" data-lang="en">  EN  </a></li>
         <li><a href="/fr/" data-lang="fr">  FR  </a></li>
       </ul>
 
-              {% endif %}
+      {% endif %}
 
-      </div>
+    </div>
 
 
     <ul>
@@ -133,7 +136,8 @@
       <li><a href="/fr/press" class="light">Presse</a></li>
       <li><a href="/news" class="light">News</a></li>
 
-      {% else %} <!-- spanish -->
+      {% else %}
+      <!-- spanish -->
 
       <li><a href="/#rooms">Habitaciones</a></li>
       <li><a href="/#info">Info</a></li>
