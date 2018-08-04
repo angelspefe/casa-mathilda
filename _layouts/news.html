@@ -9,11 +9,20 @@ layout: default
         <p class="narrow-width bump-right p-bold">{{page.intro-paragraph}}</p>
       </div>
 
+<!-- - - - - - - - - - - BODY - - - - - - - - - -  -->
       {% for post in site.posts %}
       <div class="news grid padded-5">
         <div class="col-1 mob-hide">
-          <p class="month">{{post.date | date: "%b" }}</p>
-          <p class="date">{{post.date | date: "%d"}}</p>
+          {% if page.language == 'es' %}
+            <p class="month">{{post.date | date: "%b" }}</p>
+            <p class="date">{{post.date | date: "%-d" }}</p>
+          {% elsif page.language == 'en' %}
+            <p class="month">{{post.date | date: "%b" }}</p>
+            <p class="date">{{post.date | date: "%-d"}}</p>
+          {% elsif page.language == 'fr' %}
+            <p class="month">{{post.date | date: "%b" }}</p>
+            <p class="date">{{post.date | date: "%-d"}}</p>
+          {% endif %}
         </div>
         <div class="col-4_sm-12">
             <a href="{{post.url}}"><img src="{{post.featured_image}}" alt="{{post.title}}"></a>
@@ -30,7 +39,8 @@ layout: default
         </div>
       </div>
       {% endfor %}
-  <!-- - - - - - - - - - - Bottom Button - - - - - - - - - -  -->
+
+  <!-- - - - - - - - - - - Read More Button - - - - - - - - - -  -->
       <!-- <div class="button-1 align-center margin-top">
         <a href="#">News Anteriores
           <img src="/images/right-arrow.svg" alt="right arrow">

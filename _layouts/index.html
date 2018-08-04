@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- Intro Banner -->
+<!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
 <div class="bg-image-slide bg-slide-1">
   <div class="padded-2 bump-right transbox">
     <h1>{{page.intro-banner}}</h1>
@@ -133,8 +133,8 @@ layout: default
 
 <!-- - - - - - - - - - - SECTION: INFO - - - - - - - - - -  -->
 
-<!-- - - Main info & Services - -  -->
-
+<!-- - - - - - - - - - - First Column - - - - - - - - - -  -->
+<!-- - - - - - - - - - - Info & Services- - - - - - - - - -  -->
 <section class="bg-image bg-box">
   <div class="grid-middle-spaceBetween bg-beige" id="info">
     <div class="col-6_sm-12 padded-8">
@@ -147,7 +147,9 @@ layout: default
         {{page.services_html}}
       </div>
 
-      <!-- Who is Mathilda - - this is where you change the image for each language -->
+<!-- - - - - - - - - - - Who is Mathilda - - - - - - - - - -  -->
+
+      <!-- this is where you change the image for each language -->
       {% if page.language == 'es' %}
       <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-esp.png')" ;>
         {% elsif page.language == 'en' %}
@@ -171,9 +173,10 @@ layout: default
         </div>
         <!-- closes the container -->
 
-        <!-- - - last news article - -  -->
+<!-- - - - - - - - - - - Second Column - - - - - - - - - -  -->
+<!-- - - - - - - - - - - Latest News - - - - - - - - - -  -->
 
-        <div class="col-5_sm-12 padded-right-0">
+        <div class="col-5_sm-12 padded-right-0 padded-left-0">
           <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
             <h2 class="align-center">{{page.news-title}}</h2>
             <hr> {% for post in site.posts limit:1 %}
@@ -196,55 +199,18 @@ layout: default
             <a href="/news">Toutes les News <img src="/images/right-arrow.svg" alt="right arrow"></a> {% endif %}
           </div>
 
-          <!-- - - client testimonial slider - -  -->
+<!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
           <h2 class="padded-top-30 align-center">Lo que dicen nuestros huéspedes...</h2>
-
-          <div class="cd-testimonials-wrapper cd-container padded-8">
-            <ul class="cd-testimonials">
-              <li>
-                <div class="testimonial-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-                  <div class="cd-author">
-                    <ul class="cd-author-info">
-                      <li>Lorem</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="testimonial-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-                  <div class="cd-author">
-                    <ul class="cd-author-info">
-                      <li>Lorem</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="testimonial-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-                  <div class="cd-author">
-                    <ul class="cd-author-info">
-                      <li>Lorem</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- cd-testimonials -->
-
 
         </div>
       </div>
       <!-- this closes the second column -->
 
-
     </div>
   </div>
 
-  <!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
+<!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
+<!-- - - - - - - - - - - Gallery Selector - - - - - - - - - - -  -->
   <div class="bg-beige padded-8 margin-top link-menu" id="gallery">
 
     {% if page.language == 'es' %}
@@ -288,8 +254,7 @@ layout: default
 
     {% endif %}
 
-    <!-- - - - - - - - - - - grid - - - - - - - - - - -  -->
-
+<!-- - - - - - - - - - - Gallery Grid - - - - - - - - - - -  -->
     <div class="grid gallery" id="portfolio-grid">
       {% for item in site.data.gallery %}
       <div class="col-4_sm-6_xs-12 filterable-item {{item.category}} all">
@@ -316,12 +281,13 @@ layout: default
     </div>
   </div>
   <div>
-    <!-- SnapWidget -->
+
+<!-- - - - - - - - - - - Snap Widget - - - - - - - - - - -  -->
     <script src="https://snapwidget.com/js/snapwidget.js"></script>
     <iframe src="https://snapwidget.com/embed/557615" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
   </div>
 
-  <!-- - - - - - - - - - - SECTION: CONTACT - - - - - - - - - -  -->
+<!-- - - - - - - - - - - SECTION: CONTACT - - - - - - - - - -  -->
   <div class="grid-middle-spaceBetween" id="contact">
     <div class="col-6_md-6_xs-12 padded-8">
       <h1>{{page.contact-title}}</h1>
@@ -330,6 +296,8 @@ layout: default
         <p class="bump-right p-bold">{{page.contact-email}}</p>
       </div>
       {{page.contact_html }}
+
+<!-- - - - - - - - - - - Form - - - - - - - - - - -  -->
       <form method="" action="">
         <!-- <label for="firstname" class="mob-show">Tu nombre</label> -->
 
@@ -345,6 +313,8 @@ layout: default
         </div>
       </form>
     </div>
+<!-- - - - - - - - - - - How to Get There - - - - - - - - - - -  -->
+
     <div class="col-4_md-5_xs-12 address-box padded-5">
       <h2 class="align-center">{{page.address-title}}</h2>
       <hr>
@@ -356,13 +326,14 @@ layout: default
   </div>
 </section>
 
+<!-- - - - - - - - - - - Google Maps - - - - - - - - - - -  -->
 <!-- normally we wouldn't set a fixed height on a div, but since the only element inside the container already has a fixed height, this ensures there is no gap around the map -->
 <div style="height:450px">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.9479093214813!2d2.161464915383106!3d41.39693760336602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a294be90cebf%3A0xe80d18c953205613!2sCasa+Mathilda+%7C+Barcelona!5e0!3m2!1sen!2sid!4v1532076689863"
     width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
-<!-- This is the magnificPopup Javascript -->
+<!-- - - - - - - - - - - (MAGNIFIC) POP UP - - - - - - - - - - -  -->
 <div id="launch-popup" class="launch-popup mfp-hide mob-hide align-center">
   <h1>Promoción de Verano</h1>
   <h2>Explora Barcelona hasta el último rincón.</h2>
@@ -373,9 +344,7 @@ layout: default
 </div>
 <!--End magnificPopup  -->
 
-
-<!-- This is javascript specifically for this page -->
-
+<!-- - - - - - - - - - - JAVASCRIPT FOR THIS PAGE - - - - - - - - - - -  -->
 <script>
   // OLD CODE
   var slideIndex1 = 1;

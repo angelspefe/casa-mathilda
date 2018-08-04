@@ -1,4 +1,4 @@
-/*----------- CSS Reset -----------*/
+/*----------- CSS RESET -----------*/
 
 * {
   margin: 0;
@@ -13,13 +13,11 @@
   box-sizing: border-box;
 }
 
-/*----------- Universal Styles -----------*/
+/*----------- UNIVERSAL STYLES -----------*/
 
 body {
   font-family: 'Raleway', sans-serif;
 }
-
-/* Eg padding on your sections, utility classes, etc. */
 
 header, section, .body-content {
   padding: 0 0 0 100px;
@@ -34,7 +32,7 @@ header {
   /* this fixes a bug where there is a small gap in between the slider and the top of the page */
 }
 
-/*----------- Paddings & Positionings -----------*/
+/*----------- Hiding Mobile Navigation -----------*/
 
 .mob-nav {
   display: none;
@@ -43,6 +41,8 @@ header {
 .mob-show {
   display: none;
 }
+
+/*----------- PADDINGS & POSITIONINGS -----------*/
 
 .padded-10 {
   padding: 10% !important;
@@ -78,6 +78,10 @@ header {
 
 .padded-right-0{
   padding-right:0!important;
+}
+
+.padded-left-0 {
+  padding-left:0!important;
 }
 
 .padded-bottom {
@@ -121,8 +125,77 @@ header {
   min-height: 100vh;
 }
 
+/*----------- TYPOGRAPHY -----------*/
 
-/*----------- Backgrounds & Images -----------*/
+h1, h2, h3, a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color: #546461;
+  line-height: 1.6;
+  padding-bottom: 1rem;
+}
+
+p, li {
+  font-family: 'Raleway', sans-serif;
+  color: #546461;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.p-bold, .p-bold p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.bg-teal p, .bg-teal h1, .bg-teal h2, .bg-teal h3 {
+  color: #fff;
+}
+
+.address-box p, .address-box h2 {
+  color: #546461;
+}
+
+.link-menu li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+.link-menu p {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding-bottom: 0;
+}
+
+.link-menu a {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.link-menu a:hover {
+  color: #DEBD31;
+  transition: 0.7s;
+}
+
+/*----------- BACKGROUNDS & IMAGES -----------*/
 
 .bg-image {
   background-size: cover;
@@ -201,215 +274,7 @@ header {
   padding: 2%;
 }
 
-/* Slider styles */
-
-.bg-image-slide {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/images/casa-mathilda-banner.jpg);
-  background-attachment: fixed;
-  min-height: 100vh;
-  display: none;
-  position: relative;
-}
-
-.bg-image-slide .transbox {
-  max-width: 70%;
-  position: absolute;
-  top: 60vh;
-  right: 0;
-}
-
-.bg-slide-1 {
-  background-image: url(/images/casa-mathilda-banner-1.jpg);
-}
-
-.bg-slide-2 {
-  background-image: url(/images/casa-mathilda-banner-2.jpg);
-}
-
-.bg-slide-3 {
-  background-image: url(/images/casa-mathilda-banner-3.jpg);
-}
-
-/* Popup Room Details */
-
-/* this styles the active link for the room navigation */
-
-#rooms-filter a, #portfolio-filter a {
-  padding-bottom: 0;
-}
-
-#portfolio-filter .active, #rooms-filter .active {
-  border-bottom: 2px solid #546461;
-}
-
-.room-details-popup {
-  position: absolute;
-  right: 0;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 4%;
-  width: auto;
-  width: 70%;
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
-  display: none;
-  z-index: 101;
-}
-
-.room-details-popup:focus {
-  outline: none;
-  /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
-}
-
-.small-image {
-  display: inline-block;
-  width: 32%;
-}
-
-.room-details-popup li {
-  list-style-position: outside;
-  padding-bottom: 0.5rem;
-}
-
-.close-icon {
-  padding: 30px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  width: 76px;
-}
-
-.slider-rooms [class*=bg-image-room] {
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.room-left-button, .room-right-button {
-  z-index: 99;
-  position: absolute;
-  border: none;
-  background-color: transparent;
-  color: white;
-  max-width: 2rem;
-}
-
-.room-left-button {
-  left: 6%;
-  top: 50%;
-  transform: rotateZ(180deg);
-}
-
-.room-right-button {
-  right: 3%;
-  top: 50%;
-  z-index: 99;
-  position: absolute;
-  border: none;
-  background-color: transparent;
-  color: white;
-  max-width: 2rem;
-}
-
-/* Launch popup */
-
-.launch-popup {
-  position: relative;
-  background: white;
-  color: #fff;
-  padding: 10px;
-  width: auto;
-  max-width: 700px;
-  margin: 5% auto;
-}
-
-.launch-popup:focus {
-  outline: none;
-  /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
-}
-
-.launch-popup .bg-image {
-  background-attachment: scroll;
-}
-
-/*----------- Typography -----------*/
-
-.link-menu li {
-  list-style: none;
-  display: inline-block;
-  font-size: 1.1em;
-}
-
-.link-menu p {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  padding-bottom: 0;
-}
-
-.link-menu a {
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-
-.link-menu a:hover {
-  color: #DEBD31;
-  transition: 0.7s;
-}
-
-h1, h2, h3, a {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  color: #546461;
-  line-height: 1.6;
-  padding-bottom: 1rem;
-}
-
-p, li {
-  font-family: 'Raleway', sans-serif;
-  color: #546461;
-  padding-bottom: 1rem;
-  font-weight: 500;
-  font-size: 0.8rem;
-  line-height: 1.5;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-}
-
-.p-bold, .p-bold p {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.light {
-  font-weight: 300;
-}
-
-.bg-teal p, .bg-teal h1, .bg-teal h2, .bg-teal h3 {
-  color: #fff;
-}
-
-.address-box p, .address-box h2 {
-  color: #546461;
-}
-
-/*----------- Navigation -----------*/
+/*----------- NAVIGATION -----------*/
 
 .sidebar {
   position: fixed;
@@ -502,7 +367,7 @@ h2 {
   /* background-color: #3e8e41; */
 }
 
-/*----------- Footer -----------*/
+/*----------- FOOTER -----------*/
 
 .top-arrow img {
   width: 1em;
@@ -537,7 +402,145 @@ footer nav a:hover, .copyright a:hover {
   text-decoration: none;
 }
 
-/*----------- Buttons -----------*/
+/*----------- SLIDER STYLE -----------*/
+
+.bg-image-slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/images/casa-mathilda-banner.jpg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: none;
+  position: relative;
+}
+
+.bg-image-slide .transbox {
+  max-width: 70%;
+  position: absolute;
+  top: 60vh;
+  right: 0;
+}
+
+.bg-slide-1 {
+  background-image: url(/images/casa-mathilda-banner-1.jpg);
+}
+
+.bg-slide-2 {
+  background-image: url(/images/casa-mathilda-banner-2.jpg);
+}
+
+.bg-slide-3 {
+  background-image: url(/images/casa-mathilda-banner-3.jpg);
+}
+
+/*----------- Pop Up Room Details -----------*/
+
+/* this styles the active link for the room navigation */
+
+#rooms-filter a, #portfolio-filter a {
+  padding-bottom: 0;
+}
+
+#portfolio-filter .active, #rooms-filter .active {
+  border-bottom: 2px solid #546461;
+}
+
+.room-details-popup {
+  position: absolute;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4%;
+  width: auto;
+  width: 70%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  z-index: 101;
+}
+
+.room-details-popup:focus {
+  outline: none;
+  /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
+}
+
+.small-image {
+  display: inline-block;
+  width: 32%;
+}
+
+.room-details-popup li {
+  list-style-position: outside;
+  padding-bottom: 0.5rem;
+}
+
+.close-icon {
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 76px;
+}
+
+.slider-rooms [class*=bg-image-room] {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.room-left-button, .room-right-button {
+  z-index: 99;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: white;
+  max-width: 2rem;
+}
+
+.room-left-button {
+  left: 6%;
+  top: 50%;
+  transform: rotateZ(180deg);
+}
+
+.room-right-button {
+  right: 3%;
+  top: 50%;
+  z-index: 99;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: white;
+  max-width: 2rem;
+}
+
+/*----------- Launch Pop Up -----------*/
+
+.launch-popup {
+  position: relative;
+  background: white;
+  color: #fff;
+  padding: 10px;
+  width: auto;
+  max-width: 700px;
+  margin: 5% auto;
+}
+
+.launch-popup:focus {
+  outline: none;
+  /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
+}
+
+.launch-popup .bg-image {
+  background-attachment: scroll;
+}
+
+/*----------- BUTTONS -----------*/
 
 .button-1, .button-2 {
   cursor: pointer;
@@ -647,7 +650,7 @@ footer nav a:hover, .copyright a:hover {
   display: block;
 }
 
-/*----------- Form -----------*/
+/*----------- FORM -----------*/
 
 form input, form label, form textarea, form p {
   font-family: 'Raleway', sans-serif;
@@ -690,7 +693,13 @@ form textarea {
   min-height: 20vh;
 }
 
-/*----------- Elements -----------*/
+form input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+/*----------- ELEMENTS -----------*/
 
 hr {
   margin: 0 auto 2em;
@@ -716,7 +725,7 @@ hr {
   font-size: 1.2em;
 }
 
-/*----------- News Page -----------*/
+/*----------- NEWS PAGE -----------*/
 
 .news .padded {
   padding: 0 15% 0 4%;
@@ -771,254 +780,13 @@ hr {
   margin: 0.5rem 2px;
 }
 
-/* FILTERABLE GRID */
+/* Filterable Grid */
 
 .hidden {
   display: none;
 }
 
-/* --------- TESTIMONIAL SLIDER ------------ */
-
-.testimonial-container {}
-
-.cd-testimonials-wrapper {
-  /* position: relative;
-	width: 100%;
-	max-width: 100%;
-	margin: 0 auto;
-	background-color: rgba(245, 245, 245, 1);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	padding: 100px 0px 40px;
-	z-index: 1; */
-}
-
-.cd-testimonials-wrapper h2 {
-  /* text-align: center;
-	position: absolute;
-	width: 100%;
-	top: 60px;
-	margin: 0 auto; */
-}
-
-.cd-testimonials {
-  text-align: center;
-  list-style: none;
-}
-
-.cd-testimonials>li {
-  position: absolute;
-  opacity: 0;
-}
-
-.cd-testimonials>li:first-child {
-  position: relative;
-  opacity: 1;
-}
-
-.cd-author-info span p {
-  display: inline-block;
-  /* font-size: 14px;
-	padding-left: 0; */
-}
-
-.cd-author-info span p a {
-  color: rgba(126, 129, 136, 1);
-}
-
-.cd-author .cd-author-info {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.cd-author .cd-author-info {
-  text-align: left;
-  line-height: 1
-}
-
-.cd-author .cd-author-info li:first-child {
-  font-size: 14px;
-  margin-top: 4px;
-}
-
-.cd-author .cd-author-info li:last-child {
-  font-size: 12px;
-  color: #6b6b70;
-}
-
-ul.cd-author-info {
-  list-style: none;
-}
-
-ul.cd-author-info li span:before {
-  font-family: 'FontAwesome';
-  content: '\f099';
-  font-size: 24px;
-  display: inline-block;
-  position: absolute;
-  margin-top: 2px;
-  font-style: normal;
-  margin-left: -30px;
-}
-
-ul.cd-author-info li span {
-  font-size: 14px;
-  padding-left: 30px;
-  line-height: 24px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: italic;
-  font-weight: 300;
-}
-
-.flex-direction-nav a {
-  text-decoration: none;
-  display: block;
-  width: 50px;
-  height: 100%;
-  margin: 0px 0 0;
-  position: absolute;
-  z-index: 9999;
-  top: 0;
-  overflow: hidden;
-  opacity: 1;
-  background: rgba(245, 245, 245, 1);
-  cursor: pointer;
-  color: rgba(255, 255, 255, .5);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.flex-direction-nav a:before {
-  font-size: 40px;
-  content: url('https://dl.dropboxusercontent.com/u/97609687/codepen/chevronleft.svg');
-  position: absolute;
-  display: block;
-  top: 50%;
-  padding: 14px 10px 14px 10px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.flex-direction-nav a.flex-next:before {
-  content: url('https://dl.dropboxusercontent.com/u/97609687/codepen/chevronright.svg');
-  padding: 14px 20px 14px 10px;
-}
-
-.flex-direction-nav .flex-prev {
-  left: 0px;
-}
-
-.flex-direction-nav .flex-next {
-  right: 0px;
-  text-align: right;
-}
-
-.flexslider:hover .flex-direction-nav .flex-prev {
-  opacity: 1;
-  left: 0px;
-}
-
-.flexslider:hover .flex-direction-nav .flex-prev:hover {
-  opacity: 1;
-}
-
-.flexslider:hover .flex-direction-nav .flex-next {
-  opacity: 1;
-  right: 0px;
-}
-
-.flexslider:hover .flex-direction-nav .flex-next:hover {
-  opacity: 1;
-}
-
-.flex-direction-nav .flex-disabled {
-  opacity: 0 !important;
-  filter: alpha(opacity=0);
-  cursor: default;
-}
-
-.flex-control-paging li a {
-  width: 6px;
-  height: 6px;
-  display: block;
-  background: #666;
-  background: rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  text-indent: -9999px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-}
-
-.flex-control-paging li a:hover {
-  background: #333;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.flex-control-paging li a.flex-active {
-  background: #000;
-  background: rgba(2, 23, 31, 1);
-  cursor: default;
-}
-
-.flex-control-nav {
-  bottom: 30px;
-  position: absolute;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-}
-
-.flex-control-nav li {
-  display: inline-block;
-  padding: 0px 5px 0px 5px;
-}
-
-@media screen and (max-width: 767px) {
-  .flex-direction-nav a {
-    width: 30px;
-  }
-  .flex-direction-nav a:before {
-    visibility: hidden;
-  }
-  .flex-direction-nav a:before {
-    padding: 14px 0px 10px 0px;
-  }
-  .flex-direction-nav .flex-prev {
-    left: 0px;
-  }
-  .flex-direction-nav .flex-next {
-    right: 0px;
-    text-align: right;
-  }
-  .flexslider:hover .flex-direction-nav .flex-prev {
-    opacity: 1;
-    left: 0px;
-  }
-  .flexslider:hover .flex-direction-nav .flex-prev:hover {
-    opacity: 1;
-  }
-  .flexslider:hover .flex-direction-nav .flex-next {
-    opacity: 1;
-    right: 0px;
-  }
-  .flex-direction-nav {
-    visibility: hidden;
-  }
-}
-
-/*----------- MOB NAVIGATION / BURGER MENU -----------*/
+/*----------- MOBILE NAVIGATION / BURGER MENU -----------*/
 
 .burger-button {
   position: fixed;

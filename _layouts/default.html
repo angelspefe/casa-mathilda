@@ -8,7 +8,8 @@
 <body class="bg-image">
 
   <header id="top">
-    <!-- - - - - - - - - - - LOGO - - - - - - - - - -  -->
+
+<!-- - - - - - - - - - - LOGO - - - - - - - - - -  -->
     {% if page.language == 'en' %}
     <a href="/en/index.html">
       {% elsif page.language == 'fr' %}
@@ -21,9 +22,10 @@
 
       </a>
 
-    <!-- - - - - - - - - - - NAVIGATION BAR - - - - - - - - - -  -->
+<!-- - - - - - - - - - - NAVIGATION BAR - - - - - - - - - -  -->
     {% include navigation.html %}
-    <!-- - - - - - - - - - - BOOK BUTTON - - - - - - - - - -  -->
+
+<!-- - - - - - - - - - - BOOK BUTTON - - - - - - - - - -  -->
     <a href="#">
         {% if page.language == 'en' %}
         <img src="/images/book-button-eng.png" alt="book button" class="book-button">
@@ -34,18 +36,18 @@
         {% endif %}
       </a>
 
-    <!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
-
+<!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
 
   </header>
 
   {{content}}
 
-
+<!-- - - - - - - - - - - FOOTER - - - - - - - - - -  -->
   <footer class="align-center bg-beige">
     <div class="top-arrow"><a href="#top"><img src="/images/up-arrow.svg" alt="up arrow"></a></div>
 
     {% if page.language == 'en'%}
+
     <nav>
       <li><a href="/en/#contact">Contact</a></li>
       <li><a href="/en/privacidad">Privacy</a></li>
@@ -81,8 +83,8 @@
     </div>
   </footer>
 
+<!-- - - - - - - - - - - POP UP - - - - - - - - - -  -->
   {% include pop-up.html %} {% include body-scripts.html %}
 
 </body>
-
 </html>
