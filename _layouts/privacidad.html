@@ -1,6 +1,4 @@
----
-layout: default
----
+--- layout: default ---
 
 <!-- - - - - - - - - - - HEADER - - - - - - - - - -  -->
 <div class="body-content">
@@ -8,21 +6,17 @@ layout: default
     <div class="padded-top">
       <h1>{{page.heading}}</h1>
 
-<!-- - - - - - - - - - - MAIN - - - - - - - - - -  -->
-    <div class="padded-2 padded-right">
-      <p>{{page.privacidad_html}}</p>
-    </div>
+      <!-- - - - - - - - - - - MAIN - - - - - - - - - -  -->
+      <div class="padded-2 padded-right">
+        <p>{{page.privacidad_html}}</p>
+      </div>
 
-    <div class="button-1 align-center margin-top">
-      {% if page.language == 'es' %}
-        <a href="/#contact">Contacto</a>
-      {% elsif page.language == 'en' %}
-        <a href="en/#contact">Contact</a>
-      {% elsif page.language == 'fr' %}
-        <a href="en/#contact">Contact</a>
-
-      {% endif %}
+      <div class="button-1 align-center margin-top">
+        {% if page.language == 'es' %}
+        <a href="/#contact">Contacto</a> {% elsif page.language == 'en' %}
+        <a href="en/#contact">Contact</a> {% elsif page.language == 'fr' %}
+        <a href="en/#contact">Contact</a> {% endif %}
+      </div>
     </div>
-  </div>
   </section>
 </div>

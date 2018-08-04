@@ -1,6 +1,4 @@
----
-layout: default
----
+--- layout: default ---
 
 <!-- Intro Banner -->
 <div class="bg-image-slide bg-slide-1">
@@ -22,37 +20,37 @@ layout: default
 
 
 <!-- - - - - - - - - - - SECTION: ROOMS - - - - - - - - - -  -->
-  <section class="bg-beige">
-    <div class="padded-8">
-      <h1>{{page.rooms-title}}</h1>
-      <p class="narrow-width bump-right p-bold">{{page.rooms-description}}</p>
-    </div>
-    <div class="padded-left padded-2 link-menu" id="rooms">
-      <p>{{page.rooms-title-2}}</p>
+<section class="bg-beige">
+  <div class="padded-8">
+    <h1>{{page.rooms-title}}</h1>
+    <p class="narrow-width bump-right p-bold">{{page.rooms-description}}</p>
+  </div>
+  <div class="padded-left padded-2 link-menu" id="rooms">
+    <p>{{page.rooms-title-2}}</p>
 
-      {% if page.language == 'es' %}
-      <nav id="rooms-filter">
-        <li><a class="active" href="#" id="terraza">Terraza</a> | </li>
-        <li><a href="#" id="interiores">Interiores</a> | </li>
-        <li><a href="#" id="a-la-calle">A la Calle</a></li>
-      </nav>
-      {% elsif page.language == 'en' %}
-      <nav id="rooms-filter">
-        <li><a class="active" href="#" id="terraza">Terrace</a> | </li>
-        <li><a href="#" id="interiores">Interior</a> | </li>
-        <li><a href="#" id="a-la-calle">Street</a></li>
-      </nav>
-      {% elsif page.language == 'fr' %}
-      <nav id="rooms-filter">
-        <li><a class="active" href="#" id="terraza">Terrasse</a> | </li>
-        <li><a href="#" id="interiores">Intérieurs</a> | </li>
-        <li><a href="#" id="a-la-calle">Sur la Rue</a></li>
-      </nav>
-      {% endif %}
+    {% if page.language == 'es' %}
+    <nav id="rooms-filter">
+      <li><a class="active" href="#" id="terraza">Terraza</a> | </li>
+      <li><a href="#" id="interiores">Interiores</a> | </li>
+      <li><a href="#" id="a-la-calle">A la Calle</a></li>
+    </nav>
+    {% elsif page.language == 'en' %}
+    <nav id="rooms-filter">
+      <li><a class="active" href="#" id="terraza">Terrace</a> | </li>
+      <li><a href="#" id="interiores">Interior</a> | </li>
+      <li><a href="#" id="a-la-calle">Street</a></li>
+    </nav>
+    {% elsif page.language == 'fr' %}
+    <nav id="rooms-filter">
+      <li><a class="active" href="#" id="terraza">Terrasse</a> | </li>
+      <li><a href="#" id="interiores">Intérieurs</a> | </li>
+      <li><a href="#" id="a-la-calle">Sur la Rue</a></li>
+    </nav>
+    {% endif %}
 
-    </div>
-    <!-- we need to create one of these for each of the room types -->
-    <div id="rooms-grid">
+  </div>
+  <!-- we need to create one of these for each of the room types -->
+  <div id="rooms-grid">
 
     {% for item in site.data.room-details %}
 
@@ -68,19 +66,13 @@ layout: default
       <button class="room-right-button mob-hide" onclick="plusRoomGallery{{item.number}}(+1)">
         <img src="/images/right-arrow.svg">
       </button>
-    <!--this anchor link is the details button which when clicked opens up the popup div. The href corresponds to the id of the div we want to pop-up and the class 'open-room-details' is what initialises the popup in the javascript. The styles of the popup are controlled through the 'room-details-popup class'. -->
+      <!--this anchor link is the details button which when clicked opens up the popup div. The href corresponds to the id of the div we want to pop-up and the class 'open-room-details' is what initialises the popup in the javascript. The styles of the popup are controlled through the 'room-details-popup class'. -->
 
       <div class="button-1 button-ochre align-center" id="show-{{item.number}}">
         <a href="#popup-room-details-{{item.number}}" class="open-room-details-{{item.number}}">
-              <!-- this changes the text within the anchor link based on the language -->
-              {% if page.language == 'es' %}
-                  Detalles
-              {% elsif page.language == 'en' %}
-                  Details
-              {% elsif page.language == 'fr' %}
-                  Détails
-              {% endif %}
-              <img src="/images/right-arrow.svg" alt="right arrow">
+          <!-- this changes the text within the anchor link based on the language -->
+          {% if page.language == 'es' %} Detalles {% elsif page.language == 'en' %} Details {% elsif page.language == 'fr' %} Détails {% endif %}
+          <img src="/images/right-arrow.svg" alt="right arrow">
         </a>
       </div>
 
@@ -88,51 +80,45 @@ layout: default
         <div class="grid">
           <div class="col-5_sm-12">
 
-                {% if page.language == 'en' %}
-                    <h2> {{item.room-details-title-en}} </h2>
-                    <p> {{item.room-details-description-en}}</p>
-                    <div class="button-left button-ochre left mob-hide">
-                        <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
-                    </div>
-                {% elsif page.language == 'fr' %}
-                    <h2> {{item.room-details-title-fr}} </h2>
-                    <p> {{item.room-details-description-fr}}</p>
-                    <div class="button-left button-ochre left mob-hide">
-                        <a href="#"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
-                    </div>
-                {% else %}
-                    <h2> {{item.room-details-title-es}} </h2>
-                    <p> {{item.room-details-description-es}}</p>
-                    <div class="button-left button-ochre left mob-hide">
-                        <a href="#"> Reserva <img src="/images/right-arrow.svg" alt="right arrow"> </a>
-                    </div>
-                {% endif %}
+            {% if page.language == 'en' %}
+            <h2> {{item.room-details-title-en}} </h2>
+            <p> {{item.room-details-description-en}}</p>
+            <div class="button-left button-ochre left mob-hide">
+              <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+            </div>
+            {% elsif page.language == 'fr' %}
+            <h2> {{item.room-details-title-fr}} </h2>
+            <p> {{item.room-details-description-fr}}</p>
+            <div class="button-left button-ochre left mob-hide">
+              <a href="#"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+            </div>
+            {% else %}
+            <h2> {{item.room-details-title-es}} </h2>
+            <p> {{item.room-details-description-es}}</p>
+            <div class="button-left button-ochre left mob-hide">
+              <a href="#"> Reserva <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+            </div>
+            {% endif %}
 
           </div>
           <div class="col-7_sm-12 padded-left">
 
-            {% if page.language == 'en' %}
-
-            {{item.room-features-en_html}}
+            {% if page.language == 'en' %} {{item.room-features-en_html}}
 
             <div class="button-left button-ochre left mob-show">
-                <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
 
-            {% elsif page.language == 'fr' %}
-
-            {{item.room-features-fr_html}}
+            {% elsif page.language == 'fr' %} {{item.room-features-fr_html}}
 
             <div class="button-left button-ochre left mob-show">
-                <a href="#"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              <a href="#"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
 
-            {% else %}
-
-            {{item.room-features-es_html}}
+            {% else %} {{item.room-features-es_html}}
 
             <div class="button-left button-ochre left mob-show">
-                <a href="#"> Reserva <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              <a href="#"> Reserva <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
 
             {% endif %}
@@ -147,340 +133,350 @@ layout: default
 
     {% endfor %}
 
-    </div>
-  </section>
+  </div>
+</section>
 
 
-  <!-- - - - - - - - - - - SECTION: INFO - - - - - - - - - -  -->
+<!-- - - - - - - - - - - SECTION: INFO - - - - - - - - - -  -->
 
-  <!-- - - Main info & services - -  -->
+<!-- - - Main info & services - -  -->
 
-  <section class="bg-image bg-box">
-    <div class="grid-middle-spaceBetween bg-beige" id="info">
-      <div class="col-6_sm-12 padded-8">
-        <h1>{{page.info-title}}</h1>
-        <div class="bump-right p-bold padded-bottom">
-            {{page.info_html}}
-        </div>
-        <h2>{{page.services-title}}</h2>
-        <div class="bump-right padded-bottom">
-            {{page.services_html}}
-        </div>
+<section class="bg-image bg-box">
+  <div class="grid-middle-spaceBetween bg-beige" id="info">
+    <div class="col-6_sm-12 padded-8">
+      <h1>{{page.info-title}}</h1>
+      <div class="bump-right p-bold padded-bottom">
+        {{page.info_html}}
+      </div>
+      <h2>{{page.services-title}}</h2>
+      <div class="bump-right padded-bottom">
+        {{page.services_html}}
+      </div>
 
-  <!-- Who is Mathilda - - this is where you change the image for each language -->
-        {% if page.language == 'es' %}
-        <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-esp.png')";>
+      <!-- Who is Mathilda - - this is where you change the image for each language -->
+      {% if page.language == 'es' %}
+      <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-esp.png')" ;>
         {% elsif page.language == 'en' %}
-        <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-eng.png')";>
-        {% elsif page.language == 'fr' %}
-        <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-fr.png')";>
-        {% endif %}
+        <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-eng.png')" ;>
+          {% elsif page.language == 'fr' %}
+          <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-fr.png')" ;>
+            {% endif %}
 
-          <div class="grid-middle show-on-hover">
-            <p class="col-12 align-center">
-              {{page.who-is-mathilda}}
-            </p>
-          </div> <!-- close hover div -->
+            <div class="grid-middle show-on-hover">
+              <p class="col-12 align-center">
+                {{page.who-is-mathilda}}
+              </p>
+            </div>
+            <!-- close hover div -->
 
-          </div> <!-- close mathilda div -->
+          </div>
+          <!-- close mathilda div -->
 
           <p class="mob-show padded-top"> {{page.who-is-mathilda}} </p>
 
-    </div><!-- closes the container -->
+        </div>
+        <!-- closes the container -->
 
-      <!-- - - last news article - -  -->
+        <!-- - - last news article - -  -->
 
-      <div class="col-5_sm-12">
-        <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
-          <h2 class="align-center">{{page.news-title}}</h2>
-          <hr>
-          {% for post in site.posts limit:1 %}
+        <div class="col-5_sm-12">
+          <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
+            <h2 class="align-center">{{page.news-title}}</h2>
+            <hr> {% for post in site.posts limit:1 %}
             <a href="{{post.url}}"><img src="{{post.featured_image}}" alt="{{post.title}}" class="padded-bottom align-center"></a>
             <h3 class="align-center">{{post.title}}</h3>
             <p>{{post.blurb}}</p>
 
-          <div class="align-center button-2">
-            {% if page.language == 'es' %}
-                <a href="{{post.url}}">Leer más</a>
-            {% elsif page.language == 'en' %}
-                <a href="{{post.url}}">Read More</a>
-            {% elsif page.language == 'fr' %}
-                <a href="{{post.url}}">En Savoir Plus</a>
-            {% endif %}
+            <div class="align-center button-2">
+              {% if page.language == 'es' %}
+              <a href="{{post.url}}">Leer más</a> {% elsif page.language == 'en' %}
+              <a href="{{post.url}}">Read More</a> {% elsif page.language == 'fr' %}
+              <a href="{{post.url}}">En Savoir Plus</a> {% endif %}
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
-        </div>
-        <div class="button-1 align-center margin-bottom">
-          {% if page.language == 'es' %}
-              <a href="/news">Todas las News <img src="/images/right-arrow.svg" alt="right arrow"></a>
-          {% elsif page.language == 'en' %}
-              <a href="/news">View All News <img src="/images/right-arrow.svg" alt="right arrow"></a>
-          {% elsif page.language == 'fr' %}
-              <a href="/news">Toutes les News <img src="/images/right-arrow.svg" alt="right arrow"></a>
-          {% endif %}
-        </div>
+          <div class="button-1 align-center">
+            {% if page.language == 'es' %}
+            <a href="/news">Todas las News <img src="/images/right-arrow.svg" alt="right arrow"></a> {% elsif page.language == 'en' %}
+            <a href="/news">View All News <img src="/images/right-arrow.svg" alt="right arrow"></a> {% elsif page.language == 'fr' %}
+            <a href="/news">Toutes les News <img src="/images/right-arrow.svg" alt="right arrow"></a> {% endif %}
+          </div>
 
-        <!-- - - client testimonial slider - -  -->
-        <h2 class="margin-top align-center">Lo que dicen nuestros huéspedes...</h2>
+          <!-- - - client testimonial slider - -  -->
+          <h2 class="padded-top-30 align-center">Lo que dicen nuestros huéspedes...</h2>
 
-        		<div class="cd-testimonials-wrapper cd-container padded-8">
-        			<ul class="cd-testimonials">
-        				<li>
-        					<div class="testimonial-content">
-        						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        						<div class="cd-author">
-        							<ul class="cd-author-info">
-        								<li>Lorem</li>
-        							</ul>
-        						</div>
-        					</div>
-        				</li>
-        				<li>
-                  <div class="testimonial-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-                    <div class="cd-author">
-                      <ul class="cd-author-info">
-                        <li>Lorem</li>
-                      </ul>
-                    </div>
+          <div class="cd-testimonials-wrapper cd-container padded-8">
+            <ul class="cd-testimonials">
+              <li>
+                <div class="testimonial-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                  <div class="cd-author">
+                    <ul class="cd-author-info">
+                      <li>Lorem</li>
+                    </ul>
                   </div>
-        				</li>
-        				<li>
-                  <div class="testimonial-content">
-        						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        						<div class="cd-author">
-        							<ul class="cd-author-info">
-        								<li>Lorem</li>
-        							</ul>
-        						</div>
-        					</div>
-        				</li>
-        			</ul>
-        		</div>
-        		<!-- cd-testimonials -->
+                </div>
+              </li>
+              <li>
+                <div class="testimonial-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                  <div class="cd-author">
+                    <ul class="cd-author-info">
+                      <li>Lorem</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="testimonial-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                  <div class="cd-author">
+                    <ul class="cd-author-info">
+                      <li>Lorem</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- cd-testimonials -->
 
 
+        </div>
       </div>
-      </div> <!-- this closes the second column -->
+      <!-- this closes the second column -->
 
 
+    </div>
   </div>
+
+  <!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
+  <div class="bg-beige padded-8 margin-top link-menu" id="gallery">
+
+    {% if page.language == 'es' %}
+
+    <h1>Galería</h1>
+    <p>Selecciona</p>
+    <nav id="portfolio-filter">
+      <li><a href="" id="all" class="active">Todas</a> | </li>
+      <li><a href="" id="habitaciones">Habitaciones</a> | </li>
+      <li><a href="" id="desayuno">Desayuno</a> | </li>
+      <li><a href="" id="sala">Sala</a> | </li>
+      <li><a href="" id="entrada">Entrada</a> | </li>
+      <li><a href="" id="terraza">Terraza</a></li>
+    </nav>
+
+    {% elsif page.language == 'en' %}
+
+    <h1>Galería</h1>
+    <p>Selecciona</p>
+    <nav id="portfolio-filter">
+      <li><a href="" id="all" class="active">All</a> | </li>
+      <li><a href="" id="habitaciones">Rooms</a> | </li>
+      <li><a href="" id="desayuno">Breakfast</a> | </li>
+      <li><a href="" id="sala">Living Room</a> | </li>
+      <li><a href="" id="entrada">Reception</a> | </li>
+      <li><a href="" id="terraza">Terrace</a></li>
+    </nav>
+
+    {% elsif page.language =='fr' %}
+
+    <h1>Galería</h1>
+    <p>Selecciona</p>
+    <nav id="portfolio-filter">
+      <li><a href="" id="all" class="active">Toutes</a> | </li>
+      <li><a href="" id="habitaciones">Chambres</a> | </li>
+      <li><a href="" id="desayuno">Petit Déjenuer</a> | </li>
+      <li><a href="" id="sala">Salon</a> | </li>
+      <li><a href="" id="entrada">Réception</a> | </li>
+      <li><a href="" id="terraza">Terrasse</a></li>
+    </nav>
+
+    {% endif %}
+
+    <!-- - - - - - - - - - - grid - - - - - - - - - - -  -->
+
+    <div class="grid gallery" id="portfolio-grid">
+      {% for item in site.data.gallery %}
+      <div class="col-4_sm-6_xs-12 filterable-item {{item.category}} all">
+        <img src="{{item.image_path}}" alt="{{item.image_description}}">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</section>
+
+
+<!-- - - - - - - - - - - INSTAGRAM WIDGET - - - - - - - - - -  -->
+<section class="bg-teal">
+  <div class="padded-8">
+
+    {% if page.language == 'es' %}
+    <h2>Sigue a Casa Mathilda</h2> {% elsif page.language == 'en' %}
+    <h2>Follow Casa Mathilda</h2> {% elsif page.language == 'fr' %}
+    <h2>Sigue a Casa Mathilda</h2> {% endif %}
+
+    <div class="button-1 button-ochre button-insta">
+      <a href="http://instagram.com/casamathilda" target="_blank">Instagram <img src="/images/right-arrow.svg" alt="right arrow"></a>
+    </div>
+  </div>
+  <div>
+    <!-- SnapWidget -->
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/557615" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+  </div>
+
+  <!-- - - - - - - - - - - SECTION: CONTACT - - - - - - - - - -  -->
+  <div class="grid-middle-spaceBetween" id="contact">
+    <div class="col-6_md-7_xs-12 padded-8">
+      <h1>{{page.contact-title}}</h1>
+      <div>
+        <p class="bump-right p-bold">{{page.contact-phone}}</p>
+        <p class="bump-right p-bold">{{page.contact-email}}</p>
+      </div>
+      {{page.contact_html }}
+      <form method="" action="">
+        <!-- <label for="firstname" class="mob-show">Tu nombre</label> -->
+
+        <input type="firstname" name="firstname" placeholder="{{page.contact-name-placeholder}}" required>
+        <!-- <label for="email" class="mob-show">Tu email</label> -->
+        <input type="email" name="email" placeholder="{{page.contact-email-placeholder}}" required>
+
+        <textarea name="mensaje" form="textarea" placeholder="{{page.contact-message-placeholder}}"></textarea>
+
+        <!-- <label for="comment" class="mob-show">Mensaje</label> -->
+        <div class="align-center button-2">
+          <input type="submit" value="{{page.contact-send-button}}"></input>
+        </div>
+      </form>
+    </div>
+    <div class="col-4_md-5_xs-12 address-box padded-5">
+      <h2 class="align-center">{{page.address-title}}</h2>
+      <hr>
+      <p class="p-bold align-center"> {{page.address}}</p>
+      <p class="p-bold align-center"> {{page.city}}</p>
+
+      {{page.directions_html}}
+    </div>
+  </div>
+</section>
+
+<!-- normally we wouldn't set a fixed height on a div, but since the only element inside the container already has a fixed height, this ensures there is no gap around the map -->
+<div style="height:450px">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.9479093214813!2d2.161464915383106!3d41.39693760336602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a294be90cebf%3A0xe80d18c953205613!2sCasa+Mathilda+%7C+Barcelona!5e0!3m2!1sen!2sid!4v1532076689863"
+    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
-    <!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
-    <div class="bg-beige padded-8 margin-top link-menu" id="gallery">
-
-      {% if page.language == 'es' %}
-
-        <h1>Galería</h1>
-        <p>Selecciona</p>
-        <nav id="portfolio-filter">
-          <li><a href="" id="all" class="active">Todas</a> | </li>
-          <li><a href="" id="habitaciones">Habitaciones</a> | </li>
-          <li><a href="" id="desayuno">Desayuno</a> | </li>
-          <li><a href="" id="sala">Sala</a> | </li>
-          <li><a href="" id="entrada">Entrada</a> | </li>
-          <li><a href="" id="terraza">Terraza</a></li>
-        </nav>
-
-      {% elsif page.language == 'en' %}
-
-        <h1>Galería</h1>
-        <p>Selecciona</p>
-        <nav id="portfolio-filter">
-          <li><a href="" id="all" class="active">All</a> | </li>
-          <li><a href="" id="habitaciones">Rooms</a> | </li>
-          <li><a href="" id="desayuno">Breakfast</a> | </li>
-          <li><a href="" id="sala">Living Room</a> | </li>
-          <li><a href="" id="entrada">Reception</a> | </li>
-          <li><a href="" id="terraza">Terrace</a></li>
-        </nav>
-
-      {% elsif page.language =='fr' %}
-
-      <h1>Galería</h1>
-      <p>Selecciona</p>
-      <nav id="portfolio-filter">
-        <li><a href="" id="all" class="active">Toutes</a> | </li>
-        <li><a href="" id="habitaciones">Chambres</a> | </li>
-        <li><a href="" id="desayuno">Petit Déjenuer</a> | </li>
-        <li><a href="" id="sala">Salon</a> | </li>
-        <li><a href="" id="entrada">Réception</a> | </li>
-        <li><a href="" id="terraza">Terrasse</a></li>
-      </nav>
-
-      {% endif %}
-
-      <!-- - - - - - - - - - - grid - - - - - - - - - - -  -->
-
-      <div class="grid gallery" id="portfolio-grid">
-        {% for item in site.data.gallery %}
-        <div class="col-4_sm-6_xs-12 filterable-item {{item.category}} all" >
-          <img src="{{item.image_path}}" alt="{{item.image_description}}">
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-
-  </section>
-
-
-  <!-- - - - - - - - - - - INSTAGRAM WIDGET - - - - - - - - - -  -->
-  <section class="bg-teal">
-    <div class="padded-8">
-
-      {% if page.language == 'es' %}
-      <h2>Sigue a Casa Mathilda</h2>
-      {% elsif page.language == 'en' %}
-      <h2>Follow Casa Mathilda</h2>
-      {% elsif page.language == 'fr' %}
-      <h2>Sigue a Casa Mathilda</h2>
-      {% endif %}
-
-      <div class="button-1 button-ochre button-insta">
-        <a href="http://instagram.com/casamathilda" target="_blank">Instagram <img src="/images/right-arrow.svg" alt="right arrow"></a>
-      </div>
-    </div>
-    <div>
-      <!-- SnapWidget -->
-      <script src="https://snapwidget.com/js/snapwidget.js"></script>
-      <iframe src="https://snapwidget.com/embed/557615" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-    </div>
-
-    <!-- - - - - - - - - - - SECTION: CONTACT - - - - - - - - - -  -->
-    <div class="grid-middle-spaceBetween" id="contact">
-      <div class="col-6_md-7_xs-12 padded-8">
-        <h1>{{page.contact-title}}</h1>
-        <div>
-            <p class="bump-right p-bold">{{page.contact-phone}}</p>
-            <p class="bump-right p-bold">{{page.contact-email}}</p>
-        </div>
-        {{page.contact_html }}
-        <form method="" action="">
-          <!-- <label for="firstname" class="mob-show">Tu nombre</label> -->
-
-          <input type="firstname" name="firstname" placeholder="{{page.contact-name-placeholder}}" required>
-          <!-- <label for="email" class="mob-show">Tu email</label> -->
-          <input type="email" name="email" placeholder="{{page.contact-email-placeholder}}" required>
-
-          <textarea name="mensaje" form="textarea" placeholder="{{page.contact-message-placeholder}}"></textarea>
-
-          <!-- <label for="comment" class="mob-show">Mensaje</label> -->
-          <div class="align-center button-2">
-            <input type="submit" value="{{page.contact-send-button}}"></input>
-          </div>
-        </form>
-      </div>
-      <div class="col-4_md-5_xs-12 address-box padded-5">
-        <h2 class="align-center">{{page.address-title}}</h2>
-        <hr>
-          <p class="p-bold align-center"> {{page.address}}</p>
-          <p class="p-bold align-center"> {{page.city}}</p>
-
-        {{page.directions_html}}
-      </div>
-    </div>
-  </section>
-
-  <!-- normally we wouldn't set a fixed height on a div, but since the only element inside the container already has a fixed height, this ensures there is no gap around the map -->
-  <div style="height:450px">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.9479093214813!2d2.161464915383106!3d41.39693760336602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a294be90cebf%3A0xe80d18c953205613!2sCasa+Mathilda+%7C+Barcelona!5e0!3m2!1sen!2sid!4v1532076689863" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
-
 <!-- This is the magnificPopup Javascript -->
-  <div id="launch-popup" class="launch-popup mfp-hide mob-hide align-center">
-    <h1>Promoción de Verano</h1>
-    <h2>Explora Barcelona hasta el último rincón.</h2>
-    <p>Reserva un mínimo de 4 noches y recibe un 20% de descuento.</p>
-    <div class="button-1 button-ochre button-insta align-center">
-      <a href="#" target="_blank">Reserva Ahora<img src="/images/right-arrow.svg" alt="right arrow"></a>
-    </div>
+<div id="launch-popup" class="launch-popup mfp-hide mob-hide align-center">
+  <h1>Promoción de Verano</h1>
+  <h2>Explora Barcelona hasta el último rincón.</h2>
+  <p>Reserva un mínimo de 4 noches y recibe un 20% de descuento.</p>
+  <div class="button-1 button-ochre button-insta align-center">
+    <a href="#" target="_blank">Reserva Ahora<img src="/images/right-arrow.svg" alt="right arrow"></a>
   </div>
+</div>
 <!--End magnificPopup  -->
 
 
 <!-- This is javascript specifically for this page -->
 
 <script>
-// OLD CODE
+  // OLD CODE
   var slideIndex1 = 1;
   showRoomGallery1(slideIndex);
 
   function plusRoomGallery1(n) {
-      showRoomGallery1(slideIndex1 += n);
+    showRoomGallery1(slideIndex1 += n);
   }
+
   function showRoomGallery1(n) {
-      var i;
-      var x = document.getElementsByClassName("bg-image-room-1");
-      if (n > x.length) {slideIndex1 = 1}
-      if (n < 1) {slideIndex1 = x.length} ;
-      for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-      }
-      x[slideIndex1-1].style.display = "block";
+    var i;
+    var x = document.getElementsByClassName("bg-image-room-1");
+    if (n > x.length) {
+      slideIndex1 = 1
+    }
+    if (n < 1) {
+      slideIndex1 = x.length
+    };
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex1 - 1].style.display = "block";
 
-}
+  }
 
-// OLD CODE
+  // OLD CODE
   var slideIndex2 = 1;
   showRoomGallery2(slideIndex2);
 
   function plusRoomGallery2(n) {
-      showRoomGallery2(slideIndex2 += n);
+    showRoomGallery2(slideIndex2 += n);
   }
+
   function showRoomGallery2(n) {
-      var i;
-      var x = document.getElementsByClassName("bg-image-room-2");
-      if (n > x.length) {slideIndex2 = 1}
-      if (n < 1) {slideIndex2 = x.length} ;
-      for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-      }
-      x[slideIndex2-1].style.display = "block";
+    var i;
+    var x = document.getElementsByClassName("bg-image-room-2");
+    if (n > x.length) {
+      slideIndex2 = 1
+    }
+    if (n < 1) {
+      slideIndex2 = x.length
+    };
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex2 - 1].style.display = "block";
 
-}
-// Slide 2
+  }
+  // Slide 2
 
 
 
-// OLD CODE
+  // OLD CODE
   var slideIndex3 = 1;
   showRoomGallery3(slideIndex3);
 
   function plusRoomGallery3(n) {
-      showRoomGallery3(slideIndex3 += n);
+    showRoomGallery3(slideIndex3 += n);
   }
+
   function showRoomGallery3(n) {
-      var i;
-      var x = document.getElementsByClassName("bg-image-room-3");
-      if (n > x.length) {slideIndex3 = 1}
-      if (n < 1) {slideIndex3 = x.length} ;
-      for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-      }
-      x[slideIndex3-1].style.display = "block";
+    var i;
+    var x = document.getElementsByClassName("bg-image-room-3");
+    if (n > x.length) {
+      slideIndex3 = 1
+    }
+    if (n < 1) {
+      slideIndex3 = x.length
+    };
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex3 - 1].style.display = "block";
 
-}
-
+  }
 </script>
 
 <script>
   // This is the automatic background slider on the homepage
 
- var slideIndex = 0;
- carousel();
+  var slideIndex = 0;
+  carousel();
 
- function carousel() {
-     var i;
-     var x = document.getElementsByClassName("bg-image-slide");
-     for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-     }
-     slideIndex++;
-     if (slideIndex > x.length) {slideIndex = 1}
-     x[slideIndex-1].style.display = "block";
-     setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-// end background slides
-
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("bg-image-slide");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {
+      slideIndex = 1
+    }
+    x[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  // end background slides
 </script>

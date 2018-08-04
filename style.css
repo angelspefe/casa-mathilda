@@ -64,6 +64,10 @@ header {
   padding-top: 10%;
 }
 
+.padded-top-30 {
+  padding-top:30%;
+}
+
 .padded-left {
   padding-left: 8%
 }
