@@ -45,11 +45,11 @@ header {
 }
 
 .padded-10 {
-  padding: 10%;
+  padding: 10% !important;
 }
 
 .padded-8 {
-  padding: 8%;
+  padding: 8% !important;
 }
 
 .padded-5 {
@@ -1177,6 +1177,7 @@ ul.cd-author-info li span {
 
   .blog-box {
     padding:15%;
+    right:0;
   }
 }
 

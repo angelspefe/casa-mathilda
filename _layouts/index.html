@@ -1,4 +1,6 @@
---- layout: default ---
+---
+layout: default
+---
 
 <!-- Intro Banner -->
 <div class="bg-image-slide bg-slide-1">
@@ -102,27 +104,19 @@
 
           </div>
           <div class="col-7_sm-12 padded-left">
-
             {% if page.language == 'en' %} {{item.room-features-en_html}}
-
             <div class="button-left button-ochre left mob-show">
               <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
-
             {% elsif page.language == 'fr' %} {{item.room-features-fr_html}}
-
             <div class="button-left button-ochre left mob-show">
               <a href="#"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
-
             {% else %} {{item.room-features-es_html}}
-
             <div class="button-left button-ochre left mob-show">
               <a href="#"> Reserva <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
-
             {% endif %}
-
 
           </div>
           <span class="close-icon" id="hide-{{item.number}}"><img src="/images/letter-x.svg"></span>
@@ -139,7 +133,7 @@
 
 <!-- - - - - - - - - - - SECTION: INFO - - - - - - - - - -  -->
 
-<!-- - - Main info & services - -  -->
+<!-- - - Main info & Services - -  -->
 
 <section class="bg-image bg-box">
   <div class="grid-middle-spaceBetween bg-beige" id="info">
@@ -329,7 +323,7 @@
 
   <!-- - - - - - - - - - - SECTION: CONTACT - - - - - - - - - -  -->
   <div class="grid-middle-spaceBetween" id="contact">
-    <div class="col-6_md-7_xs-12 padded-8">
+    <div class="col-6_md-6_xs-12 padded-8">
       <h1>{{page.contact-title}}</h1>
       <div>
         <p class="bump-right p-bold">{{page.contact-phone}}</p>
