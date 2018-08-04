@@ -76,6 +76,10 @@ header {
   padding-right: 8%;
 }
 
+.padded-right-0{
+  padding-right:0!important;
+}
+
 .padded-bottom {
   padding-bottom: 10%;
 }
@@ -116,6 +120,7 @@ header {
 .tall {
   min-height: 100vh;
 }
+
 
 /*----------- Backgrounds & Images -----------*/
 
@@ -714,7 +719,7 @@ hr {
 /*----------- News Page -----------*/
 
 .news .padded {
-  padding: 0 15% 0 5%;
+  padding: 0 15% 0 4%;
 }
 
 .news .padded-bottom {
@@ -1131,10 +1136,19 @@ ul.cd-author-info li span {
 
 /*----------- RESPONSIVE DESIGN - MEDIA QUERIES -----------*/
 
-@media(max-width:768px) {
+@media(max-width:1024px) {
   .news .mob-hide {
     display: none;
   }
+
+  .news .padded {
+    padding: 0 0 0 4%;
+  }
+
+}
+
+@media(max-width:768px) {
+
   section {
     padding: 7px 0px 0px 100px;
   }
@@ -1179,9 +1193,7 @@ ul.cd-author-info li span {
     padding:15%;
     right:0;
   }
-}
-
-/* this closes the media query  */
+} /* this closes the media query  */
 
 @media(max-width:576px) {
   .mob-nav {
@@ -1239,9 +1251,7 @@ ul.cd-author-info li span {
   #portfolio-filter li {
     padding-bottom: 0.5rem;
   }
-}
-
-/* this closes the media query  */
+} /* this closes the media query  */
 
 @media(max-width:375px) {
   .book-button {
@@ -1275,9 +1285,7 @@ ul.cd-author-info li span {
   .bg-image-slide .transbox {
     max-width: 80%;
   }
-}
-
-/* this closes the media query  */
+} /* this closes the media query  */
 
 @media(max-width:320px) {
   footer {
@@ -1289,6 +1297,4 @@ ul.cd-author-info li span {
   .banner {
     margin-top: 46vh;
   }
-}
-
-/* this closes the media query  */
+}/* this closes the media query  */

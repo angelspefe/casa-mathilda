@@ -1,40 +1,7 @@
 ---
-title: News | Casa Mathilda
+title: News
+layout: news
 language: es
-layout: default
+heading: News
+intro-paragraph: En Casa Mathilda pasa de todo, y queremos compartirlo contigo.
 ---
-
-<!-- - - - - - - - - - - HEADER - - - - - - - - - -  -->
-<div class="body-content">
-  <section class="bg-beige margin-top">
-      <div class="padded-top">
-        <h1>News</h1>
-        <p class="narrow-width bump-right p-bold">En Casa Mathilda pasa de todo, y queremos compartirlo contigo.</p>
-      </div>
-
-      {% for post in site.posts %}
-      <div class="news grid padded-8">
-        <div class="col-1 mob-hide">
-          <p class="month">{{post.date | date: "%b" }}</p>
-          <p class="date">{{post.date | date: "%d"}}</p>
-        </div>
-        <div class="col-4_sm-5_xs-12">
-            <a href="{{post.url}}"><img src="{{post.featured_image}}" alt="{{post.title}}"></a>
-        </div>
-        <div class="col-7_sm-7_xs-12 padded">
-          <h3 class="align-center">{{post.title}}</h3>
-          <p>{{post.blurb}}</p>
-          <div class="align-center button-2"><a href="{{post.url}}">Leer más</a></div>
-        </div>
-      </div>
-      {% endfor %}
-  <!-- - - - - - - - - - - Bottom Button - - - - - - - - - -  -->
-      <!-- <div class="button-1 align-center margin-top">
-        <a href="#">News Anteriores
-          <img src="/images/right-arrow.svg" alt="right arrow">
-        </a>
-
-      </div> -->
-
-    </section>
-</div>
