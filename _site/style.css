@@ -184,13 +184,15 @@ h2 {
   padding-bottom: 0;
 }
 
-.link-menu a {
+.link-menu a,
+.post_navigation a {
   text-transform: uppercase;
   font-size: 0.9rem;
   text-decoration: none;
 }
 
-.link-menu a:hover {
+.link-menu a:hover,
+.post_navigation a:hover {
   color: #DEBD31;
   transition: 0.7s;
 }
@@ -788,6 +790,11 @@ hr {
 .hidden {
   display: none;
 }
+
+.post_navigation img {
+  max-width:15px;
+}
+
 
 /*----------- MOBILE NAVIGATION / BURGER MENU -----------*/
 
