@@ -940,6 +940,11 @@ hr {
     width: 90%;
     background: rgba(255, 255, 255, 0.95);
   }
+
+  .bg-image-slide {
+    background-attachment: scroll;
+  }
+
   .bg-image-slide .transbox {
     top: 70vh;
   }
