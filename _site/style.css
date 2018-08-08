@@ -590,6 +590,10 @@ footer nav a:hover, .copyright a:hover {
   margin:auto;
 }
 
+.mfp-close-btn-in .mfp-close {
+  color:#fff;
+}
+
 /*----------- BUTTONS -----------*/
 
 .button-1, .button-2 {
