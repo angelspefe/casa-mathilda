@@ -177,6 +177,17 @@ h5 {
   font-size: 0.9rem;
 }
 
+#contact a {
+  color: #DEBD31;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #fff;
+  transition: 0.7s;
+}
+
 .p-bold, .p-bold p {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
@@ -220,6 +231,8 @@ h5 {
   color: #DEBD31;
   transition: 0.7s;
 }
+
+
 
 /*----------- BACKGROUNDS & IMAGES -----------*/
 
