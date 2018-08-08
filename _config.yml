@@ -6,3 +6,19 @@ _options:
     hidden: true
   rooms-title-2:
     hidden: true
+  news-title:
+    hidden: true
+  contact-name-placeholder:
+    hidden: true
+  contact-email-placeholder:
+    hidden: true
+  contact-message-placeholder:
+    hidden: true
+  contact-send-button:
+    hidden: true
+  address-title:
+    hidden: true
+  address:
+    hidden: true
+  city:
+    hidden: true

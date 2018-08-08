@@ -30,19 +30,19 @@ layout: default
   <div class="padded-left padded-2 link-menu" id="rooms">
     <p>{{page.rooms-title-2}}</p>
 
-    {% if page._language == 'es' %}
+    {% if page.language == 'es' %}
     <nav id="rooms-filter">
       <li><a class="active" href="#" id="terraza">Terraza</a> | </li>
       <li><a href="#" id="interiores">Interiores</a> | </li>
       <li><a href="#" id="a-la-calle">A la Calle</a></li>
     </nav>
-    {% elsif page._language == 'en' %}
+    {% elsif page.language == 'en' %}
     <nav id="rooms-filter">
       <li><a class="active" href="#" id="terraza">Terrace</a> | </li>
       <li><a href="#" id="interiores">Interior</a> | </li>
       <li><a href="#" id="a-la-calle">Street</a></li>
     </nav>
-    {% elsif page._language == 'fr' %}
+    {% elsif page.language == 'fr' %}
     <nav id="rooms-filter">
       <li><a class="active" href="#" id="terraza">Terrasse</a> | </li>
       <li><a href="#" id="interiores">Intérieurs</a> | </li>
@@ -73,7 +73,7 @@ layout: default
       <div class="button-1 button-ochre align-center" id="show-{{item.number}}">
         <a href="#popup-room-details-{{item.number}}" class="open-room-details-{{item.number}}">
           <!-- this changes the text within the anchor link based on the language -->
-          {% if page._language == 'es' %} Detalles {% elsif page._language == 'en' %} Details {% elsif page._language == 'fr' %} Détails {% endif %}
+          {% if page.language == 'es' %} Detalles {% elsif page.language == 'en' %} Details {% elsif page.language == 'fr' %} Détails {% endif %}
           <img src="/images/right-arrow.svg" alt="right arrow">
         </a>
       </div>
@@ -82,13 +82,13 @@ layout: default
         <div class="grid">
           <div class="col-5_sm-12">
 
-            {% if page._language == 'en' %}
+            {% if page.language == 'en' %}
             <h2> {{item.room-details-title-en}} </h2>
             <p> {{item.room-details-description-en}}</p>
             <div class="button-left button-ochre left mob-hide">
               <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
-            {% elsif page._language == 'fr' %}
+            {% elsif page.language == 'fr' %}
             <h2> {{item.room-details-title-fr}} </h2>
             <p> {{item.room-details-description-fr}}</p>
             <div class="button-left button-ochre left mob-hide">
@@ -104,11 +104,11 @@ layout: default
 
           </div>
           <div class="col-7_sm-12 padded-left">
-            {% if page._language == 'en' %} {{item.room-features-en_html}}
+            {% if page.language == 'en' %} {{item.room-features-en_html}}
             <div class="button-left button-ochre left mob-show">
               <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
-            {% elsif page._language == 'fr' %} {{item.room-features-fr_html}}
+            {% elsif page.language == 'fr' %} {{item.room-features-fr_html}}
             <div class="button-left button-ochre left mob-show">
               <a href="#"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
@@ -150,11 +150,11 @@ layout: default
 <!-- - - - - - - - - - - Who is Mathilda - - - - - - - - - -  -->
 
       <!-- this is where you change the image for each language -->
-      {% if page._language == 'es' %}
+      {% if page.language == 'es' %}
       <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-esp.png')" ;>
-        {% elsif page._language == 'en' %}
+        {% elsif page.language == 'en' %}
         <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-eng.png')" ;>
-          {% elsif page._language == 'fr' %}
+          {% elsif page.language == 'fr' %}
           <div class="postal-mathilda" style="background-image:url('/images/postal-mathilda-fr.png')" ;>
             {% endif %}
 
@@ -185,17 +185,17 @@ layout: default
             <p>{{post.blurb}}</p>
 
             <div class="align-center button-2">
-              {% if page._language == 'es' %}
-              <a href="{{post.url}}">Leer más</a> {% elsif page._language == 'en' %}
-              <a href="{{post.url}}">Read More</a> {% elsif page._language == 'fr' %}
+              {% if page.language == 'es' %}
+              <a href="{{post.url}}">Leer más</a> {% elsif page.language == 'en' %}
+              <a href="{{post.url}}">Read More</a> {% elsif page.language == 'fr' %}
               <a href="{{post.url}}">En Savoir Plus</a> {% endif %}
             </div>
             {% endfor %}
           </div>
           <div class="button-1 align-center">
-            {% if page._language == 'es' %}
-            <a href="/news">Todas las News <img src="/images/right-arrow.svg" alt="right arrow"></a> {% elsif page._language == 'en' %}
-            <a href="/news">View All News <img src="/images/right-arrow.svg" alt="right arrow"></a> {% elsif page._language == 'fr' %}
+            {% if page.language == 'es' %}
+            <a href="/news">Todas las News <img src="/images/right-arrow.svg" alt="right arrow"></a> {% elsif page.language == 'en' %}
+            <a href="/news">View All News <img src="/images/right-arrow.svg" alt="right arrow"></a> {% elsif page.language == 'fr' %}
             <a href="/news">Toutes les News <img src="/images/right-arrow.svg" alt="right arrow"></a> {% endif %}
           </div>
 
@@ -213,7 +213,7 @@ layout: default
 <!-- - - - - - - - - - - Gallery Selector - - - - - - - - - - -  -->
   <div class="bg-beige padded-8 margin-top link-menu" id="gallery">
 
-    {% if page._language == 'es' %}
+    {% if page.language == 'es' %}
 
     <h1>Galería</h1>
     <p>Selecciona</p>
@@ -226,7 +226,7 @@ layout: default
       <li><a href="" id="terraza">Terraza</a></li>
     </nav>
 
-    {% elsif page._language == 'en' %}
+    {% elsif page.language == 'en' %}
 
     <h1>Galería</h1>
     <p>Selecciona</p>
@@ -239,7 +239,7 @@ layout: default
       <li><a href="" id="terraza">Terrace</a></li>
     </nav>
 
-    {% elsif page._language =='fr' %}
+    {% elsif page.language =='fr' %}
 
     <h1>Galería</h1>
     <p>Selecciona</p>
@@ -271,9 +271,9 @@ layout: default
 <section class="bg-teal">
   <div class="padded-8">
 
-    {% if page._language == 'es' %}
-    <h2>Sigue a Casa Mathilda</h2> {% elsif page._language == 'en' %}
-    <h2>Follow Casa Mathilda</h2> {% elsif page._language == 'fr' %}
+    {% if page.language == 'es' %}
+    <h2>Sigue a Casa Mathilda</h2> {% elsif page.language == 'en' %}
+    <h2>Follow Casa Mathilda</h2> {% elsif page.language == 'fr' %}
     <h2>Sigue a Casa Mathilda</h2> {% endif %}
 
     <div class="button-1 button-ochre button-insta">
