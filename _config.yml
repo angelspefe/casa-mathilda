@@ -24,3 +24,5 @@ _options:
     hidden: true
   number:
     hidden: true
+  room-type-class:
+    hidden: true
