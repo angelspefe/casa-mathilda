@@ -22,7 +22,5 @@ _options:
     hidden: true
   city:
     hidden: true
-defaults:
-  - type: 'index.html'
-    values:
-      _hide_title: true
+  number:
+    hidden: true
