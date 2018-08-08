@@ -568,6 +568,14 @@ footer nav a:hover, .copyright a:hover {
   background-attachment: scroll;
 }
 
+.launch-popup h2, .launch-popup p {
+  color: #fff;
+}
+
+.launch-popup div {
+  text-align: center;
+}
+
 /*----------- BUTTONS -----------*/
 
 .button-1, .button-2 {
