@@ -1,4 +1,4 @@
-<!-- - - - - - - sidebar navigation  - - - - - - - - - --->
+<!-- - - - - - - - - - - SIDEBAR NAVIGATION - - - - - - - - - -  -->
 <div class="sidebar mob-hide">
   <nav>
 
@@ -9,7 +9,7 @@
     <li><a href="/en/#gallery">Gallery</a></li>
     <li><a href="/en/#contact" class="light">Contact</a></li>
     <li><a href="/en/press" class="light">Press</a></li>
-    <li><a href="/news" class="light">News</a></li>
+    <!-- <li><a href="/en/news" class="light">News</a></li> -->
 
     {% elsif page.language == 'fr' %}
 
@@ -18,9 +18,10 @@
     <li><a href="/fr/#gallery">Galerie</a></li>
     <li><a href="/fr/#contact" class="light">Contact</a></li>
     <li><a href="/fr/press" class="light">Presse</a></li>
-    <li><a href="/news" class="light">News</a></li>
+    <!-- <li><a href="/fr/news" class="light">News</a></li> -->
 
-    {% else %} <!-- spanish -->
+    {% else %}
+    <!-- spanish -->
 
     <li><a href="/#rooms">Habitaciones</a></li>
     <li><a href="/#info">Info</a></li>
@@ -32,6 +33,7 @@
     {% endif %}
   </nav>
 
+<!-- - - - - - - - - - - Language Dropdown - - - - - - - - - -  -->
   <div class="dropdown">
 
     {% if page.language == 'en' %}
@@ -54,7 +56,8 @@
       <a href="/" data-lang="es">ES</a>
     </div>
 
-    {% else %} <!-- spanish -->
+    {% else %}
+    <!-- spanish -->
 
     <button class="dropbtn">
       ES <img class="down-arrow" src="/images/down-arrow.svg" alt="down arrow">
@@ -70,8 +73,7 @@
 
 </div>
 
-<!- - - - - - - -  MOBILE NAVIGATION  - - - - - - - - -->
-
+<!-- - - - - - - - - - - MOBILE NAVIGATION / BURGER MENU - - - - - - - - - -  -->
 <nav class="mob-nav">
   <a href="/index.html"><img src="/images/logo-casa-mathilda.png" alt="casa mathilda logo" class="logo"></a>
   <div class="burger-button">
@@ -82,36 +84,35 @@
 
   <div class="burger-menu">
 
-    <div class="mob-lang" >
+    <div class="mob-lang">
 
-          {% if page.language == 'en' %}
+      {% if page.language == 'en' %}
 
       <ul>
-      	<li><a href="#">  EN  </a></li>
+        <li><a href="#">  EN  </a></li>
         <li><a href="/es/" data-lang="es">  ES  </a></li>
         <li><a href="/fr/" data-lang="fr">  FR  </a></li>
       </ul>
 
-              {% elsif page.language == 'fr' %}
+      {% elsif page.language == 'fr' %}
 
       <ul>
-      	<li><a href="#">  FR  </a></li>
+        <li><a href="#">  FR  </a></li>
         <li><a href="/es/" data-lang="es">  ES  </a></li>
         <li><a href="/en/" data-lang="en">  EN</a></li>
       </ul>
 
-              {% else %} <!-- spanish -->
+      {% else %}
 
       <ul>
-      	<li><a href="#">  ES  </a></li>
+        <li><a href="#">  ES  </a></li>
         <li><a href="/en/" data-lang="en">  EN  </a></li>
         <li><a href="/fr/" data-lang="fr">  FR  </a></li>
       </ul>
 
-              {% endif %}
+      {% endif %}
 
-      </div>
-
+    </div>
 
     <ul>
 
@@ -133,7 +134,7 @@
       <li><a href="/fr/press" class="light">Presse</a></li>
       <li><a href="/news" class="light">News</a></li>
 
-      {% else %} <!-- spanish -->
+      {% else %}
 
       <li><a href="/#rooms">Habitaciones</a></li>
       <li><a href="/#info">Info</a></li>

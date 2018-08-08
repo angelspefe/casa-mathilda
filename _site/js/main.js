@@ -1,6 +1,6 @@
 // has jqurey as a dependcy
 
-$(document).ready(function(){
+$(document).ready(function() {
   /* filtering */
 
   $('nav#portfolio-filter a').click(function(e) {
@@ -15,47 +15,47 @@ $(document).ready(function(){
     var filterVal = $(this).attr('id');
 
     $('#portfolio-grid .filterable-item').each(function() {
-        if(filterVal == 'all'){
-          $(this).removeClass('hidden');
-        }else{
-          if(!$(this).hasClass(filterVal)) {
-            $(this).addClass('hidden'); // hide those that don't have the filter
-          }else{
-            $(this).removeClass('hidden'); // show those that do have the filter
-          }
-    };
-    });
-
-    });
-
-    /* filtering */
-
-    $('nav#rooms-filter a').click(function(e) {
-      e.preventDefault();
-      console.log("We clicked it");
-
-      /* make this <li> class active and remove class 'active' from any other <li>s */
-      $('nav#rooms-filter .active').removeClass('active');
-      $(this).addClass('active');
-
-      /* get the name of the cateory from this link */
-      var filterVal = $(this).attr('id');
-
-      $('#rooms-grid .filterable-item').each(function() {
-          if(filterVal == 'all'){
-            $(this).removeClass('hidden');
-          }else{
-            if(!$(this).hasClass(filterVal)) {
-              $(this).addClass('hidden'); // hide those that don't have the filter
-            }else{
-              $(this).removeClass('hidden'); // show those that do have the filter
-            }
+      if (filterVal == 'all') {
+        $(this).removeClass('hidden');
+      } else {
+        if (!$(this).hasClass(filterVal)) {
+          $(this).addClass('hidden'); // hide those that don't have the filter
+        } else {
+          $(this).removeClass('hidden'); // show those that do have the filter
+        }
       };
-      });
+    });
 
-      });
+  });
 
-    // end filterable gallery
+  /* filtering */
+
+  $('nav#rooms-filter a').click(function(e) {
+    e.preventDefault();
+    console.log("We clicked it");
+
+    /* make this <li> class active and remove class 'active' from any other <li>s */
+    $('nav#rooms-filter .active').removeClass('active');
+    $(this).addClass('active');
+
+    /* get the name of the cateory from this link */
+    var filterVal = $(this).attr('id');
+
+    $('#rooms-grid .filterable-item').each(function() {
+      if (filterVal == 'all') {
+        $(this).removeClass('hidden');
+      } else {
+        if (!$(this).hasClass(filterVal)) {
+          $(this).addClass('hidden'); // hide those that don't have the filter
+        } else {
+          $(this).removeClass('hidden'); // show those that do have the filter
+        }
+      };
+    });
+
+  });
+
+  // end filterable gallery
 
 
 });
@@ -73,8 +73,7 @@ $('a[href*="#"]')
   .click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-      &&
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
@@ -94,7 +93,7 @@ $('a[href*="#"]')
           if ($target.is(":focus")) { // Checking if the target was focused
             return false;
           } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
           };
         });
@@ -102,77 +101,76 @@ $('a[href*="#"]')
     }
   });
 
-  // end smooth scroll
+// end smooth scroll
 
 
-  // magnific popup
+// magnific popup
 
-  // $(document).ready(function() {
-  //   $('.open-room-details-1, .open-room-details-2, .open-room-details-3').magnificPopup({
-  //     type:'inline',
-  //     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-  //   });
-  // });
+// $(document).ready(function() {
+//   $('.open-room-details-1, .open-room-details-2, .open-room-details-3').magnificPopup({
+//     type:'inline',
+//     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+//   });
+// });
 
 
-  $(document).ready(function() {
-    $(window).on('load', function() {
-      var now, lastDatePopupShowed;
-      now = new Date();
+$(document).ready(function() {
+  $(window).on('load', function() {
+    var now, lastDatePopupShowed;
+    now = new Date();
 
-      if (localStorage.getItem('lastDatePopupShowed') !== null) {
-        lastDatePopupShowed = new Date(parseInt(localStorage.getItem('lastDatePopupShowed')));
-      }
+    if (localStorage.getItem('lastDatePopupShowed') !== null) {
+      lastDatePopupShowed = new Date(parseInt(localStorage.getItem('lastDatePopupShowed')));
+    }
 
-      if (((now - lastDatePopupShowed) >= (15 * 86400000)) || !lastDatePopupShowed) {
-        $.magnificPopup.open({
-          items: { src: '#launch-popup' },
-          type: 'inline'
-        }, 0);
+    if (((now - lastDatePopupShowed) >= (15 * 86400000)) || !lastDatePopupShowed) {
+      $.magnificPopup.open({
+        items: {
+          src: '#launch-popup'
+        },
+        type: 'inline'
+      }, 0);
 
-        localStorage.setItem('lastDatePopupShowed', now);
-      }
-    });
+      localStorage.setItem('lastDatePopupShowed', now);
+    }
   });
+});
 
 // This creates a funtion for the rooms details sections where we can show a section by clicking on the show button and hide it with the hide button
 
-  $(document).ready(function(){
-    $("#hide-1").click(function(){
-        $("#popup-room-details-1").hide();
-    });
-    $("#show-1").click(function(){
-        $("#popup-room-details-1").show();
-    });
-    $("#hide-2").click(function(){
-        $("#popup-room-details-2").hide();
-    });
-    $("#show-2").click(function(){
-        $("#popup-room-details-2").show();
-    });
-    $("#hide-3").click(function(){
-        $("#popup-room-details-3").hide();
-    });
-    $("#show-3").click(function(){
-        $("#popup-room-details-3").show();
-    });
+$(document).ready(function() {
+  $("#hide-1").click(function() {
+    $("#popup-room-details-1").hide();
+  });
+  $("#show-1").click(function() {
+    $("#popup-room-details-1").show();
+  });
+  $("#hide-2").click(function() {
+    $("#popup-room-details-2").hide();
+  });
+  $("#show-2").click(function() {
+    $("#popup-room-details-2").show();
+  });
+  $("#hide-3").click(function() {
+    $("#popup-room-details-3").hide();
+  });
+  $("#show-3").click(function() {
+    $("#popup-room-details-3").show();
+  });
 });
-
-
-
 
 
 
 // Slide 2
 
-  // This creates a function that allows a button to take you back to the last page you visited, to use it create a button like this <button onclick="goBack()">Go Back</button>
+// This creates a function that allows a button to take you back to the last page you visited, to use it create a button like this <button onclick="goBack()">Go Back</button>
 
-  function goBack() {
-    window.history.back();
-  }
+function goBack() {
+  window.history.back();
+}
 
 // - - - - - - - - BURGER MENU
-$(".burger-button").click(function(){
+$(".burger-button").click(function() {
   $(".burger-button").toggleClass("active");
   $(".burger-menu").slideToggle("slow");
 });

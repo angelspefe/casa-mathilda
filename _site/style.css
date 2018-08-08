@@ -1,4 +1,4 @@
-/*----------- CSS Reset -----------*/
+/*----------- CSS RESET -----------*/
 
 * {
   margin: 0;
@@ -13,13 +13,11 @@
   box-sizing: border-box;
 }
 
-/*----------- Universal Styles -----------*/
+/*----------- UNIVERSAL STYLES -----------*/
 
 body {
   font-family: 'Raleway', sans-serif;
 }
-
-/* Eg padding on your sections, utility classes, etc. */
 
 header, section, .body-content {
   padding: 0 0 0 100px;
@@ -30,10 +28,11 @@ footer {
 }
 
 header {
-  height: 0; /* this fixes a bug where there is a small gap in between the slider and the top of the page */
+  height: 0;
+  /* this fixes a bug where there is a small gap in between the slider and the top of the page */
 }
 
-/*----------- Paddings & Positionings -----------*/
+/*----------- Hiding Mobile Navigation -----------*/
 
 .mob-nav {
   display: none;
@@ -43,12 +42,14 @@ header {
   display: none;
 }
 
+/*----------- PADDINGS & POSITIONINGS -----------*/
+
 .padded-10 {
-  padding: 10%;
+  padding: 10% !important;
 }
 
 .padded-8 {
-  padding: 8%;
+  padding: 8% !important;
 }
 
 .padded-5 {
@@ -63,8 +64,24 @@ header {
   padding-top: 10%;
 }
 
+.padded-top-30 {
+  padding-top:30%;
+}
+
 .padded-left {
   padding-left: 8%
+}
+
+.padded-right {
+  padding-right: 8%;
+}
+
+.padded-right-0{
+  padding-right:0!important;
+}
+
+.padded-left-0 {
+  padding-left:0!important;
 }
 
 .padded-bottom {
@@ -77,6 +94,10 @@ header {
 
 .margin-top {
   margin-top: 10%;
+}
+
+.margin-top-5 {
+  margin-top: 5%;
 }
 
 .margin-bottom {
@@ -101,9 +122,82 @@ header {
 }
 
 .tall {
-  min-height:100vh;
+  min-height: 100vh;
 }
-/*----------- Backgrounds & Images -----------*/
+
+/*----------- TYPOGRAPHY -----------*/
+
+h1, h2, h3, a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color: #546461;
+  line-height: 1.6;
+  padding-bottom: 1rem;
+}
+
+p, li {
+  font-family: 'Raleway', sans-serif;
+  color: #546461;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.p-bold, .p-bold p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.bg-teal p, .bg-teal h1, .bg-teal h2, .bg-teal h3 {
+  color: #fff;
+}
+
+.address-box p, .address-box h2 {
+  color: #546461;
+}
+
+.link-menu li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+.link-menu p {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding-bottom: 0;
+}
+
+.link-menu a,
+.post_navigation a {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.link-menu a:hover,
+.post_navigation a:hover {
+  color: #DEBD31;
+  transition: 0.7s;
+}
+
+/*----------- BACKGROUNDS & IMAGES -----------*/
 
 .bg-image {
   background-size: cover;
@@ -148,7 +242,7 @@ header {
 
 .address-box {
   background-color: #F7F5F0;
-  margin-bottom: 10%!important;
+  margin-bottom: 10% !important;
 }
 
 .bg-teal {
@@ -159,21 +253,21 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding-bottom:60%;
+  padding-bottom: 60%;
   position: relative;
 }
 
 .postal-mathilda .show-on-hover {
-    background-color: rgba(209,205,195,0.9);
-    padding: 1rem;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    opacity: 0;
-    transition: opacity 0.5s;
+  background-color: rgba(209, 205, 195, 0.9);
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
+
 .postal-mathilda .show-on-hover:hover {
   opacity: 1;
 }
@@ -182,217 +276,7 @@ header {
   padding: 2%;
 }
 
-
-/* Slider styles */
-
-.bg-image-slide {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/images/casa-mathilda-banner.jpg);
-  background-attachment: fixed;
-  min-height:100vh;
-  display:none;
-  position: relative;
-}
-
-.bg-image-slide .transbox {
-    max-width: 70%;
-    position: absolute;
-    top: 60vh;
-    right: 0;
-}
-
-.bg-slide-1 {
-  background-image: url(/images/casa-mathilda-banner-1.jpg);
-}
-.bg-slide-2 {
-  background-image: url(/images/casa-mathilda-banner-2.jpg);
-}
-.bg-slide-3 {
-  background-image: url(/images/casa-mathilda-banner-3.jpg);
-}
-
-
-/* Popup Room Details */
-
-  /* this styles the active link for the room navigation */
-#rooms-filter a,
-#portfolio-filter a {
-  padding-bottom: 0;
-}
-
-#portfolio-filter .active,
-#rooms-filter .active {
-  border-bottom: 2px solid #546461;
-}
-
-.room-details-popup {
-  position: absolute;
-  right: 0;
-  background: rgba(255,255,255,0.9);
-  padding: 4%;
-  width: auto;
-  width: 70%;
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
-  display:none;
-  z-index: 101;
-}
-
-.room-details-popup:focus {
-  outline: none; /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
-}
-
-.small-image {
-    display: inline-block;
-    width: 32%;
-}
-
-
-.room-details-popup li {
-  list-style-position: outside;
-  padding-bottom: 0.5rem;
-}
-
-.close-icon {
-  padding: 30px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  width:76px;
-}
-
-.slider-rooms [class*=bg-image-room] {
-    background-size: cover;
-    background-position:center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.room-left-button,
-.room-right-button {
-  z-index:99;
-  position: absolute;
-  border: none;
-  background-color: transparent;
-  color: white;
-  max-width: 2rem;
-}
-
-.room-left-button {
-  left: 5%;
-  top:50%;
-  transform: rotateZ(180deg);
-}
-
-.room-right-button {
-  right: 3%;
-  top:50%;
-  z-index:99;
-  position: absolute;
-  border: none;
-  background-color: transparent;
-  color: white;
-  max-width: 2rem;
-}
-
-/* Launch popup */
-
-.launch-popup {
-  position: relative;
-  background: white;
-  color: #fff;
-  padding: 10px;
-  width: auto;
-  max-width: 700px;
-  margin: 5% auto;
-}
-
-.launch-popup:focus {
-  outline: none; /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
-}
-
-.launch-popup .bg-image {
-  background-attachment: scroll;
-}
-
-/*----------- Typography -----------*/
-
-.link-menu li {
-  list-style: none;
-  display: inline-block;
-  font-size: 1.1em;
-}
-
-.link-menu p {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  padding-bottom: 0;
-}
-
-.link-menu a {
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-
-.link-menu a:hover {
-  color: #DEBD31;
-  transition: 0.7s;
-}
-
-h1, h2, h3, a {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  color: #546461;
-  line-height: 1.6;
-  padding-bottom: 1rem;
-}
-
-p, li {
-  font-family: 'Raleway', sans-serif;
-  color: #546461;
-  padding-bottom: 1rem;
-  font-weight: 500;
-  font-size: 0.8rem;
-  line-height: 1.5;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-}
-
-.p-bold,
-.p-bold p {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.light {
-  font-weight: 300;
-}
-
-.bg-teal p, .bg-teal h1, .bg-teal h2, .bg-teal h3 {
-  color: #fff;
-}
-
-.address-box p, .address-box h2 {
-  color: #546461;
-}
-
-/*----------- Navigation -----------*/
+/*----------- NAVIGATION -----------*/
 
 .sidebar {
   position: fixed;
@@ -404,14 +288,12 @@ h2 {
   z-index: 100;
 }
 
-.sidebar li,
-.mob-nav li {
+.sidebar li, .mob-nav li {
   list-style: none;
   padding-bottom: 0;
 }
 
-.sidebar a,
-.mob-nav a {
+.sidebar a, .mob-nav a {
   list-style: none;
   padding-left: 0.5rem;
   text-decoration: none;
@@ -420,74 +302,81 @@ h2 {
   display: block;
 }
 
-.sidebar a:hover,
-.mob-nav a:hover {
+.sidebar a:hover, .mob-nav a:hover {
   color: #DEBD31;
   transition: 0.7s;
 }
 
 /* Style The Dropdown Button */
+
 .dropbtn {
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    font-family: 'Oswald', sans-serif;
-    background-color:transparent;
-    color: #546461;
-    line-height:1.6;
-    font-size: 0.8rem;
-    padding-left:0.5rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    padding-right: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  background-color: transparent;
+  color: #546461;
+  line-height: 1.6;
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
 }
 
 .dropbtn .down-arrow {
-  max-width:15px;
+  max-width: 15px;
   margin-left: 10px;
 }
 
 /* The container <div> - needed to position the dropdown content */
+
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    width:100%;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
 }
 
 /* Links inside the dropdown */
+
 .dropdown-content a {
-    display: block;
-    font-size: 0.8rem;
-    font-weight: 300;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 /* Change color of dropdown links on hover */
+
 /* .dropdown-content a:hover {background-color: #f1f1f1} */
 
 /* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
+
 .dropdown:hover .dropbtn {
-    /* background-color: #3e8e41; */
+  /* background-color: #3e8e41; */
 }
-/*----------- Footer -----------*/
+
+/*----------- FOOTER -----------*/
 
 .top-arrow img {
   width: 1em;
 }
 
 .top-arrow {
-  transition:0.2s ease;
+  transition: 0.2s ease;
 }
 
 .top-arrow:hover {
@@ -515,7 +404,148 @@ footer nav a:hover, .copyright a:hover {
   text-decoration: none;
 }
 
-/*----------- Buttons -----------*/
+/*----------- SLIDER STYLE -----------*/
+
+.bg-image-slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/images/casa-mathilda-banner.jpg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: none;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.bg-image-slide .transbox {
+  max-width: 70%;
+  position: absolute;
+  top: 60vh;
+  right: 0;
+}
+
+.bg-slide-1 {
+  background-image: url(/images/casa-mathilda-banner-1.jpg);
+}
+
+.bg-slide-2 {
+  background-image: url(/images/casa-mathilda-banner-2.jpg);
+}
+
+.bg-slide-3 {
+  background-image: url(/images/casa-mathilda-banner-3.jpg);
+}
+
+/*----------- Pop Up Room Details -----------*/
+
+/* this styles the active link for the room navigation */
+
+#rooms-filter a, #portfolio-filter a {
+  padding-bottom: 0;
+}
+
+#portfolio-filter .active, #rooms-filter .active {
+  border-bottom: 2px solid #546461;
+}
+
+.room-details-popup {
+  position: absolute;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4%;
+  width: auto;
+  width: 70%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  z-index: 101;
+}
+
+.room-details-popup:focus {
+  outline: none;
+  /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
+}
+
+.small-image {
+  display: inline-block;
+  width: 32%;
+}
+
+.room-details-popup li {
+  list-style-position: outside;
+  padding-bottom: 0.5rem;
+}
+
+.close-icon {
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 76px;
+}
+
+.slider-rooms [class*=bg-image-room] {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.room-left-button, .room-right-button {
+  z-index: 99;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: white;
+  max-width: 2rem;
+}
+
+.room-left-button {
+  left: 6%;
+  top: 50%;
+  transform: rotateZ(180deg);
+}
+
+.room-right-button {
+  right: 3%;
+  top: 50%;
+  z-index: 99;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: white;
+  max-width: 2rem;
+}
+
+/*----------- Launch Pop Up -----------*/
+
+.launch-popup {
+  position: relative;
+  background: white;
+  color: #fff;
+  padding: 10px;
+  width: auto;
+  max-width: 700px;
+  margin: 5% auto;
+}
+
+.launch-popup:focus {
+  outline: none;
+  /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
+}
+
+.launch-popup .bg-image {
+  background-attachment: scroll;
+}
+
+/*----------- BUTTONS -----------*/
 
 .button-1, .button-2 {
   cursor: pointer;
@@ -550,14 +580,11 @@ footer nav a:hover, .copyright a:hover {
   display: block;
 }
 
-.button-1 img,
-.button-left img,
-.button-1 .arrow {
+.button-1 img, .button-left img, .button-1 .arrow {
   width: 0.9em;
-  margin:0;
+  margin: 0;
   margin-left: 1em;
-  display:inline-block;
-
+  display: inline-block;
 }
 
 .button-1:hover, .click-discover:hover, .book-button:hover {
@@ -581,18 +608,13 @@ footer nav a:hover, .copyright a:hover {
   text-decoration: none;
 }
 
-
-.press .button-2,
-.news .button-2 {
+.press .button-2, .news .button-2 {
   border: 1px solid #546461;
-
 }
 
-.press .button-2 a,
-.news .button-2 a {
+.press .button-2 a, .news .button-2 a {
   color: #546461;
 }
-
 
 .button-2:hover {
   transform: scale(1.02, 1.02);
@@ -600,10 +622,10 @@ footer nav a:hover, .copyright a:hover {
 
 .slider-rooms .button-1 {
   position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .book-button {
@@ -616,7 +638,7 @@ footer nav a:hover, .copyright a:hover {
   transition: 0.2s ease;
 }
 
-.button-left{
+.button-left {
   background-color: #CECBC2;
   line-height: 1em;
   transition: 0.2s ease;
@@ -633,7 +655,7 @@ footer nav a:hover, .copyright a:hover {
   display: block;
 }
 
-/*----------- Form -----------*/
+/*----------- FORM -----------*/
 
 form input, form label, form textarea, form p {
   font-family: 'Raleway', sans-serif;
@@ -665,7 +687,6 @@ form input[type="submit"] {
   color: #fff;
   text-decoration: none;
   padding: 0;
-
 }
 
 /* form input[type="submit"]:hover {
@@ -677,7 +698,13 @@ form textarea {
   min-height: 20vh;
 }
 
-/*----------- Elements -----------*/
+form input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+/*----------- ELEMENTS -----------*/
 
 hr {
   margin: 0 auto 2em;
@@ -703,27 +730,25 @@ hr {
   font-size: 1.2em;
 }
 
-
-/*----------- News Page -----------*/
+/*----------- NEWS PAGE -----------*/
 
 .news .padded {
-  padding: 0 15% 0 5%;
+  padding: 0 15% 0 4%;
 }
 
 .news .padded-bottom {
-  padding-bottom:2%;
+  padding-bottom: 2%;
 }
 
 .news .button-2 {
-  display:inline-block;
+  display: inline-block;
 }
 
 .news img {
   border-left: 6px solid #546461;
 }
 
-.news .date,
-.news .month {
+.news .date, .news .month {
   padding: 0 10px;
   text-align: right;
   font-family: 'Oswald', sans-serif;
@@ -737,7 +762,7 @@ hr {
 }
 
 .news .month {
-  font-size:1.5em;
+  font-size: 1.5em;
 }
 
 /* --------- BLOG POST STYLING ------------ */
@@ -748,7 +773,7 @@ hr {
 
 .post-body img {
   margin-bottom: 2rem;
-  display:block;
+  display: block;
 }
 
 .tag {
@@ -759,12 +784,19 @@ hr {
   border-radius: 2px;
   margin: 0.5rem 2px;
 }
-/* FILTERABLE GRID */
+
+/* Filterable Grid */
+
 .hidden {
-  display:none;
+  display: none;
 }
 
-/*----------- MOB NAVIGATION / BURGER MENU -----------*/
+.post_navigation img {
+  max-width:15px;
+}
+
+
+/*----------- MOBILE NAVIGATION / BURGER MENU -----------*/
 
 .burger-button {
   position: fixed;
@@ -858,7 +890,6 @@ hr {
   padding-left: 30%;
 }
 
-
 .mob-lang a {
   font-size: 0.8rem;
   color: #DEBD31;
@@ -866,31 +897,39 @@ hr {
 
 .mob-lang li {
   list-style: none;
-  display:inline-block;
-  padding:0;
+  display: inline-block;
+  padding: 0;
   text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 .mob-lang a:hover {
-  color:#546461;
+  color: #546461;
 }
+
 /* .goog-te-banner-frame.skiptranslate {
     display: none!important;
 } */
 
 /*----------- RESPONSIVE DESIGN - MEDIA QUERIES -----------*/
 
-@media(max-width:768px) {
+@media(max-width:1024px) {
+  .news .mob-hide {
+    display: none;
+  }
 
-.news .mob-hide {
-  display:none;
+  .news .padded {
+    padding: 0 0 0 4%;
+  }
+
 }
+
+@media(max-width:768px) {
 
   section {
     padding: 7px 0px 0px 100px;
-}
+  }
 
   .slider-rooms {
     background-size: cover;
@@ -905,24 +944,40 @@ hr {
     padding: 5% 0 5% 0px;
   }
   .room-details-popup {
-    width:90%;
-    background: rgba(255,255,255,0.95);
+    width: 90%;
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .bg-image-slide {
+    background-attachment: scroll;
   }
 
   .bg-image-slide .transbox {
     top: 70vh;
   }
-
   .bg-image-slide .transbox h1 {
-    line-height:1.5;
+    line-height: 1.5;
     font-size: 1.5rem;
   }
-
   .postal-mathilda .show-on-hover {
-    min-height:22rem;
+    min-height: 22rem;
   }
 
-}/* this closes the media query  */
+  .room-left-button {
+    left: 9.5%;
+  }
+
+  .postal-mathilda {
+    max-width:70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blog-box {
+    padding:15%;
+    right:0;
+  }
+} /* this closes the media query  */
 
 @media(max-width:576px) {
   .mob-nav {
@@ -934,20 +989,16 @@ hr {
   .mob-hide {
     display: none;
   }
-
   .postal-mathilda .show-on-hover:hover {
     opacity: 0;
-    display:none;
+    display: none;
   }
-
   section {
     padding: 30px 5% 0 5%;
   }
-
   .body-content {
-    padding:30px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
   }
-
   footer {
     padding: 5% 10% 2% 10%;
   }
@@ -981,9 +1032,10 @@ hr {
   .bg-image-slide .transbox {
     top: 55vh;
   }
-}
-
-/* this closes the media query  */
+  #portfolio-filter li {
+    padding-bottom: 0.5rem;
+  }
+} /* this closes the media query  */
 
 @media(max-width:375px) {
   .book-button {
@@ -1011,16 +1063,13 @@ hr {
   footer {
     padding: 5% 10% 25% 10%;
   }
-
   .news .padded {
     padding: 0 5% 0 5%;
   }
-
   .bg-image-slide .transbox {
     max-width: 80%;
   }
-
-}/* this closes the media query  */
+} /* this closes the media query  */
 
 @media(max-width:320px) {
   footer {
@@ -1032,6 +1081,4 @@ hr {
   .banner {
     margin-top: 46vh;
   }
-}
-
-/* this closes the media query  */
+}/* this closes the media query  */

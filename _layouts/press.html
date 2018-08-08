@@ -3,23 +3,22 @@ layout: default
 ---
 <!-- - - - - - - - - - - HEADER - - - - - - - - - -  -->
 <div class="body-content">
-<section class="bg-beige margin-top press">
-  <div>
-    <div class="padded-top">
-      <h1>{{page.heading}}</h1>
-      <p class="narrow-width bump-right p-bold">{{page.intro-paragraph}}</p>
+  <section class="bg-beige margin-top press">
+    <div>
+      <div class="padded-top">
+        <h1>{{page.heading}}</h1>
+        <p class="narrow-width bump-right p-bold">{{page.intro-paragraph}}</p>
+      </div>
     </div>
-  </div>
 
+<!-- - - - - - - - - - - BODY - - - - - - - - - -  -->
+    <div class="bg-beige grid">
 
-<!-- - - - - - - - - - - MAIN - - - - - - - - - -  -->
-  <div class="bg-beige grid">
+      {% for press in site.data.media %}
 
-    {% for press in site.data.media %}
-
-    <div class="col-4_sm-6_xs-12 padded-5">
-      <img src="{{press.featured_image}}" alt="{{press.title}}">
-      <div class="align-center button-2"><a href="{{press.pdf_path}}" target="_blank">
+      <div class="col-4_sm-6_xs-12 padded-5">
+        <img src="{{press.featured_image}}" alt="{{press.title}}">
+        <div class="align-center button-2"><a href="{{press.pdf_path}}" target="_blank">
         {% if page.language == 'en' %}
         Read
         {% elsif page.language == 'fr' %}
@@ -29,27 +28,25 @@ layout: default
         {% endif %}
 
       </a></div>
+      </div>
+
+      {% endfor %}
+
     </div>
 
-    {% endfor %}
-
-  </div>
-
-
-
-<!-- - - - - - - - - - - Bottom Button - - - - - - - - - -  -->
-  <div class="button-1 align-center">
-    <a href="#" onclick="goBack()">
+<!-- - - - - - - - - - - Back Button - - - - - - - - - -  -->
+    <div class="button-1 align-center">
+      <a href="#" onclick="goBack()">
       {% if page.language == 'en' %}
       Back
       {% elsif page.language == 'fr' %}
-      Back (fr)
+      Retourner
       {% else %}
       Atrás
       {% endif %}
     <img src="/images/right-arrow.svg" alt="right arrow">
     </a>
-  </div>
+    </div>
 
-</section>
+  </section>
 </div>

@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<!-- - - - - - - - - - - HEADER - - - - - - - - - -  -->
+<div class="body-content">
+  <section class="bg-beige margin-top">
+      <div class="padded-top">
+        <h1>{{page.heading}}</h1>
+        <p class="narrow-width bump-right p-bold">{{page.intro-paragraph}}</p>
+      </div>
+
+<!-- - - - - - - - - - - BODY - - - - - - - - - -  -->
+      {% for post in site.posts %}
+      <div class="news grid padded-5">
+        <div class="col-1 mob-hide">
+          {% if page.language == 'es' %}
+            <p class="month">{{post.date | date: "%b" }}</p>
+            <p class="date">{{post.date | date: "%-d" }}</p>
+          {% elsif page.language == 'en' %}
+            <p class="month">{{post.date | date: "%b" }}</p>
+            <p class="date">{{post.date | date: "%-d"}}</p>
+          {% elsif page.language == 'fr' %}
+            <p class="month">{{post.date | date: "%b" }}</p>
+            <p class="date">{{post.date | date: "%-d"}}</p>
+          {% endif %}
+        </div>
+        <div class="col-4_sm-12">
+            <a href="{{post.url}}"><img src="{{post.featured_image}}" alt="{{post.title}}"></a>
+        </div>
+        <div class="col-7_sm-12 padded">
+          <h3>{{post.title}}</h3>
+          <p>{{post.blurb}}</p>
+          <div class="align-center button-2">
+            {% if page.language == 'es' %}
+            <a href="{{post.url}}">Leer más</a> {% elsif page.language == 'en' %}
+            <a href="{{post.url}}">Read More</a> {% elsif page.language == 'fr' %}
+            <a href="{{post.url}}">En Savoir Plus</a> {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+  <!-- - - - - - - - - - - Read More Button - - - - - - - - - -  -->
+      <!-- <div class="button-1 align-center margin-top">
+        <a href="#">News Anteriores
+          <img src="/images/right-arrow.svg" alt="right arrow">
+        </a>
+
+      </div> -->
+
+    </section>
+</div>
