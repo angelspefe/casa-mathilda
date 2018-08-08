@@ -44,6 +44,11 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
+<!-- - - - - - - - - - - Owl Carousel - - - - - - - - - -  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
 <!-- - - - - - - - - - - Google Analytics - - - - - - - - - -  -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57053404-1"></script>
 <script>
@@ -388,17 +393,15 @@
                 Casa Mathilda is a personal Project that start in my passion for travelling. Meeting people and other cultures has always been something very interesting for me. In an almost unconscious way, you can perceive the imprint that Mathilda has left on me throughout my life: the way she puts the heart in every single thing she does, her wisdom of making everyone happy and her infinite generosity.
 This is our spirit when welcoming our guests, sharing and personalizing in everyone’s interest, to make their experience unique, and wishing them to feel as comfortable as at their home, as comfortable as in Matilda’s home.
               </p>
-            </div>
-            <!-- close hover div -->
+            </div><!-- close hover div -->
 
-          </div>
-          <!-- close mathilda div -->
+          </div><!-- close mathilda div -->
 
           <p class="mob-show padded-top"> Casa Mathilda is a personal Project that start in my passion for travelling. Meeting people and other cultures has always been something very interesting for me. In an almost unconscious way, you can perceive the imprint that Mathilda has left on me throughout my life: the way she puts the heart in every single thing she does, her wisdom of making everyone happy and her infinite generosity.
 This is our spirit when welcoming our guests, sharing and personalizing in everyone’s interest, to make their experience unique, and wishing them to feel as comfortable as at their home, as comfortable as in Matilda’s home. </p>
 
-        </div>
-        <!-- closes the container -->
+
+      </div><!-- closes First Column -->
 
 <!-- - - - - - - - - - - Second Column - - - - - - - - - -  -->
 <!-- - - - - - - - - - - Latest News - - - - - - - - - -  -->
@@ -422,14 +425,41 @@ This is our spirit when welcoming our guests, sharing and personalizing in every
             <a href="/news">View All News <img src="/images/right-arrow.svg" alt="right arrow"></a> 
           </div>
 
-<!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
-          <h2 class="padded-top-30 align-center padded-5">Lo que dicen nuestros huéspedes...</h2>
 
-        </div>
-      </div>
-      <!-- this closes the second column -->
+<!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
+<div class="testimonial-section padded-5 align-center">
+  <h2>Lo que dicen nuestros huéspedes...</h2>
+
+<!-- - - - - - - - - - - Owl Carousel - - - - - - - - - -  -->
+  <div class="owl-carousel">
+    <div class="testimonial">
+      <p class="testimonial-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      <h4 class="testimonial-client">Mary</h4>
+      <h5 class="testimonial-country">Chicago</h5>
+    </div>
+    <div class="testimonial">
+      <p class="testimonial-review">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <h4 class="testimonial-client">Joe</h4>
+      <h5 class="testimonial-country">Moscow</h5>
 
     </div>
+    <div class="testimonial">
+      <p class="testimonial-review"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h4 class="testimonial-client">Carly</h4>
+      <h5 class="testimonial-country">Australia</h5>
+    </div>
+  </div>
+
+</div> <!-- - - - - - - - - - - End Owl Carousel - - - - - - - - - -  -->
+</div>
+
+
+
+
+
+
+      </div><!-- this closes the second column -->
+
   </div>
 
 <!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
@@ -772,6 +802,34 @@ This is our spirit when welcoming our guests, sharing and personalizing in every
   // end background slides
 </script>
 
+// OWL CAROUSEL
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    items:1,
+    margin:10,
+    responsive:{
+        0:{
+            items:1,
+            // autoHeight:true
+        },
+        600:{
+            items:1,
+          // autoHeight:true
+        },
+        1000:{
+            items:1,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout:4000,
+            autoplayHoverPause:false,
+          // autoHeight:true
+        }
+    }
+  })
+</script>
+
 
 <!-- - - - - - - - - - - FOOTER - - - - - - - - - -  -->
   <footer class="align-center bg-beige">
@@ -813,6 +871,10 @@ This is our spirit when welcoming our guests, sharing and personalizing in every
 
 <!-- - - - - - - - - - - JQuery - - - - - - - - - -  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+<!-- - - - - - - - - - - Owl Carousel - - - - - - - - - -  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <!-- - - - - - - - - - - Magnific Pop Up Lightbox - - - - - - - - - -  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>

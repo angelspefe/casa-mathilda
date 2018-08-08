@@ -1,4 +1,5 @@
-// has jqurey as a dependcy
+
+// has jquery as a dependcy
 
 $(document).ready(function() {
   /* filtering */

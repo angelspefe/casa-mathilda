@@ -162,16 +162,14 @@ layout: default
               <p class="col-12 align-center">
                 {{page.who-is-mathilda}}
               </p>
-            </div>
-            <!-- close hover div -->
+            </div><!-- close hover div -->
 
-          </div>
-          <!-- close mathilda div -->
+          </div><!-- close mathilda div -->
 
           <p class="mob-show padded-top"> {{page.who-is-mathilda}} </p>
 
-        </div>
-        <!-- closes the container -->
+
+      </div><!-- closes First Column -->
 
 <!-- - - - - - - - - - - Second Column - - - - - - - - - -  -->
 <!-- - - - - - - - - - - Latest News - - - - - - - - - -  -->
@@ -199,14 +197,41 @@ layout: default
             <a href="/news">Toutes les News <img src="/images/right-arrow.svg" alt="right arrow"></a> {% endif %}
           </div>
 
-<!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
-          <h2 class="padded-top-30 align-center padded-5">Lo que dicen nuestros huéspedes...</h2>
 
-        </div>
-      </div>
-      <!-- this closes the second column -->
+<!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
+<div class="testimonial-section padded-5 align-center">
+  <h2>Lo que dicen nuestros huéspedes...</h2>
+
+<!-- - - - - - - - - - - Owl Carousel - - - - - - - - - -  -->
+  <div class="owl-carousel">
+    <div class="testimonial">
+      <p class="testimonial-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      <h4 class="testimonial-client">Mary</h4>
+      <h5 class="testimonial-country">Chicago</h5>
+    </div>
+    <div class="testimonial">
+      <p class="testimonial-review">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <h4 class="testimonial-client">Joe</h4>
+      <h5 class="testimonial-country">Moscow</h5>
 
     </div>
+    <div class="testimonial">
+      <p class="testimonial-review"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h4 class="testimonial-client">Carly</h4>
+      <h5 class="testimonial-country">Australia</h5>
+    </div>
+  </div>
+
+</div> <!-- - - - - - - - - - - End Owl Carousel - - - - - - - - - -  -->
+</div>
+
+
+
+
+
+
+      </div><!-- this closes the second column -->
+
   </div>
 
 <!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
@@ -431,4 +456,32 @@ layout: default
     setTimeout(carousel, 2000); // Change image every 2 seconds
   }
   // end background slides
+</script>
+
+// OWL CAROUSEL
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    items:1,
+    margin:10,
+    responsive:{
+        0:{
+            items:1,
+            // autoHeight:true
+        },
+        600:{
+            items:1,
+          // autoHeight:true
+        },
+        1000:{
+            items:1,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout:4000,
+            autoplayHoverPause:false,
+          // autoHeight:true
+        }
+    }
+  })
 </script>

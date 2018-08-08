@@ -1,9 +1,5 @@
 - room-type-class: terraza
   number: 1
-  banner-1_image: /uploads/rooms-terraza-2.jpg
-  banner-2_image: /uploads/rooms-terraza-1.jpg
-  banner-3_image: /uploads/rooms-terraza-3.jpg
-  banner-4_image: /uploads/rooms-terraza-4.jpg
   room-details-title-es: Habitaciones a la Terraza
   room-details-description-es: >-
     Con salida directa a la terraza e increíblemente luminosas, las habitaciones
@@ -47,13 +43,13 @@
     thermostatique</li><li>Savons et produits de toilette naturels et
     biologiques ( Rituals )</li><li>Minibar et Coffre-fort</li><li>TV
     &eacute;cran plat avec cha&icirc;nes internationales</li></ul>
+  banner-1_image: /uploads/rooms-terraza-2.jpg
+  banner-2_image: /uploads/rooms-terraza-1.jpg
+  banner-3_image: /uploads/rooms-terraza-3.jpg
+  banner-4_image: /uploads/rooms-terraza-4.jpg
 - room-type-class: interiores
   number: 2
   hidden: true
-  banner-1_image: /uploads/rooms-interiores-2.jpg
-  banner-2_image: /uploads/rooms-interiores-3.jpg
-  banner-3_image: /uploads/rooms-interiores-8.jpg
-  banner-4_image: /uploads/rooms-interiores-6.jpg
   room-details-title-es: Habitaciones Interiores
   room-details-description-es: >-
     Si lo tuyo es disfrutar al máximo de las ilimitadas posibilidades que ofrece
@@ -101,13 +97,13 @@
     thermostatique</li><li>Savons et produits de toilette naturels et
     biologiques (Rituals)</li><li>Minibar et Coffre-fort</li><li>TV &eacute;cran
     plat avec cha&icirc;nes internationales</li></ul>
+  banner-1_image: /uploads/rooms-interiores-2.jpg
+  banner-2_image: /uploads/rooms-interiores-3.jpg
+  banner-3_image: /uploads/rooms-interiores-8.jpg
+  banner-4_image: /uploads/rooms-interiores-6.jpg
 - room-type-class: a-la-calle
   number: 3
   hidden: true
-  banner-1_image: /uploads/rooms-calle-4.jpg
-  banner-2_image: /uploads/rooms-calle-3.jpg
-  banner-3_image: /uploads/rooms-calle-2.jpg
-  banner-4_image: /uploads/rooms-calle-5.jpg
   room-details-title-es: Habitaciones A la Calle
   room-details-description-es: >-
     Si te gusta tomarle el pulso a la ciudad y contemplar desde tu ventana el
@@ -153,3 +149,7 @@
     thermostatique</li><li>Savons et produits de toilette naturels et
     biologiques ( Rituals )</li><li>Minibar et Coffre-fort</li><li>TV
     &eacute;cran plat avec cha&icirc;nes internationales</li></ul>
+  banner-1_image: /uploads/rooms-calle-4.jpg
+  banner-2_image: /uploads/rooms-calle-3.jpg
+  banner-3_image: /uploads/rooms-calle-2.jpg
+  banner-4_image: /uploads/rooms-calle-5.jpg

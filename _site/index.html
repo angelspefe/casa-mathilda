@@ -44,6 +44,11 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
+<!-- - - - - - - - - - - Owl Carousel - - - - - - - - - -  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
 <!-- - - - - - - - - - - Google Analytics - - - - - - - - - -  -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57053404-1"></script>
 <script>
@@ -389,16 +394,14 @@
               <p class="col-12 align-center">
                 Casa Mathilda es un proyecto personal fruto de mi afición a viajar y conocer otras culturas y formas de vida. De una forma casi inconsciente, se puede percibir la huella que Mathilda ha dejado en mí a lo largo de mi vida: su forma de poner el corazón en todo lo que hace, su deseo de hacer felices a los demás y de su generosidad infinita. Este es el espíritu con el que recibimos a nuestros huéspedes, compartiendo y personalizando al máximo su experiencia, haciéndolo con nuestro máximo cariño para que se sientan como en su casa, como en la Casa de Mathilda.
               </p>
-            </div>
-            <!-- close hover div -->
+            </div><!-- close hover div -->
 
-          </div>
-          <!-- close mathilda div -->
+          </div><!-- close mathilda div -->
 
           <p class="mob-show padded-top"> Casa Mathilda es un proyecto personal fruto de mi afición a viajar y conocer otras culturas y formas de vida. De una forma casi inconsciente, se puede percibir la huella que Mathilda ha dejado en mí a lo largo de mi vida: su forma de poner el corazón en todo lo que hace, su deseo de hacer felices a los demás y de su generosidad infinita. Este es el espíritu con el que recibimos a nuestros huéspedes, compartiendo y personalizando al máximo su experiencia, haciéndolo con nuestro máximo cariño para que se sientan como en su casa, como en la Casa de Mathilda. </p>
 
-        </div>
-        <!-- closes the container -->
+
+      </div><!-- closes First Column -->
 
 <!-- - - - - - - - - - - Second Column - - - - - - - - - -  -->
 <!-- - - - - - - - - - - Latest News - - - - - - - - - -  -->
@@ -422,14 +425,41 @@
             <a href="/news">Todas las News <img src="/images/right-arrow.svg" alt="right arrow"></a> 
           </div>
 
-<!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
-          <h2 class="padded-top-30 align-center padded-5">Lo que dicen nuestros huéspedes...</h2>
 
-        </div>
-      </div>
-      <!-- this closes the second column -->
+<!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
+<div class="testimonial-section padded-5 align-center">
+  <h2>Lo que dicen nuestros huéspedes...</h2>
+
+<!-- - - - - - - - - - - Owl Carousel - - - - - - - - - -  -->
+  <div class="owl-carousel">
+    <div class="testimonial">
+      <p class="testimonial-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      <h4 class="testimonial-client">Mary</h4>
+      <h5 class="testimonial-country">Chicago</h5>
+    </div>
+    <div class="testimonial">
+      <p class="testimonial-review">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <h4 class="testimonial-client">Joe</h4>
+      <h5 class="testimonial-country">Moscow</h5>
 
     </div>
+    <div class="testimonial">
+      <p class="testimonial-review"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h4 class="testimonial-client">Carly</h4>
+      <h5 class="testimonial-country">Australia</h5>
+    </div>
+  </div>
+
+</div> <!-- - - - - - - - - - - End Owl Carousel - - - - - - - - - -  -->
+</div>
+
+
+
+
+
+
+      </div><!-- this closes the second column -->
+
   </div>
 
 <!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
@@ -772,6 +802,34 @@
   // end background slides
 </script>
 
+// OWL CAROUSEL
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    items:1,
+    margin:10,
+    responsive:{
+        0:{
+            items:1,
+            // autoHeight:true
+        },
+        600:{
+            items:1,
+          // autoHeight:true
+        },
+        1000:{
+            items:1,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout:4000,
+            autoplayHoverPause:false,
+          // autoHeight:true
+        }
+    }
+  })
+</script>
+
 
 <!-- - - - - - - - - - - FOOTER - - - - - - - - - -  -->
   <footer class="align-center bg-beige">
@@ -813,6 +871,10 @@
 
 <!-- - - - - - - - - - - JQuery - - - - - - - - - -  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+<!-- - - - - - - - - - - Owl Carousel - - - - - - - - - -  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <!-- - - - - - - - - - - Magnific Pop Up Lightbox - - - - - - - - - -  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
