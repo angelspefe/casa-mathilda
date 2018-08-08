@@ -568,7 +568,8 @@ footer nav a:hover, .copyright a:hover {
   background-attachment: scroll;
 }
 
-.launch-popup h2, .launch-popup p {
+.launch-popup h2,
+.launch-popup p {
   color: #fff;
 }
 
@@ -583,6 +584,10 @@ footer nav a:hover, .copyright a:hover {
 
 .launch-popup div {
   text-align: center;
+}
+
+.launch-popup .button-1 {
+  margin:auto;
 }
 
 /*----------- BUTTONS -----------*/
