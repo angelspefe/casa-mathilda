@@ -23,6 +23,6 @@ _options:
   city:
     hidden: true
 defaults:
-  - type: 'pages'
+  - type: 'index.html'
     values:
       _hide_title: true
