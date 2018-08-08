@@ -26,6 +26,3 @@ _options:
     hidden: true
   room-type-class:
     hidden: true
-date:
-  abbr_monthnames: [‘Ene’, 'Feb', 'Mar', 'Abr’, 'May', 'Jun', 'Jul', 'Ago’, 'Sep', 'Oct', 'Nov', 'Dic']
-  monthnames: [‘Enero’, ‘Febrero’, ‘Marzo’, ‘Abril’, 'Mayo’, 'Junio’, ‘Julio’, ‘Agosto’, ‘Septiembre’, ‘Octubre’, ‘Noviembre’, ‘Diciembre’]
