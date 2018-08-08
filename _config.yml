@@ -25,6 +25,6 @@ _options:
 defaults:
   -
     scope:
-      path: "test"
+      path: "test.html"
       type: "pages"
       hidden: true
