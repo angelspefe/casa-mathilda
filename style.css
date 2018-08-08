@@ -572,6 +572,15 @@ footer nav a:hover, .copyright a:hover {
   color: #fff;
 }
 
+.launch-popup h2 {
+  font-size: 1.5rem;
+}
+
+.launch-popup p {
+  font-size: 1rem;
+  padding:10%
+}
+
 .launch-popup div {
   text-align: center;
 }
