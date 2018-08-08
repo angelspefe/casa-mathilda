@@ -23,8 +23,6 @@ _options:
   city:
     hidden: true
 defaults:
-  -
-    scope:
-      path: "test.html"
-      type: "pages"
-      hidden: true
+  - type: 'projects'
+    values:
+      _hide_title: true
