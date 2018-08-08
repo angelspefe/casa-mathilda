@@ -22,7 +22,3 @@ _options:
     hidden: true
   city:
     hidden: true
-defaults:
-  - type: 'test'
-    values:
-      _hide_content: true
