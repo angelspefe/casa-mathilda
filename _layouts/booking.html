@@ -1,0 +1,130 @@
+<!Doctype html>
+<html>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body class="bg-image">
+
+  <header id="top">
+
+<!-- - - - - - - - - - - LOGO - - - - - - - - - -  -->
+    {% if page.language == 'en' %}
+    <a href="/en/index.html">
+      {% elsif page.language == 'fr' %}
+      <a href="/fr/index.html">
+      {% else %}
+      <a href="/index.html">
+      {% endif %}
+
+        <img src="/images/logo-casa-mathilda.png" alt="casa mathilda logo" class="logo mob-hide">
+
+      </a>
+
+<!-- - - - - - - - - - - NAVIGATION BAR - - - - - - - - - -  -->
+    {% include navigation.html %}
+
+<!-- - - - - - - - - - - BOOK BUTTON - - - - - - - - - -  -->
+    <!-- <a href="#">
+        {% if page.language == 'en' %}
+        <img src="/images/book-button-eng.png" alt="book button" class="book-button">
+        {% elsif page.language == 'fr' %}
+        <img src="/images/book-button-fr.png" alt="book button" class="book-button">
+        {% else %}
+        <img src="/images/book-button-esp.png" alt="book button" class="book-button">
+        {% endif %}
+      </a> -->
+
+<!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
+
+  </header>
+
+<!-- - - - - - - - - - - HEADER - - - - - - - - - -  -->
+<div class="body-content">
+  <section class="bg-beige margin-top">
+    <div class="padded-top">
+
+<!-- - - - - - - - - - - BOOKASSIST EMBED - - - - - - - - - -  -->
+<iframe src="" id="booking_frame" width="100%" height="3500" scrolling="auto" frameborder="0"></iframe>
+    </div>
+  </section>
+</div>
+
+  <!-- - - - - - - - - - - BOOKASSIST SCRIPTS - - - - - - - - - -  -->
+
+  <script>
+      var BA = BA || {};
+      BA.destinationURL='https://www.bookassist.com/conduit/bookassist.do';
+      BA.paramsForBA='action=c_1&guide_id=101&hotel_id=525&service_model=2&ca=center&dw=900&user_language=es';
+      BA.checkMobile=true;
+      BA.mobileURL = "https://m.bookassist.com/m/c1.jsp?guide_id=101&hotel_id=525&ho=1&price_group=2&service_model=5&user_language=es&wu=http://www.hoteldomain.com";
+  </script>
+
+  <script type="text/javascript" src="https://js.bookassist.com/scripts/BA/be.2-min.jsp?action=c_1&guide_id=101&hotel_id=525&service_model=2&ca=center&dw=900&user_language=es">
+  </script>
+
+  <script>
+      var BA = BA || {};
+      BA.account = "Casa Mathilda";  // hotel Name
+      BA.hotel_id = "525";   // bookassist_hotel_id_number_for_hotel
+      BA.hotel_group_id = "";
+      BA.guide_id = "101";   // bookassist_guide_id_number_for_hotel
+      (function() {
+      var ba = document.createElement('script');
+      ba.type = 'text/javascript'; ba.async = true;
+      ba.src = '//dwxf316kii2pu.cloudfront.net/scripts/BA/rt-min.jsp';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ba, s);
+      })();
+  </script>
+
+  <!-- - - - - - - - - - - FOOTER - - - - - - - - - -  -->
+    <footer class="align-center bg-beige">
+      <div class="top-arrow"><a href="#top"><img src="/images/up-arrow.svg" alt="up arrow"></a></div>
+
+      {% if page.language == 'en'%}
+
+      <nav>
+        <li><a href="/en/#contact">Contact</a></li>
+        <li><a href="/en/privacidad">Privacy</a></li>
+        <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
+        <li><a href="/#" class="mob-hide">Book</a></li>
+      </nav>
+
+      {% elsif page.language == 'fr'%}
+
+      <nav>
+        <li><a href="/fr/#contact">Contact</a></li>
+        <li><a href="/fr/privacidad">Confidentialité</a></li>
+        <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
+        <li><a href="/#" class="mob-hide">Réserve</a></li>
+      </nav>
+
+      {% else %}
+
+      <nav>
+        <li><a href="/#contact">Contacto</a></li>
+        <li><a href="/privacidad">Privacidad</a></li>
+        <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
+        <li><a href="/#" class="mob-hide">Reserva</a></li>
+      </nav>
+
+      {% endif %}
+
+      <div class="copyright">
+        <p>Copyright © 2018 Casa Mathilda | <a href="http://loveiscreative.com" target="_blank">Site Credits</a></p>
+      </div>
+    </footer>
+
+  <!-- - - - - - - - - - - POP UP - - - - - - - - - -  -->
+    {% include pop-up.html %}
+
+  <!-- - - - - - - - - - - BODY SCRIPTS - - - - - - - - - -  -->
+    {% include body-scripts.html %}
+
+  </body>
+  </html>

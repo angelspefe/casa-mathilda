@@ -165,60 +165,78 @@
 
 
 <!-- - - - - - - - - - - BOOK BUTTON - - - - - - - - - -  -->
-    <a href="/booking">
+    <!-- <a href="#">
         
         <img src="/images/book-button-esp.png" alt="book button" class="book-button">
         
-      </a>
+      </a> -->
 
 <!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
 
   </header>
 
-  <!-- - - - - - - - - - - MAIN - - - - - - - - - -  -->
+<!-- - - - - - - - - - - HEADER - - - - - - - - - -  -->
 <div class="body-content">
-  <section class="bg-beige margin-top post-body">
-    <div class="padded-8">
-      <h1 class="align-center"> Semana de Shooting en Mathilda </h1>
-      <p class="small-date align-center"> 03 Jan 2018 </p>
-      
-      <img src="/uploads/blog-shooting.jpg" alt="Semana de Shooting en Mathilda"> <p>Jordi Pelegrí ha escogido Casa Mathilda para su ultimo trabajo para Cheads Magazine. No hemos visto todavía el resultado de su trabajo pero ver a la modelo  Rafaella Consentino y a  todo el equipo de Jordi en acción presagian un buen resultado.  Os lo mostraremos tan pronto lo tenga listo !</p>
+  <section class="bg-beige margin-top">
+    <div class="padded-top">
 
-    </div>
-
-
-<!-- - - - - - - - - - - Back Button - - - - - - - - - -  -->
-    <div class="button-1 align-center">
-      <a href="#" onclick="goBack()">Atrás<img class="arrow" src="/images/right-arrow.svg" alt="right arrow"></a>
+<!-- - - - - - - - - - - BOOKASSIST EMBED - - - - - - - - - -  -->
+<iframe src="" id="booking_frame" width="100%" height="3500" scrolling="auto" frameborder="0"></iframe>
     </div>
   </section>
-
 </div>
 
+  <!-- - - - - - - - - - - BOOKASSIST SCRIPTS - - - - - - - - - -  -->
 
-<!-- - - - - - - - - - - FOOTER - - - - - - - - - -  -->
-  <footer class="align-center bg-beige">
-    <div class="top-arrow"><a href="#top"><img src="/images/up-arrow.svg" alt="up arrow"></a></div>
+  <script>
+      var BA = BA || {};
+      BA.destinationURL='https://www.bookassist.com/conduit/bookassist.do';
+      BA.paramsForBA='action=c_1&guide_id=101&hotel_id=525&service_model=2&ca=center&dw=900&user_language=es';
+      BA.checkMobile=true;
+      BA.mobileURL = "https://m.bookassist.com/m/c1.jsp?guide_id=101&hotel_id=525&ho=1&price_group=2&service_model=5&user_language=es&wu=http://www.hoteldomain.com";
+  </script>
 
-    
+  <script type="text/javascript" src="https://js.bookassist.com/scripts/BA/be.2-min.jsp?action=c_1&guide_id=101&hotel_id=525&service_model=2&ca=center&dw=900&user_language=es">
+  </script>
 
-    <nav>
-      <li><a href="/#contact">Contacto</a></li>
-      <li><a href="/privacidad">Privacidad</a></li>
-      <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
-      <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
-      <li><a href="/booking" class="mob-hide">Reserva</a></li>
-    </nav>
+  <script>
+      var BA = BA || {};
+      BA.account = "Casa Mathilda";  // hotel Name
+      BA.hotel_id = "525";   // bookassist_hotel_id_number_for_hotel
+      BA.hotel_group_id = "";
+      BA.guide_id = "101";   // bookassist_guide_id_number_for_hotel
+      (function() {
+      var ba = document.createElement('script');
+      ba.type = 'text/javascript'; ba.async = true;
+      ba.src = '//dwxf316kii2pu.cloudfront.net/scripts/BA/rt-min.jsp';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ba, s);
+      })();
+  </script>
 
-    
+  <!-- - - - - - - - - - - FOOTER - - - - - - - - - -  -->
+    <footer class="align-center bg-beige">
+      <div class="top-arrow"><a href="#top"><img src="/images/up-arrow.svg" alt="up arrow"></a></div>
 
-    <div class="copyright">
-      <p>Copyright © 2018 Casa Mathilda | <a href="http://loveiscreative.com" target="_blank">Site Credits</a></p>
-    </div>
-  </footer>
+      
 
-<!-- - - - - - - - - - - POP UP - - - - - - - - - -  -->
-  <!-- - - - - - - - - - - MAGNIFIC POP UP JAVASCRIPT - - - - - - - - - -  -->
+      <nav>
+        <li><a href="/#contact">Contacto</a></li>
+        <li><a href="/privacidad">Privacidad</a></li>
+        <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
+        <li><a href="/#" class="mob-hide">Reserva</a></li>
+      </nav>
+
+      
+
+      <div class="copyright">
+        <p>Copyright © 2018 Casa Mathilda | <a href="http://loveiscreative.com" target="_blank">Site Credits</a></p>
+      </div>
+    </footer>
+
+  <!-- - - - - - - - - - - POP UP - - - - - - - - - -  -->
+    <!-- - - - - - - - - - - MAGNIFIC POP UP JAVASCRIPT - - - - - - - - - -  -->
 <div id="launch-popup" class="launch-popup mfp-hide mob-hide">
   <div class="bg-image padded-8" style="background-image:url(/uploads/bg-popup.jpg);">
 
@@ -235,8 +253,8 @@
 </div>
 
 
-<!-- - - - - - - - - - - BODY SCRIPTS - - - - - - - - - -  -->
-  <!-- - - - - - - - - - - FOOTER - - - - - - - - - -  -->
+  <!-- - - - - - - - - - - BODY SCRIPTS - - - - - - - - - -  -->
+    <!-- - - - - - - - - - - FOOTER - - - - - - - - - -  -->
 
 <!-- - - - - - - - - - - JQuery - - - - - - - - - -  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
@@ -248,5 +266,5 @@
 <script src="/js/main.js"></script>
 
 
-</body>
-</html>
+  </body>
+  </html>

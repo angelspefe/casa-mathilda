@@ -299,6 +299,10 @@ h5 {
   padding: 2%;
 }
 
+.mfp-counter, .mfp-s-loading { /* counter for zoom-in gallery */
+  display:none;
+  }
+
 /*----------- NAVIGATION -----------*/
 
 .sidebar {
@@ -751,6 +755,12 @@ form input {
 -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;
+}
+
+/*----------- BOOKASSIST -----------*/
+
+#booking_frame {
+  padding-right:5%;
 }
 
 

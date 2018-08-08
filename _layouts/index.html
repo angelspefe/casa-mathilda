@@ -86,19 +86,19 @@ layout: default
             <h2> {{item.room-details-title-en}} </h2>
             <p> {{item.room-details-description-en}}</p>
             <div class="button-left button-ochre left mob-hide">
-              <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              <a href="/booking"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
             {% elsif page.language == 'fr' %}
             <h2> {{item.room-details-title-fr}} </h2>
             <p> {{item.room-details-description-fr}}</p>
             <div class="button-left button-ochre left mob-hide">
-              <a href="#"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              <a href="/booking"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
             {% else %}
             <h2> {{item.room-details-title-es}} </h2>
             <p> {{item.room-details-description-es}}</p>
             <div class="button-left button-ochre left mob-hide">
-              <a href="#"> Reserva <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              <a href="/booking"> Reserva <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
             {% endif %}
 
@@ -106,15 +106,15 @@ layout: default
           <div class="col-7_sm-12 padded-left">
             {% if page.language == 'en' %} {{item.room-features-en_html}}
             <div class="button-left button-ochre left mob-show">
-              <a href="#"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              <a href="/booking"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
             {% elsif page.language == 'fr' %} {{item.room-features-fr_html}}
             <div class="button-left button-ochre left mob-show">
-              <a href="#"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              <a href="/booking"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
             {% else %} {{item.room-features-es_html}}
             <div class="button-left button-ochre left mob-show">
-              <a href="#"> Reserva <img src="/images/right-arrow.svg" alt="right arrow"> </a>
+              <a href="/booking"> Reserva <img src="/images/right-arrow.svg" alt="right arrow"> </a>
             </div>
             {% endif %}
 
@@ -280,10 +280,10 @@ layout: default
     {% endif %}
 
 <!-- - - - - - - - - - - Gallery Grid - - - - - - - - - - -  -->
-    <div class="grid gallery" id="portfolio-grid">
+    <div class="grid gallery popup-gallery" id="portfolio-grid">
       {% for item in site.data.gallery %}
       <div class="col-4_sm-6_xs-12 filterable-item {{item.category}} all">
-        <img src="{{item.image_path}}" alt="{{item.image_description}}">
+        <a href="{{item.image_path}}"><img src="{{item.image_path}}" alt="{{item.image_description}}"></a>
       </div>
       {% endfor %}
     </div>
@@ -347,6 +347,7 @@ layout: default
       <p class="p-bold align-center"> {{page.city}}</p>
 
       {{page.directions_html}}
+
     </div>
   </div>
 </section>
