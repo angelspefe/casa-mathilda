@@ -2,3 +2,7 @@ permalink: /:year/:title/
 _options:
   layout:
     hidden: true
+  language:
+    hidden: true
+  rooms-title-2:
+    hidden: true
