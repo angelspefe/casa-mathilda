@@ -22,3 +22,9 @@ _options:
     hidden: true
   city:
     hidden: true
+defaults:
+  -
+    scope:
+      path: "test"
+      type: "pages"
+      hidden: true
