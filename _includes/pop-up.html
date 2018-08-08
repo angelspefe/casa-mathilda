@@ -1,11 +1,29 @@
 <!-- - - - - - - - - - - MAGNIFIC POP UP JAVASCRIPT - - - - - - - - - -  -->
 <div id="launch-popup" class="launch-popup mfp-hide mob-hide">
   <div class="bg-image padded-8" style="background-image:url({{site.data.pop-up.featured_image}});">
-    <h1>{{site.data.pop-up.title}}</h1>
-    <h2> {{site.data.pop-up.sub-title}} </h2>
-    <p> {{site.data.pop-up.body}}</p>
+
+    {% if page.language == 'en' %}
+    <h2> {{site.data.pop-up.title-en}} </h2>
+    <p> {{site.data.pop-up.body-en}}</p>
+    <div class="button-1 button-ochre button-insta align-center">
+      <a href="#" target="_blank">Book Now<img src="/images/right-arrow.svg" alt="right arrow"></a>
+    </div>
+
+    {% elsif page.language == 'fr' %}
+    <h2> {{site.data.pop-up.title-fr}} </h2>
+    <p> {{site.data.pop-up.body-fr}}</p>
+    <div class="button-1 button-ochre button-insta align-center">
+      <a href="#" target="_blank">Réserver<img src="/images/right-arrow.svg" alt="right arrow"></a>
+    </div>
+
+    {% else %}
+    <h2> {{site.data.pop-up.title-es}} </h2>
+    <p> {{site.data.pop-up.body-es}}</p>
     <div class="button-1 button-ochre button-insta align-center">
       <a href="#" target="_blank">Reserva Ahora<img src="/images/right-arrow.svg" alt="right arrow"></a>
     </div>
+
+    {% endif %}
+
   </div>
 </div>
