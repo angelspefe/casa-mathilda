@@ -23,6 +23,6 @@ _options:
   city:
     hidden: true
 defaults:
-  - type: 'projects'
+  - type: 'pages'
     values:
       _hide_title: true
