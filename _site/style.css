@@ -586,7 +586,7 @@ footer nav a:hover, .copyright a:hover {
   text-align: center;
 }
 
-.launch-popup .button-1 {
+.launch-popup.button-1 {
   margin:auto;
 }
 
