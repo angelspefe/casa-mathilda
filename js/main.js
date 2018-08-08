@@ -114,28 +114,6 @@ $('a[href*="#"]')
 // });
 
 
-$(document).ready(function() {
-  $(window).on('load', function() {
-    var now, lastDatePopupShowed;
-    now = new Date();
-
-    if (localStorage.getItem('lastDatePopupShowed') !== null) {
-      lastDatePopupShowed = new Date(parseInt(localStorage.getItem('lastDatePopupShowed')));
-    }
-
-    if (((now - lastDatePopupShowed) >= (15 * 86400000)) || !lastDatePopupShowed) {
-      $.magnificPopup.open({
-        items: {
-          src: '#launch-popup'
-        },
-        type: 'inline'
-      }, 0);
-
-      localStorage.setItem('lastDatePopupShowed', now);
-    }
-  });
-});
-
 // This creates a funtion for the rooms details sections where we can show a section by clicking on the show button and hide it with the hide button
 
 $(document).ready(function() {
@@ -173,4 +151,26 @@ function goBack() {
 $(".burger-button").click(function() {
   $(".burger-button").toggleClass("active");
   $(".burger-menu").slideToggle("slow");
+});
+
+$(document).ready(function() {
+  $(window).on('load', function() {
+    var now, lastDatePopupShowed;
+    now = new Date();
+
+    if (localStorage.getItem('lastDatePopupShowed') !== null) {
+      lastDatePopupShowed = new Date(parseInt(localStorage.getItem('lastDatePopupShowed')));
+    }
+
+    if (((now - lastDatePopupShowed) >= (15 * 86400000)) || !lastDatePopupShowed) {
+      $.magnificPopup.open({
+        items: {
+          src: '#launch-popup'
+        },
+        type: 'inline'
+      }, 0);
+
+      localStorage.setItem('lastDatePopupShowed', now);
+    }
+  });
 });
