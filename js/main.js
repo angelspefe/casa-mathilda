@@ -195,3 +195,28 @@ $(document).ready(function() {
     }
   });
 });
+
+
+// - - - - - - - - COOKIES CONSENT
+
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  palette: {
+    popup: {
+      background: '#879d99',
+      text: '#ffffff'
+    },
+    button: {
+      background: '#cecbc2',
+      text: '#ffffff'
+    }
+  },
+  position: 'top',
+  content: {
+    message: 'Utilizamos cookies para dar la mejor experiencia al usuario en nuestro sitio web. Si continúa navegando, asumiremos que está de acuerdo.',
+    link: 'Política de privacidad',
+    href: 'client-casamathilda.loveiscreative.com/privacidad',
+    dismiss: 'De Acuerdo',
+    target: '_blank'
+  }
+})});
