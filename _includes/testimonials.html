@@ -1,3 +1,16 @@
+
+{% for item in site.data.testimonials %}
+  <div class="testimonial">
+    <p class="testimonial-review"> {{site.data.testimonials.review-1-en}} </p>
+    <h4 class="testimonial-client"> {{site.data.testimonials.name-1-en}} </h4>
+    <h5 class="testimonial-country">{{site.data.testimonials.country-1-en}}</h5>
+  </div>
+{% endfor %}
+
+
+
+
+
 <!-- - - - - - - - - - - ENGLISH - - - - - - - - - -  -->
 {% if page.language == 'en' %}
 <!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
