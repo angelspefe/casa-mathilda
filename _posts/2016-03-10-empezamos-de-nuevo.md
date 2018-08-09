@@ -13,3 +13,7 @@ Y hemos vuelto con la cara lavada y las pilas cargadas a tope para iniciar la te
 Este a&ntilde;o ha empezado con inmejorables noticias. Nos hemos presentado “oficialmente a la prensa de casa ” y al mismo tiempo algunos medios extranjeros nos han descubierto y nos han mostrado en peri&oacute;dicos tan importantes con el ingl&eacute;s The Times.
 
 Este fue el articulo publicado en su peri&oacute;dico hace unos d&iacute;as. Recomendaciones de hoteles y restaurantes en Barcelona y Madrid. Y ah&iacute; estamos!!! Esperamos dar la bienvenida a muchos de sus lectores.
+
+Lee el art&iacute;culo completo:
+
+![](/uploads/blog-empezamos-2.jpg)
