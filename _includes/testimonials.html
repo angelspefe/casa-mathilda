@@ -6,10 +6,13 @@
     <h4 class="testimonial-client"> {{site.data.testimonials.name-en}} </h4>
     <h5 class="testimonial-country">{{site.data.testimonials.country-en}}</h5>
     {% elsif page.language == 'fr' %}
-    <p class="testimonial-review"> {{site.data.testimonials.review-en}} </p>
-    <h4 class="testimonial-client"> {{site.data.testimonials.name-en}} </h4>
-    <h5 class="testimonial-country">{{site.data.testimonials.country-en}}</h5>
+    <p class="testimonial-review"> {{site.data.testimonials.review-fr}} </p>
+    <h4 class="testimonial-client"> {{site.data.testimonials.name-fr}} </h4>
+    <h5 class="testimonial-country">{{site.data.testimonials.country-fr}}</h5>
     {% else %}
+    <p class="testimonial-review"> {{site.data.testimonials.review-es}} </p>
+    <h4 class="testimonial-client"> {{site.data.testimonials.name-es}} </h4>
+    <h5 class="testimonial-country">{{site.data.testimonials.country-es}}</h5>
     {% endif %}
   </div>
 {% endfor %}
