@@ -201,6 +201,9 @@ a.cc-link
     padding: 0;
 }
 
+.cc-button {
+  padding: .4em 2.8em;
+}
 
 .p-bold, .p-bold p {
   font-family: 'Oswald', sans-serif;
