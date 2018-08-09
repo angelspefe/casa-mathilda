@@ -168,6 +168,8 @@ h4 {
   color: #546461;
   text-transform: uppercase;
   font-size: 1rem;
+  padding-bottom: 0;
+  line-height: 0.5
 }
 
 h5 {
@@ -177,38 +179,18 @@ h5 {
   font-size: 0.9rem;
 }
 
-#contact a,
-a.cc-link
+#contact a
  {
   color: #DEBD31 !important;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
 }
 
-#contact a:hover,
-.cc-link a:hover {
+#contact a:hover {
   color: #fff;
   transition: 0.7s;
 }
 
-.cc-banner .cc-message {
-  line-height:0.8em;
-}
-
-.cc-link {
-    opacity: 1;
-    display: inline;
-    padding: 0;
-}
-
-.cc-btn {
-  padding: .4em 2.8em;
-}
-
-.cc-window {
-  font-family: 'Raleway', sans-serif;
-  font-size:0.9em;
-}
 
 .p-bold, .p-bold p {
   font-family: 'Oswald', sans-serif;
@@ -586,6 +568,40 @@ footer nav a:hover, .copyright a:hover {
   max-width: 2rem;
 }
 
+
+/*----------- Cookies Consent -----------*/
+
+a.cc-link{
+  color: #DEBD31 !important;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+
+.cc-link a:hover {
+  color: #fff;
+  transition: 0.7s;
+}
+
+.cc-banner .cc-message {
+  line-height:0.8em;
+}
+
+.cc-link {
+    opacity: 1 !important;
+    display: inline !important;
+    padding: 0 !important;
+}
+
+.cc-btn {
+  padding: .4em 2.8em !important;
+}
+
+.cc-window {
+  font-family: 'Raleway', sans-serif !important;
+  font-size:0.9em;
+}
+
+
 /*----------- Launch Pop Up -----------*/
 
 .launch-popup {
@@ -802,9 +818,6 @@ appearance: none;
 
 .testimonial-section {
   margin-top: 20%;
-}
-
-.owl-carousel {
   background-image: url('/images/quote.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -826,6 +839,12 @@ appearance: none;
 .testimonial-country, {
   margin:auto;
 }
+
+.testimonial-slider {
+  height:10vh;
+}
+
+
 
 /*----------- ELEMENTS -----------*/
 

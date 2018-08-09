@@ -441,8 +441,10 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
 <div class="testimonial-section padded-5 align-center">
   <h2>Lo que dicen nuestros huéspedes...</h2>
 
-<!-- - - - - - - - - - - Owl Carousel - - - - - - - - - -  -->
-  <div class="owl-carousel">
+<!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - -  -->
+
+
+  <div class="testimonial-slider">
     <div class="testimonial">
       <p class="testimonial-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
       <h4 class="testimonial-client">Mary</h4>
@@ -461,12 +463,12 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
     </div>
   </div>
 
-</div> <!-- - - - - - - - - - - End Owl Carousel - - - - - - - - - -  -->
+
+
+
+
+</div> <!-- - - - - - - - - - - End Testimonial Carousel - - - - - - - - - -  -->
 </div>
-
-
-
-
 
 
       </div><!-- this closes the second column -->
@@ -792,9 +794,8 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
   }
 </script>
 
+<!-- - - - - - - - - - - Banner on Homepage - - - - - - - - - - -  -->
 <script>
-  // This is the automatic background slider on the homepage
-
   var slideIndex = 0;
   carousel();
 
@@ -810,6 +811,27 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
     }
     x[slideIndex - 1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+</script>
+
+<!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - - -  -->
+<script>
+
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("testimonial");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {
+      slideIndex = 1
+    }
+    x[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 5000);
   }
   // end background slides
 </script>

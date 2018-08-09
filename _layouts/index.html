@@ -200,34 +200,12 @@ layout: default
 
 <!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
 <div class="testimonial-section padded-5 align-center">
-  <h2>Lo que dicen nuestros huéspedes...</h2>
 
-<!-- - - - - - - - - - - Owl Carousel - - - - - - - - - -  -->
-  <div class="owl-carousel">
-    <div class="testimonial">
-      <p class="testimonial-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-      <h4 class="testimonial-client">Mary</h4>
-      <h5 class="testimonial-country">Chicago</h5>
-    </div>
-    <div class="testimonial">
-      <p class="testimonial-review">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <h4 class="testimonial-client">Joe</h4>
-      <h5 class="testimonial-country">Moscow</h5>
+  {% include testimonials.html %}
 
-    </div>
-    <div class="testimonial">
-      <p class="testimonial-review"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h4 class="testimonial-client">Carly</h4>
-      <h5 class="testimonial-country">Australia</h5>
-    </div>
-  </div>
 
-</div> <!-- - - - - - - - - - - End Owl Carousel - - - - - - - - - -  -->
+</div> <!-- - - - - - - - - - - End Testimonial Carousel - - - - - - - - - -  -->
 </div>
-
-
-
-
 
 
       </div><!-- this closes the second column -->
@@ -437,9 +415,8 @@ layout: default
   }
 </script>
 
+<!-- - - - - - - - - - - Banner on Homepage - - - - - - - - - - -  -->
 <script>
-  // This is the automatic background slider on the homepage
-
   var slideIndex = 0;
   carousel();
 
@@ -455,6 +432,27 @@ layout: default
     }
     x[slideIndex - 1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+</script>
+
+<!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - - -  -->
+<script>
+
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("testimonial");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {
+      slideIndex = 1
+    }
+    x[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 5000);
   }
   // end background slides
 </script>
