@@ -9,8 +9,6 @@ blurb: >-
   algunas increíbles, mezcladas con ciertos momentos de estrés que al final
   acabaron siempre con unas buenas dosis de risas !!!
 featured_image: /uploads/blog-primer-aniversario.jpg
-_comments:
-  featured_image: Mida 600px ample x 400px alt, en JPG
 ---
 
 Inauguramos el Blog para celebrar con todos vosotros nuestro 1er. aniversario.
