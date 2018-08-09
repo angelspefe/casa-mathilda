@@ -1,13 +1,11 @@
 
 {% for item in site.data.testimonials %}
   <div class="testimonial">
-    <p class="testimonial-review"> {{site.data.testimonials.review-1-en}} </p>
-    <h4 class="testimonial-client"> {{site.data.testimonials.name-1-en}} </h4>
-    <h5 class="testimonial-country">{{site.data.testimonials.country-1-en}}</h5>
+    <p class="testimonial-review"> {{site.data.testimonials.review-en}} </p>
+    <h4 class="testimonial-client"> {{site.data.testimonials.name-en}} </h4>
+    <h5 class="testimonial-country">{{site.data.testimonials.country-en}}</h5>
   </div>
 {% endfor %}
-
-
 
 
 
@@ -17,7 +15,7 @@
   <h2>Words from our guests...</h2>
 
 <!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - -  -->
-  <div class="testimonial-slider">
+  <!-- <div class="testimonial-slider">
     <div class="testimonial">
       <p class="testimonial-review"> {{site.data.testimonials.review-1-en}} </p>
       <h4 class="testimonial-client"> {{site.data.testimonials.name-1-en}} </h4>
@@ -34,7 +32,15 @@
       <h4 class="testimonial-client"> {{site.data.testimonials.name-3-en}} </h4>
       <h5 class="testimonial-country">{{site.data.testimonials.country-3-en}}</h5>
     </div>
-  </div>
+  </div> -->
+
+  {% for item in site.data.testimonials %}
+    <div class="testimonial">
+      <p class="testimonial-review"> {{site.data.testimonials.review-en}} </p>
+      <h4 class="testimonial-client"> {{site.data.testimonials.name-en}} </h4>
+      <h5 class="testimonial-country">{{site.data.testimonials.country-en}}</h5>
+    </div>
+  {% endfor %}
 
 
 <!-- - - - - - - - - - - FRENCH - - - - - - - - - -  -->
@@ -43,7 +49,7 @@
   <h2>Mots de nos invités... </h2>
 
 <!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - -  -->
-  <div class="testimonial-slider">
+  <!-- <div class="testimonial-slider">
     <div class="testimonial">
       <p class="testimonial-review"> {{site.data.testimonials.review-1-fr}} </p>
       <h4 class="testimonial-client"> {{site.data.testimonials.name-1-fr}} </h4>
@@ -60,7 +66,16 @@
       <h4 class="testimonial-client"> {{site.data.testimonials.name-3-fr}} </h4>
       <h5 class="testimonial-country">{{site.data.testimonials.country-3-fr}}</h5>
     </div>
-  </div>
+  </div> -->
+
+  {% for item in site.data.testimonials %}
+    <div class="testimonial">
+      <p class="testimonial-review"> {{site.data.testimonials.review-fr}} </p>
+      <h4 class="testimonial-client"> {{site.data.testimonials.name-fr}} </h4>
+      <h5 class="testimonial-country">{{site.data.testimonials.country-fr}}</h5>
+    </div>
+  {% endfor %}
+
 
 <!-- - - - - - - - - - - ESPAÑOL - - - - - - - - - -  -->
 {% else %}
@@ -68,7 +83,7 @@
   <h2>Lo que nuestros huéspedes dicen... </h2>
 
 <!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - -  -->
-  <div class="testimonial-slider">
+  <!-- <div class="testimonial-slider">
     <div class="testimonial">
       <p class="testimonial-review"> {{site.data.testimonials.review-1-es}} </p>
       <h4 class="testimonial-client"> {{site.data.testimonials.name-1-es}} </h4>
@@ -85,6 +100,16 @@
       <h4 class="testimonial-client"> {{site.data.testimonials.name-3-es}} </h4>
       <h5 class="testimonial-country">{{site.data.testimonials.country-3-es}}</h5>
     </div>
-  </div>
+  </div> -->
+
+
+  {% for item in site.data.testimonials %}
+    <div class="testimonial">
+      <p class="testimonial-review"> {{site.data.testimonials.review-es}} </p>
+      <h4 class="testimonial-client"> {{site.data.testimonials.name-es}} </h4>
+      <h5 class="testimonial-country">{{site.data.testimonials.country-es}}</h5>
+    </div>
+  {% endfor %}
+
 
 {% endif %}
