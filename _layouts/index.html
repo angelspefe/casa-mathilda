@@ -105,20 +105,20 @@ layout: default
           </div>
           <div class="col-7_sm-12 padded-left">
             {% if page.language == 'en' %} {{item.room-features-en_html}}
-            <div class="button-left button-ochre left mob-show">
+            <!-- <div class="button-left button-ochre left mob-show">
               <a href="/booking"> Book <img src="/images/right-arrow.svg" alt="right arrow"> </a>
-            </div>
+            </div> -->
             {% elsif page.language == 'fr' %} {{item.room-features-fr_html}}
-            <div class="button-left button-ochre left mob-show">
+            <!-- <div class="button-left button-ochre left mob-show">
               <a href="/booking"> Réserver <img src="/images/right-arrow.svg" alt="right arrow"> </a>
-            </div>
+            </div> -->
             {% else %} {{item.room-features-es_html}}
-            <div class="button-left button-ochre left mob-show">
+            <!-- <div class="button-left button-ochre left mob-show">
               <a href="/booking"> Reserva <img src="/images/right-arrow.svg" alt="right arrow"> </a>
-            </div>
+            </div> -->
             {% endif %}
-
           </div>
+
           <span class="close-icon" id="hide-{{item.number}}"><img src="/images/letter-x.svg"></span>
         </div>
       </div>
@@ -231,8 +231,8 @@ layout: default
 
     {% elsif page.language == 'en' %}
 
-    <h1>Galería</h1>
-    <p>Selecciona</p>
+    <h1>Gallery</h1>
+    <p>Select</p>
     <nav id="portfolio-filter">
       <li><a href="" id="all" class="active">All</a> | </li>
       <li><a href="" id="habitaciones">Rooms</a> | </li>
@@ -244,8 +244,8 @@ layout: default
 
     {% elsif page.language =='fr' %}
 
-    <h1>Galería</h1>
-    <p>Selecciona</p>
+    <h1>Galerie</h1>
+    <p>Sélectionner</p>
     <nav id="portfolio-filter">
       <li><a href="" id="all" class="active">Toutes</a> | </li>
       <li><a href="" id="habitaciones">Chambres</a> | </li>
@@ -452,7 +452,8 @@ layout: default
       slideIndex = 1
     }
     x[slideIndex - 1].style.display = "block";
-    setTimeout(carousel, 5000);
+    setTimeout(carousel, 6500);
   }
-  // end background slides
+
+
 </script>

@@ -69,7 +69,7 @@ header {
 }
 
 .padded-left {
-  padding-left: 8%
+  padding-left: 8%!important;
 }
 
 .padded-right {
