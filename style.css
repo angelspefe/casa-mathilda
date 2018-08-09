@@ -178,7 +178,7 @@ h5 {
 }
 
 #contact a,
-.cc-link a
+a.cc-link
  {
   color: #DEBD31;
   font-family: 'Raleway', sans-serif;
@@ -190,6 +190,17 @@ h5 {
   color: #fff;
   transition: 0.7s;
 }
+
+.cc-banner .cc-message {
+  line-height:0.8em;
+}
+
+.cc-link {
+    opacity: 1;
+    display: inline;
+    padding: 0;
+}
+
 
 .p-bold, .p-bold p {
   font-family: 'Oswald', sans-serif;
