@@ -213,9 +213,10 @@ window.cookieconsent.initialise({
   position: 'top',
   content: {
     message: 'Utilizamos cookies para dar la mejor experiencia al usuario en nuestra web. Si continúa navegando, asumiremos que está de acuerdo.',
-    // link: 'Política de privacidad',
-    // href: 'client-casamathilda.loveiscreative.com/privacidad',
+    link: 'Política de privacidad',
+    href: 'client-casamathilda.loveiscreative.com/privacidad',
     dismiss: 'OK',
-    // target: '_blank',
+    target: '_blank',
+    showLink: false,
   }
 })});
