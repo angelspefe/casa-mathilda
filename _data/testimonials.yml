@@ -1,73 +1,55 @@
-- testimonial:
-  review-es: ES Fabulous service and great breakfast, centrally located place with loads of charm
-  name-es: Andrea
-  country-es: Italia
-- testimonial:
-  review-en: Fabulous service and great breakfast, centrally located place with loads of charm
-  name-en: Andrea
-  country-en: Italy
-- testimonial:
-  review-fr: FR Fabulous service and great breakfast, centrally located place with loads of charm
-  name-fr: Andrea
-  country-fr: Italie
-
-
-
-
-
-
-# review-1-es: ES Fabulous service and great breakfast, centrally located place with loads of charm
-# name-1-es: Andrea
-# country-1-es: Italia
-# review-1-en: Fabulous service and great breakfast, centrally located place with loads of charm
-# name-1-en: Andrea
-# country-1-en: Italy
-# review-1-fr: FR Fabulous service and great breakfast, centrally located place with loads of charm
-# name-1-fr: Andrea
-# country-1-fr: Italie
-# review-2-es: ES The ambience of the hotel is fantastic, well decorated, very cosy and friendly staff. The rooms are a good size and the common indoor or outdoor courtyard areas are great to have drinks or just chill out
-# name-2-es: Mark
-# country-2-es: Alemania
-# review-2-en: The ambience of the hotel is fantastic, well decorated, very cosy and friendly staff. The rooms are a good size and the common indoor or outdoor courtyard areas are great to have drinks or just chill out
-# name-2-en: Mark
-# country-2-en: Germany
-# review-2-fr: FR The ambience of the hotel is fantastic, well decorated, very cosy and friendly staff. The rooms are a good size and the common indoor or outdoor courtyard areas are great to have drinks or just chill out
-# name-2-fr: Mark
-# country-2-fr: Alemagne
-# review-3-es: ES We stayed in this hotel last month - the staff were lovely and really helpful and the rooms were perfect, so clean and comfortable.
-# name-3-es: Alicia
-# country-3-es: Estados Unidos
-# review-3-en: We stayed in this hotel last month - the staff were lovely and really helpful and the rooms were perfect, so clean and comfortable.
-# name-3-en: Alicia
-# country-3-en: United States
-# review-3-fr: FR We stayed in this hotel last month - the staff were lovely and really helpful and the rooms were perfect, so clean and comfortable.
-# name-3-fr: Alicia
-# country-3-fr: États Unis
-# _comments:
-#   review-1-es: Opinió en Español
-#   name-1-es: Nom del cient en Español
-#   country-1-es: País del clienten Español
-#   review-2-es: Opinió en Español
-#   name-2-es: Nom del cient en Español
-#   country-2-es: País del client en Español
-#   review-3-es: Opinió en Español
-#   name-3-es: Nom del cient en Español
-#   country-3-es: País del clienten Español
-#   review-1-en: Opinió en English
-#   name-1-en: Nom del client en English
-#   country-1-en: País del client en English
-#   review-2-en: Opinió en English
-#   name-2-en: Nom del client en English
-#   country-2-en: País del client en English
-#   review-3-en: Opinió en English
-#   name-3-en: Nom del client en English
-#   country-3-en: País del client en English
-#   review-1-fr: Opinió en Français
-#   name-1-fr: Nom del client en Français
-#   country-1-fr: País del client en Français
-#   review-2-fr: Opinió en Français
-#   name-2-fr: Nom del client en Français
-#   country-2-fr: País del client en Français
-#   review-3-fr: Opinió en Français
-#   name-3-fr: Nom del client en Français
-#   country-3-fr: País del client en Français
+review-1-es: ES Fabulous service and great breakfast, centrally located place with loads of charm
+name-1-es: Andrea
+country-1-es: Italia
+review-1-en: Fabulous service and great breakfast, centrally located place with loads of charm
+name-1-en: Andrea
+country-1-en: Italy
+review-1-fr: FR Fabulous service and great breakfast, centrally located place with loads of charm
+name-1-fr: Andrea
+country-1-fr: Italie
+review-2-es: ES The ambience of the hotel is fantastic, well decorated, very cosy and friendly staff. The rooms are a good size and the common indoor or outdoor courtyard areas are great to have drinks or just chill out
+name-2-es: Mark
+country-2-es: Alemania
+review-2-en: The ambience of the hotel is fantastic, well decorated, very cosy and friendly staff. The rooms are a good size and the common indoor or outdoor courtyard areas are great to have drinks or just chill out
+name-2-en: Mark
+country-2-en: Germany
+review-2-fr: FR The ambience of the hotel is fantastic, well decorated, very cosy and friendly staff. The rooms are a good size and the common indoor or outdoor courtyard areas are great to have drinks or just chill out
+name-2-fr: Mark
+country-2-fr: Alemagne
+review-3-es: ES We stayed in this hotel last month - the staff were lovely and really helpful and the rooms were perfect, so clean and comfortable.
+name-3-es: Alicia
+country-3-es: Estados Unidos
+review-3-en: We stayed in this hotel last month - the staff were lovely and really helpful and the rooms were perfect, so clean and comfortable.
+name-3-en: Alicia
+country-3-en: United States
+review-3-fr: FR We stayed in this hotel last month - the staff were lovely and really helpful and the rooms were perfect, so clean and comfortable.
+name-3-fr: Alicia
+country-3-fr: États Unis
+_comments:
+  review-1-es: Opinió en Español
+  name-1-es: Nom del cient en Español
+  country-1-es: País del clienten Español
+  review-2-es: Opinió en Español
+  name-2-es: Nom del cient en Español
+  country-2-es: País del client en Español
+  review-3-es: Opinió en Español
+  name-3-es: Nom del cient en Español
+  country-3-es: País del clienten Español
+  review-1-en: Opinió en English
+  name-1-en: Nom del client en English
+  country-1-en: País del client en English
+  review-2-en: Opinió en English
+  name-2-en: Nom del client en English
+  country-2-en: País del client en English
+  review-3-en: Opinió en English
+  name-3-en: Nom del client en English
+  country-3-en: País del client en English
+  review-1-fr: Opinió en Français
+  name-1-fr: Nom del client en Français
+  country-1-fr: País del client en Français
+  review-2-fr: Opinió en Français
+  name-2-fr: Nom del client en Français
+  country-2-fr: País del client en Français
+  review-3-fr: Opinió en Français
+  name-3-fr: Nom del client en Français
+  country-3-fr: País del client en Français
