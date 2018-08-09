@@ -1,12 +1,15 @@
-- review-es: ES Fabulous service and great breakfast, centrally located place with loads of charm
-- name-es: Andrea
-- country-es: Italia
-- review-en: Fabulous service and great breakfast, centrally located place with loads of charm
-- name-en: Andrea
-- country-en: Italy
-- review-fr: FR Fabulous service and great breakfast, centrally located place with loads of charm
-- name-fr: Andrea
-- country-fr: Italie
+- testimonial:
+  review-es: ES Fabulous service and great breakfast, centrally located place with loads of charm
+  name-es: Andrea
+  country-es: Italia
+- testimonial:
+  review-en: Fabulous service and great breakfast, centrally located place with loads of charm
+  name-en: Andrea
+  country-en: Italy
+- testimonial:
+  review-fr: FR Fabulous service and great breakfast, centrally located place with loads of charm
+  name-fr: Andrea
+  country-fr: Italie
 
 
 

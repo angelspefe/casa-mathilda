@@ -1,6 +1,6 @@
 
 {% for item in site.data.testimonials %}
-  <div class="testimonial">
+  <div class="testimonial {{item.testimonial}}">
     {% if page.language == 'en' %}
     <p class="testimonial-review"> {{site.data.testimonials.review-en}} </p>
     <h4 class="testimonial-client"> {{site.data.testimonials.name-en}} </h4>
@@ -16,6 +16,9 @@
     {% endif %}
   </div>
 {% endfor %}
+
+
+
 
 
 
