@@ -180,7 +180,7 @@ h5 {
 #contact a,
 a.cc-link
  {
-  color: #DEBD31;
+  color: #DEBD31 !important;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
 }
@@ -201,8 +201,13 @@ a.cc-link
     padding: 0;
 }
 
-.cc-button {
+.cc-btn {
   padding: .4em 2.8em;
+}
+
+.cc-window {
+  font-family: 'Raleway', sans-serif;
+  font-size:0.9em;
 }
 
 .p-bold, .p-bold p {
