@@ -174,6 +174,8 @@ $(".burger-button").click(function() {
   $(".burger-menu").slideToggle("slow");
 });
 
+// - - - - - - - - MAGNIFIC POPUP
+
 $(document).ready(function() {
   $(window).on('load', function() {
     var now, lastDatePopupShowed;
@@ -212,11 +214,10 @@ window.cookieconsent.initialise({
   },
   position: 'top',
   content: {
-    message: 'Utilizamos cookies para dar la mejor experiencia al usuario en nuestra web. Si continúa navegando, asumiremos que está de acuerdo.',
-    link: 'Política de privacidad',
-    href: 'client-casamathilda.loveiscreative.com/privacidad',
+    message: 'Utilizamos cookies para dar la mejor experiencia al usuario en nuestra web. Si continúa navegando, asumiremos que está de acuerdo con nuestra',
+    link: 'política de privacidad',
+    href: '/privacidad',
     dismiss: 'OK',
     target: '_blank',
-    showLink: false,
   }
 })});

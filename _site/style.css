@@ -177,13 +177,16 @@ h5 {
   font-size: 0.9rem;
 }
 
-#contact a {
+#contact a,
+.cc-link a
+ {
   color: #DEBD31;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
 }
 
-#contact a:hover {
+#contact a:hover,
+.cc-link a:hover {
   color: #fff;
   transition: 0.7s;
 }
