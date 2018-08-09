@@ -1,9 +1,16 @@
 
 {% for item in site.data.testimonials %}
   <div class="testimonial">
+    {% if page.language == 'en' %}
     <p class="testimonial-review"> {{site.data.testimonials.review-en}} </p>
     <h4 class="testimonial-client"> {{site.data.testimonials.name-en}} </h4>
     <h5 class="testimonial-country">{{site.data.testimonials.country-en}}</h5>
+    {% elsif page.language == 'fr' %}
+    <p class="testimonial-review"> {{site.data.testimonials.review-en}} </p>
+    <h4 class="testimonial-client"> {{site.data.testimonials.name-en}} </h4>
+    <h5 class="testimonial-country">{{site.data.testimonials.country-en}}</h5>
+    {% else %}
+    {% endif %}
   </div>
 {% endfor %}
 
@@ -34,14 +41,6 @@
     </div>
   </div> -->
 
-  {% for item in site.data.testimonials %}
-    <div class="testimonial">
-      <p class="testimonial-review"> {{site.data.testimonials.review-en}} </p>
-      <h4 class="testimonial-client"> {{site.data.testimonials.name-en}} </h4>
-      <h5 class="testimonial-country">{{site.data.testimonials.country-en}}</h5>
-    </div>
-  {% endfor %}
-
 
 <!-- - - - - - - - - - - FRENCH - - - - - - - - - -  -->
 {% elsif page.language == 'fr' %}
@@ -68,15 +67,6 @@
     </div>
   </div> -->
 
-  {% for item in site.data.testimonials %}
-    <div class="testimonial">
-      <p class="testimonial-review"> {{site.data.testimonials.review-fr}} </p>
-      <h4 class="testimonial-client"> {{site.data.testimonials.name-fr}} </h4>
-      <h5 class="testimonial-country">{{site.data.testimonials.country-fr}}</h5>
-    </div>
-  {% endfor %}
-
-
 <!-- - - - - - - - - - - ESPAÑOL - - - - - - - - - -  -->
 {% else %}
 <!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
@@ -102,14 +92,6 @@
     </div>
   </div> -->
 
-
-  {% for item in site.data.testimonials %}
-    <div class="testimonial">
-      <p class="testimonial-review"> {{site.data.testimonials.review-es}} </p>
-      <h4 class="testimonial-client"> {{site.data.testimonials.name-es}} </h4>
-      <h5 class="testimonial-country">{{site.data.testimonials.country-es}}</h5>
-    </div>
-  {% endfor %}
 
 
 {% endif %}
