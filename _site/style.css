@@ -1079,6 +1079,11 @@ hr {
     background-attachment: scroll;
   }
 
+  .testimonial-slider {
+    padding-left:10%;
+    padding-right:10%;
+  }
+
 }
 
 @media(max-width:768px) {
@@ -1187,6 +1192,9 @@ hr {
   #portfolio-filter li {
     padding-bottom: 0.5rem;
   }
+  .testimonial-slider {
+    min-height:20vh;
+  }
 } /* this closes the media query  */
 
 @media(max-width:375px) {
@@ -1220,6 +1228,9 @@ hr {
   }
   .bg-image-slide .transbox {
     max-width: 80%;
+  }
+  .testimonial-slider {
+    min-height:30vh;
   }
 } /* this closes the media query  */
 
