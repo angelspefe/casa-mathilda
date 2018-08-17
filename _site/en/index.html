@@ -176,6 +176,7 @@
   </header>
 
   <!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
+<div class="banner-slider">
 <div class="bg-image-slide bg-slide-1">
   <div class="padded-2 bump-right transbox">
     <h1>Stay in Barcelona as comfortable as in your home with the efficiency of a good hotel.</h1>
@@ -191,7 +192,7 @@
     <h1> Stay in Barcelona as comfortable as in your home with the efficiency of a good hotel.</h1>
   </div>
 </div>
-
+</div>
 
 
 <!-- - - - - - - - - - - SECTION: ROOMS - - - - - - - - - -  -->
@@ -444,7 +445,7 @@ This is our spirit when welcoming our guests, sharing and personalizing in every
   <h2>Words from our guests...</h2>
 
 <!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - -  -->
-  <div class="testimonial-slider">
+  <div id="testimonial-slider">
     <div class="testimonial">
       <p class="testimonial-review"> Fabulous service and great breakfast, centrally located place with loads of charm </p>
       <h4 class="testimonial-client"> Andrea </h4>
@@ -668,7 +669,8 @@ This is our spirit when welcoming our guests, sharing and personalizing in every
 
 <!-- - - - - - - - - - - Snap Widget - - - - - - - - - - -  -->
     <script src="https://snapwidget.com/js/snapwidget.js"></script>
-    <iframe src="https://snapwidget.com/embed/557615" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+    <iframe src="https://snapwidget.com/embed/585232" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" ></iframe>
+
   </div>
 
 <!-- - - - - - - - - - - SECTION: CONTACT - - - - - - - - - -  -->
@@ -797,7 +799,7 @@ This is our spirit when welcoming our guests, sharing and personalizing in every
 </script>
 
 <!-- - - - - - - - - - - Banner on Homepage - - - - - - - - - - -  -->
-<script>
+<!-- <script>
   var slideIndex = 0;
   carousel();
 
@@ -814,10 +816,10 @@ This is our spirit when welcoming our guests, sharing and personalizing in every
     x[slideIndex - 1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
   }
-</script>
+</script> -->
 
 <!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - - -  -->
-<script>
+<!-- <script>
 
   var slideIndex = 0;
   carousel();
@@ -836,6 +838,46 @@ This is our spirit when welcoming our guests, sharing and personalizing in every
     setTimeout(carousel, 6500);
   }
 
+</script> -->
+
+<!-- - - - - - - - - - - Banner on Homepage - - - - - - - - - - -  -->
+<script>
+  var slideIndex = 1;
+  var slideIndex1 = 1;
+
+  carousel();
+  carousel1();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("bg-image-slide");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {
+      slideIndex = 1
+    }
+    x[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+
+
+<!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - - -  -->
+
+  function carousel1() {
+    var i;
+    var x = document.getElementsByClassName("testimonial");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex1++;
+    if (slideIndex1 > x.length) {
+      slideIndex1 = 1
+    }
+    x[slideIndex1 - 1].style.display = "block";
+    setTimeout(carousel1, 6500);
+  }
 
 </script>
 

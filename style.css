@@ -568,6 +568,16 @@ footer nav a:hover, .copyright a:hover {
   max-width: 2rem;
 }
 
+/*----------- Snap Widget -----------*/
+
+
+.snapwidget-widget {
+  border:none;
+  overflow:hidden;
+  width:100%;
+  height:200px;
+}
+
 
 /*----------- Cookies Consent -----------*/
 
@@ -1065,6 +1075,10 @@ hr {
     padding: 0 0 0 4%;
   }
 
+  .bg-image-slide {
+    background-attachment: scroll;
+  }
+
 }
 
 @media(max-width:768px) {
@@ -1088,10 +1102,6 @@ hr {
   .room-details-popup {
     width: 90%;
     background: rgba(255, 255, 255, 0.95);
-  }
-
-  .bg-image-slide {
-    background-attachment: scroll;
   }
 
   .bg-image-slide .transbox {

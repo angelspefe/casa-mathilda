@@ -176,6 +176,7 @@
   </header>
 
   <!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
+<div class="banner-slider">
 <div class="bg-image-slide bg-slide-1">
   <div class="padded-2 bump-right transbox">
     <h1>Le confort et l’ambiance d’une maison ainsi qu’un service d’hôtel professionnel.</h1>
@@ -191,7 +192,7 @@
     <h1> Le confort et l’ambiance d’une maison ainsi qu’un service d’hôtel professionnel.</h1>
   </div>
 </div>
-
+</div>
 
 
 <!-- - - - - - - - - - - SECTION: ROOMS - - - - - - - - - -  -->
@@ -669,7 +670,8 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
 
 <!-- - - - - - - - - - - Snap Widget - - - - - - - - - - -  -->
     <script src="https://snapwidget.com/js/snapwidget.js"></script>
-    <iframe src="https://snapwidget.com/embed/557615" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+    <iframe src="https://snapwidget.com/embed/585232" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" ></iframe>
+
   </div>
 
 <!-- - - - - - - - - - - SECTION: CONTACT - - - - - - - - - -  -->
@@ -798,7 +800,7 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
 </script>
 
 <!-- - - - - - - - - - - Banner on Homepage - - - - - - - - - - -  -->
-<script>
+<!-- <script>
   var slideIndex = 0;
   carousel();
 
@@ -815,10 +817,10 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
     x[slideIndex - 1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
   }
-</script>
+</script> -->
 
 <!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - - -  -->
-<script>
+<!-- <script>
 
   var slideIndex = 0;
   carousel();
@@ -837,6 +839,46 @@ C’est dans cet esprit que nous reçevons nos hôtes, en partageant et personna
     setTimeout(carousel, 6500);
   }
 
+</script> -->
+
+<!-- - - - - - - - - - - Banner on Homepage - - - - - - - - - - -  -->
+<script>
+  var slideIndex = 1;
+  var slideIndex1 = 1;
+
+  carousel();
+  carousel1();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("bg-image-slide");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {
+      slideIndex = 1
+    }
+    x[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+
+
+<!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - - -  -->
+
+  function carousel1() {
+    var i;
+    var x = document.getElementsByClassName("testimonial");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex1++;
+    if (slideIndex1 > x.length) {
+      slideIndex1 = 1
+    }
+    x[slideIndex1 - 1].style.display = "block";
+    setTimeout(carousel1, 6500);
+  }
 
 </script>
 
