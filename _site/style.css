@@ -72,6 +72,10 @@ header {
   padding-left: 8%!important;
 }
 
+.padded-left-20 {
+  padding-left: 20%!important;
+}
+
 .padded-right {
   padding-right: 8%;
 }
@@ -214,6 +218,7 @@ h5 {
   list-style: none;
   display: inline-block;
   font-size: 1.1em;
+  padding-right: 20px;
 }
 
 .link-menu p {
@@ -466,7 +471,7 @@ footer nav a:hover, .copyright a:hover {
 .bg-image-slide .transbox {
   max-width: 70%;
   position: absolute;
-  top: 60vh;
+  top: 52vh;
   right: 0;
 }
 
@@ -491,7 +496,8 @@ footer nav a:hover, .copyright a:hover {
 }
 
 #portfolio-filter .active, #rooms-filter .active {
-  border-bottom: 2px solid #546461;
+  border-bottom: 2px solid #DEBD31;
+  color:#DEBD31;
 }
 
 .room-details-popup {
@@ -747,7 +753,7 @@ a.cc-link{
   position: fixed;
   right: 0px;
   bottom: 0px;
-  margin: 2% 3% 3% 2%;
+  margin: 2% 6% 5% 2%;
   z-index: 100;
   transition: 0.2s ease;
 }
@@ -926,6 +932,8 @@ hr {
 .post-body img {
   margin-bottom: 2rem;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tag {
