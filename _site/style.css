@@ -888,6 +888,12 @@ hr {
   font-size: 1.2em;
 }
 
+.star {
+  float: left;
+  padding-right: 10px;
+  width: 1.8rem;
+}
+
 /*----------- NEWS PAGE -----------*/
 
 .news .padded {
