@@ -43,10 +43,12 @@
     thermostatique</li><li>Savons et produits de toilette naturels et
     biologiques ( Rituals )</li><li>Minibar et Coffre-fort</li><li>TV
     &eacute;cran plat avec cha&icirc;nes internationales</li></ul>
-  banner-1_image: /uploads/rooms-terraza-2.jpg
-  banner-2_image: /uploads/rooms-terraza-1.jpg
+  banner-1_image: /uploads/rooms-terraza-1.jpg
+  banner-2_image: /uploads/rooms-terraza-2.jpg
   banner-3_image: /uploads/rooms-terraza-3.jpg
   banner-4_image: /uploads/rooms-terraza-4.jpg
+  banner-5_image: /uploads/rooms-terraza-5.jpg
+  banner-6_image: /uploads/rooms-terraza-6.jpg
 - room-type-class: interiores
   number: 2
   hidden: true
@@ -97,10 +99,12 @@
     thermostatique</li><li>Savons et produits de toilette naturels et
     biologiques (Rituals)</li><li>Minibar et Coffre-fort</li><li>TV &eacute;cran
     plat avec cha&icirc;nes internationales</li></ul>
-  banner-1_image: /uploads/rooms-interiores-2.jpg
-  banner-2_image: /uploads/rooms-interiores-3.jpg
-  banner-3_image: /uploads/rooms-interiores-8.jpg
-  banner-4_image: /uploads/rooms-interiores-6.jpg
+  banner-1_image: /uploads/rooms-interiores-1.jpg
+  banner-2_image: /uploads/rooms-interiores-2.jpg
+  banner-3_image: /uploads/rooms-interiores-3.jpg
+  banner-4_image: /uploads/rooms-interiores-4.jpg
+  banner-5_image: /uploads/rooms-interiores-5.jpg
+  banner-6_image: /uploads/rooms-interiores-6.jpg
 - room-type-class: a-la-calle
   number: 3
   hidden: true
@@ -149,7 +153,9 @@
     thermostatique</li><li>Savons et produits de toilette naturels et
     biologiques ( Rituals )</li><li>Minibar et Coffre-fort</li><li>TV
     &eacute;cran plat avec cha&icirc;nes internationales</li></ul>
-  banner-1_image: /uploads/rooms-calle-4.jpg
-  banner-2_image: /uploads/rooms-calle-3.jpg
-  banner-3_image: /uploads/rooms-calle-2.jpg
-  banner-4_image: /uploads/rooms-calle-5.jpg
+  banner-1_image: /uploads/rooms-calle-1.jpg
+  banner-2_image: /uploads/rooms-calle-2.jpg
+  banner-3_image: /uploads/rooms-calle-3.jpg
+  banner-4_image: /uploads/rooms-calle-4.jpg
+  banner-5_image: /uploads/rooms-calle-5.jpg
+  banner-6_image: /uploads/rooms-calle-6.jpg
