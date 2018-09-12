@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 review-1-es: ES Fabulous service and great breakfast, centrally located place with loads of charm
 name-1-es: Andrea
 country-1-es: Italia
@@ -26,14 +27,67 @@ review-3-fr: FR We stayed in this hotel last month - the staff were lovely and r
 name-3-fr: Alicia
 country-3-fr: États Unis
 review-4-es: review español
+=======
+review-1-es: >-
+  La ubicación es perfecta, el silencio y tranquilidad, inigualables, y el
+  desayuno, simplemente perfecto. Pero lo mejor, es que te tratan tan bien, que
+  es como estar en casa.
+name-1-es: Erika Rodríguez
+country-1-es: España
+review-1-en: >-
+  From the moment you arrive until the moment you leave you are dealt with in a
+  professional kind manner Everything you need is to hand and nothing is too
+  much trouble, superb!
+name-1-en: Linda
+country-1-en: Great Britain
+review-1-fr: >-
+  Un endroit discret plein de charme .Situation idéale dans la ville. Chouettes
+  restaurants dans le quartier. Accueil en français très sympathique. Endroit
+  convivial, meublé avec goût.
+name-1-fr: Stephanie
+country-1-fr: Belgique
+review-2-es: >-
+  Es precioso, silencioso, decorado con gusto, tiene estilo. El personal súper
+  atento. Todo espectacular, nos ayudaron en todo. Volveremos y recomendaremos!
+name-2-es: María
+country-2-es: España
+review-2-en: >-
+  Great traditional old building with modern facilities. The air conditioning
+  was very silent and worked great. Bicycles on site to rent. Great stay,
+  Thanks!
+name-2-en: Gary
+country-2-en: Ireland
+review-2-fr: Un hôtel acceuillant et décoré avec goûts.
+name-2-fr: Ingrid
+country-2-fr: France
+review-3-es: >-
+  Excelente atención, muy amables y dispuestos a mejorar tu estadía, nos
+  ofrecieron cambiarnos a una habitación mejor, sólo porque dan una excelente
+  atención. Siempre atentos a resolver nuestras dudas y ayudarnos en lo todo.
+name-3-es: Manuel
+country-3-es: Colombia
+review-3-en: >-
+  Room very clean, quiet and nicely decorated. The staff were wonderful and on
+  duty all day. The shared spaces very nice with free tea and cookies. There's
+  also a quiet terrace available for guests.
+name-3-en: Dan
+country-3-en: Canada
+review-3-fr: >-
+  Très agréable terrasse, proche du métro Accueil par une jeune française très
+  agréable et disponible
+name-4-fr:
+country-4-fr:
+>>>>>>> 5611bd2cf94f0e876467b9726ee118360c6b7d8a
 name-4-es: Alicia
 country-4-es: Estados Unidos
-review-4-en: We stayed in this hotel last month - the staff were lovely and really helpful and the rooms were perfect, so clean and comfortable.
+review-4-en: >-
+  We stayed in this hotel last month - the staff were lovely and really helpful
+  and the rooms were perfect, so clean and comfortable.
 name-4-en: Alicia
 country-4-en: United States
-review-4-fr: FR We stayed in this hotel last month - the staff were lovely and really helpful and the rooms were perfect, so clean and comfortable.
-name-4-fr: Alicia
-country-4-fr: États Unis
+review-4-fr: >-
+  FR We stayed in this hotel last month - the staff were lovely and really
+  helpful and the rooms were perfect, so clean and comfortable.
 _comments:
   review-1-es: 1- Opinió en Español
   name-1-es: 1- Nom del cient en Español
