@@ -13,31 +13,8 @@ layout: default
       {% for post in site.posts %}
       <div class="news grid padded-5">
         <div class="col-1 mob-hide">
-          {% if page.language == 'es' %}
-            <p class="month">{{post.date | date: "%b" }}</p>
-            {% assign m = post.date | date: "%-b" %}
-            {% case m %}
-              {% when '1' %}Ene
-              {% when '2' %}Feb
-              {% when '3' %}Mar
-              {% when '4' %}Abr
-              {% when '5' %}Mayo
-              {% when '6' %}Jun
-              {% when '7' %}Jul
-              {% when '8' %}Ago
-              {% when '9' %}Sep
-              {% when '10' %}Oct
-              {% when '11' %}Nov
-              {% when '12' %}Dic
-            {% endcase %}
-            <p class="date">{{post.date | date: "%-d" }}</p>
-          {% elsif page.language == 'en' %}
-            <p class="month">{{post.date | date: "%b" }}</p>
-            <p class="date">{{post.date | date: "%-d"}}</p>
-          {% elsif page.language == 'fr' %}
-            <p class="month">{{post.date | date: "%b" }}</p>
-            <p class="date">{{post.date | date: "%-d"}}</p>
-          {% endif %}
+          <p class="month">{{post.date}}</p>
+          <p class="date">{{post.date}}</p>
         </div>
         <div class="col-4_sm-12">
             <a href="{{post.url}}"><img src="{{post.featured_image}}" alt="{{post.title}}"></a>
