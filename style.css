@@ -221,6 +221,10 @@ h5 {
   padding-right: 20px;
 }
 
+.room-selection li {
+  padding-right: 100px;
+}
+
 .link-menu p {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
