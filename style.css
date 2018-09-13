@@ -306,8 +306,19 @@ h5 {
   position: relative;
 }
 
-.postal-mathilda .show-on-hover {
+/* .postal-mathilda .show-on-hover {
   background-color: rgba(209, 205, 195, 0.9);
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+} */
+
+.postal-mathilda .show-on-hover {
+  background-color: rgba(222, 189, 49, 0.9);
   padding: 1rem;
   position: absolute;
   top: 0;
