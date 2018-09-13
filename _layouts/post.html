@@ -7,7 +7,70 @@ layout: default
   <section class="bg-beige margin-top post-body">
     <div class="padded-8">
       <h1 class="align-center"> {{page.title}} </h1>
-      <p class="small-date align-center"> {{page.date | date_to_string }} </p>
+
+      {% if page.language == 'en' %}
+      <p class="small-date align-center">
+        {% assign m = page.date | date: "%-m" %}
+          {{ page.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}January
+            {% when '2' %}February
+            {% when '3' %}March
+            {% when '4' %}April
+            {% when '5' %}May
+            {% when '6' %}June
+            {% when '7' %}July
+            {% when '8' %}August
+            {% when '9' %}September
+            {% when '10' %}October
+            {% when '11' %}November
+            {% when '12' %}December
+          {% endcase %}
+          {{ page.date | date: "%Y" }}
+      </p>
+
+      {% if page.language == 'fr' %}
+      <p class="small-date align-center">
+        {% assign m = page.date | date: "%-m" %}
+          {{ page.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}Janvier
+            {% when '2' %}Février
+            {% when '3' %}Mars
+            {% when '4' %}Avril
+            {% when '5' %}Mai
+            {% when '6' %}Juin
+            {% when '7' %}Juillet
+            {% when '8' %}Août
+            {% when '9' %}Septembre
+            {% when '10' %}Octobre
+            {% when '11' %}Novembre
+            {% when '12' %}Décembre
+          {% endcase %}
+          {{ page.date | date: "%Y" }}
+      </p>
+      {% else %}
+      <p class="small-date align-center">
+        {% assign m = page.date | date: "%-m" %}
+          {{ page.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}Enero
+            {% when '2' %}Febrero
+            {% when '3' %}Marzo
+            {% when '4' %}Abril
+            {% when '5' %}Mayo
+            {% when '6' %}Junio
+            {% when '7' %}Julio
+            {% when '8' %}Agosto
+            {% when '9' %}Septiembre
+            {% when '10' %}Octubre
+            {% when '11' %}Noviembre
+            {% when '12' %}Diciembre
+          {% endcase %}
+          {{ page.date | date: "%Y" }}
+      </p>
+      {% endif %}
+
       {% for category in page.categories %}
       <span class="tag align-center padded-bottom"> {{category}}</span> {% endfor %}
       <img src="{{page.featured_image}}" alt="{{page.title}}"> {{content}}

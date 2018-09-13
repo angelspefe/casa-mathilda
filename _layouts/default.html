@@ -26,15 +26,14 @@
     {% include navigation.html %}
 
 <!-- - - - - - - - - - - BOOK BUTTON - - - - - - - - - -  -->
-    <a href="/booking">
-        {% if page.language == 'en' %}
-        <img src="/images/book-button-eng.png" alt="book button" class="book-button">
-        {% elsif page.language == 'fr' %}
-        <img src="/images/book-button-fr.png" alt="book button" class="book-button">
-        {% else %}
-        <img src="/images/book-button-esp.png" alt="book button" class="book-button">
-        {% endif %}
-      </a>
+
+      {% if page.language == 'en' %}
+        <a href="/en/booking"><img src="/images/book-button-eng.png" alt="book button" class="book-button"></a>
+      {% elsif page.language == 'fr' %}
+        <a href="/fr/booking"><img src="/images/book-button-fr.png" alt="book button" class="book-button"></a>
+      {% else %}
+        <a href="/booking"><img src="/images/book-button-esp.png" alt="book button" class="book-button"></a>
+      {% endif %}
 
 <!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
 
@@ -53,7 +52,7 @@
       <li><a href="/en/privacidad">Privacy</a></li>
       <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
       <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
-      <li><a href="/booking" class="mob-hide">Book</a></li>
+      <li><a href="/en/booking" class="mob-hide">Book</a></li>
     </nav>
 
     {% elsif page.language == 'fr'%}
@@ -63,7 +62,7 @@
       <li><a href="/fr/privacidad">Confidentialité</a></li>
       <li><a href="https://www.facebook.com/casamathilda/" target="_blank">Facebook</a></li>
       <li><a href="https://www.instagram.com/casamathilda/" target="_blank">Instagram</a></li>
-      <li><a href="/booking" class="mob-hide">Réserve</a></li>
+      <li><a href="/fr/booking" class="mob-hide">Réserve</a></li>
     </nav>
 
     {% else %}
