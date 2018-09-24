@@ -58,12 +58,12 @@ layout: default
     {% for item in site.data.room-details %}
 
     <div class="slider-rooms filterable-item {{item.room-type-class}} {% if item.hidden %} hidden {% endif %}">
-      <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-1_image}})"></div>
-      <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-2_image}})"></div>
-      <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-3_image}})"></div>
-      <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-4_image}})"></div>
-      <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-5_image}})"></div>
-      <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-6_image}})"></div>
+      <div class="bg-image-room-{{item.number}} lazy" data-src="../img/44721746JJ_15_a.jpg" style="background-image:url({{item.banner-1_image}})"></div>
+      <div class="bg-image-room-{{item.number}} lazy" data-src="../img/44721746JJ_15_a.jpg" style="background-image:url({{item.banner-2_image}})"></div>
+      <div class="bg-image-room-{{item.number}} lazy" data-src="../img/44721746JJ_15_a.jpg" style="background-image:url({{item.banner-3_image}})"></div>
+      <div class="bg-image-room-{{item.number}} lazy" data-src="../img/44721746JJ_15_a.jpg" style="background-image:url({{item.banner-4_image}})"></div>
+      <div class="bg-image-room-{{item.number}} lazy" data-src="../img/44721746JJ_15_a.jpg" style="background-image:url({{item.banner-5_image}})"></div>
+      <div class="bg-image-room-{{item.number}} lazy" data-src="../img/44721746JJ_15_a.jpg" style="background-image:url({{item.banner-6_image}})"></div>
 
 
 
@@ -186,7 +186,7 @@ layout: default
           <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
             <h2 class="align-center">{{page.news-title}}</h2>
             <hr> {% for post in site.posts limit:1 %}
-            <a href="{{post.url}}"><img src="../img/44721746JJ_15_a.jpg" alt="{{post.title}}" class="padded-bottom align-center lazy" data-src="{{post.featured_image}}"></a>            
+            <a href="{{post.url}}"><img src="../img/44721746JJ_15_a.jpg" alt="{{post.title}}" class="padded-bottom align-center lazy" data-src="{{post.featured_image}}"></a>
             <h3 class="align-center">{{post.title}}</h3>
             <p>{{post.blurb}}</p>
 
