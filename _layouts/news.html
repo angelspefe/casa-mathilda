@@ -13,8 +13,8 @@ layout: default
       {% for post in site.posts %}
       <div class="news grid padded-5">
         <div class="col-1 mob-hide">
-          <p class="month">{{ post.date | date_to_string }}</p>
-          <p class="date">{{ post.date | date_to_string }}</p>
+          <p class="month">{{ post.date | date: "%b" }}</p>
+          <p class="date">{{ post.date | date: "%-d" }}</p>
         </div>
         <div class="col-4_sm-12">
             <a href="{{post.url}}"><img src="{{post.featured_image}}" alt="{{post.title}}"></a>
