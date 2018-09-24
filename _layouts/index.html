@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
-<div class="banner-slider lazy" data-src="../img/44721746JJ_15_a.jpg">
+<div class="banner-slider">
 <div class="bg-image-slide bg-slide-1">
   <div class="padded-2 bump-right transbox">
     <h1>{{page.intro-banner}}</h1>
@@ -84,7 +84,7 @@ layout: default
           <!-- this changes the text within the anchor link based on the language -->
           {% if page.language == 'es' %} Detalles {% elsif page.language == 'en' %} Details {% elsif page.language == 'fr' %} Détails {% endif %}
           <img src="/images/right-arrow.svg" alt="right arrow">
-        </a>
+        </a>        
       </div>
 
       <div id="popup-room-details-{{item.number}}" class="room-details-popup">
