@@ -186,7 +186,7 @@ layout: default
           <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
             <h2 class="align-center">{{page.news-title}}</h2>
             <hr> {% for post in site.posts limit:1 %}
-            <a href="{{post.url}}"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{post.featured_image}}" alt="{{post.title}}" class="padded-bottom align-center"></a>
+            <a href="{{post.url}}"><img src="{{post.featured_image}}" alt="{{post.title}}" class="padded-bottom align-center"></a>
             <h3 class="align-center">{{post.title}}</h3>
             <p>{{post.blurb}}</p>
 
@@ -269,7 +269,7 @@ layout: default
     <div class="grid gallery popup-gallery" id="portfolio-grid">
       {% for item in site.data.gallery %}
       <div class="col-4_sm-6_xs-12 filterable-item {{item.category}} all">
-        <a href="{{item.image_path}}"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{item.image_path}}" alt="{{item.image_description}}"></a>
+        <a href="{{item.image_path}}"><img src="{{item.image_path}}" alt="{{item.image_description}}"></a>
       </div>
       {% endfor %}
     </div>
