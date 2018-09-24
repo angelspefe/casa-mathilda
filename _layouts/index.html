@@ -57,7 +57,7 @@ layout: default
 
     {% for item in site.data.room-details %}
 
-    <div class="slider-rooms filterable-item {{item.room-type-class}} {% if item.hidden %} hidden {% endif %}">
+    <div class="slider-rooms filterable-item {{item.room-type-class}} {% if item.hidden %} hidden {% endif %} lazy" data-src="../img/44721746JJ_15_a.jpg">
       <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-1_image}})"></div>
       <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-2_image}})"></div>
       <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-3_image}})"></div>
