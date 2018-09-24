@@ -520,7 +520,7 @@ footer nav a:hover, .copyright a:hover {
 }
 
 .room-details-popup:focus {
-  outline: none;
+  outline: none !important;
   /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
 }
 
@@ -637,7 +637,7 @@ a.cc-link{
 }
 
 .launch-popup:focus {
-  outline: none;
+  outline: none !important;
   /* this removes the weird blue hover that would otherwise be a default style on focused elements in the popup. */
 }
 
@@ -779,6 +779,10 @@ a.cc-link{
   color: #fff;
   text-decoration: none;
   display: block;
+}
+
+[class*=button]:focus {
+  outline: none !important;
 }
 
 /*----------- FORM -----------*/
