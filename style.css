@@ -606,6 +606,7 @@ a.cc-link{
 
 .cc-banner .cc-message {
   line-height:0.8em;
+  font-size: 0.8em;
 }
 
 .cc-link {
@@ -616,6 +617,7 @@ a.cc-link{
 
 .cc-btn {
   padding: .4em 2.8em !important;
+  font-size:0.8eem;
 }
 
 .cc-window {
@@ -623,6 +625,9 @@ a.cc-link{
   font-size:0.9em;
 }
 
+.cc-window.cc-banner {
+  padding: 0.7em 1.8em 0.4em 1.8em;
+}
 
 /*----------- Launch Pop Up -----------*/
 

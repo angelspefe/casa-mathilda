@@ -179,8 +179,6 @@ $(".burger-button").click(function() {
 
 $(document).ready(function() {
   $(window).on('load', function() {
-    {% if site.launchpopup %}
-
     var now, lastDatePopupShowed;
     now = new Date();
 
@@ -198,7 +196,6 @@ $(document).ready(function() {
 
       localStorage.setItem('lastDatePopupShowed', now);
     }
-        {% endif %}
   });
 });
 

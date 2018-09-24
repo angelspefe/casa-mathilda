@@ -1,4 +1,7 @@
 permalink: /:year/:title/
+
+
+
 _options:
   layout:
     hidden: true
