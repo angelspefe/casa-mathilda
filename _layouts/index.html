@@ -269,8 +269,8 @@ layout: default
     <div class="grid gallery popup-gallery" id="portfolio-grid">
       {% for item in site.data.gallery %}
       <div class="col-4_sm-6_xs-12 filterable-item {{item.category}} all">
-        <a href="{{item.image_path}}"><img src="{{item.image_path}}" alt="{{item.image_description}}" class="lazy" data-src="../img/44721746JJ_15_a.jpg"></a>
-      </div>     
+        <a href="{{item.image_path}}"><img data-src="{{item.image_path}}" alt="{{item.image_description}}" class="lazy"></a>
+      </div>
       {% endfor %}
     </div>
   </div>
