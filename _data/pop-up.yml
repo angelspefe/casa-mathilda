@@ -5,6 +5,7 @@ body-en: Stay 5 nights and enjoy 10% off.
 title-fr: Promo d'Été
 body-fr: Séjournez 5 nuits et profitez d'une réduction de 10%.
 featured_image: /uploads/bg-popup.jpg
+launchpopup: true
 
 _comments:
   title-es: Títol de la promoció (Español)

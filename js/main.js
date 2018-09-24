@@ -137,15 +137,6 @@ $('a[href*="#"]')
 
 // magnific popup
 
-// $(document).ready(function() {
-//   $('.open-room-details-1, .open-room-details-2, .open-room-details-3').magnificPopup({
-//     type:'inline',
-//     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-//   });
-// });
-
-
-// This creates a funtion for the rooms details sections where we can show a section by clicking on the show button and hide it with the hide button
 
 $(document).ready(function() {
   $("#hide-1").click(function() {
@@ -188,6 +179,8 @@ $(".burger-button").click(function() {
 
 $(document).ready(function() {
   $(window).on('load', function() {
+    {% if site.launchpopup %}
+
     var now, lastDatePopupShowed;
     now = new Date();
 
@@ -205,6 +198,7 @@ $(document).ready(function() {
 
       localStorage.setItem('lastDatePopupShowed', now);
     }
+        {% endif %}
   });
 });
 
