@@ -802,6 +802,7 @@ form input, form label, form textarea, form p {
 form label {
   color: #fff;
   margin-bottom: 20px;
+  display:none;
 }
 
 form input, form textarea {
