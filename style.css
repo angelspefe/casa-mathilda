@@ -543,6 +543,11 @@ footer nav a:hover, .copyright a:hover {
   width: 76px;
 }
 
+.bg-image-room.lazy {
+  background-image: none;
+  background-color: #F1F1FA;
+}
+
 .slider-rooms [class*=bg-image-room] {
   background-size: cover;
   background-position: center;
