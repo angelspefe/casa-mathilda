@@ -63,7 +63,7 @@ layout: default
 
     {% for item in site.data.room-details %}
 
-    <div class="slider-rooms filterable-item {{item.room-type-class}} {% if item.hidden %} hidden {% endif %} lazy" data-src="../img/44721746JJ_15_a.jpg">
+    <div class="slider-rooms filterable-item {{item.room-type-class}} {% if item.hidden %} hidden {% endif %}">
       <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-1_image}})"></div>
       <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-2_image}})"></div>
       <div class="bg-image-room-{{item.number}}" style="background-image:url({{item.banner-3_image}})"></div>
@@ -84,7 +84,7 @@ layout: default
           <!-- this changes the text within the anchor link based on the language -->
           {% if page.language == 'es' %} Detalles {% elsif page.language == 'en' %} Details {% elsif page.language == 'fr' %} Détails {% endif %}
           <img src="/images/right-arrow.svg" alt="right arrow">
-        </a>        
+        </a>
       </div>
 
       <div id="popup-room-details-{{item.number}}" class="room-details-popup">
