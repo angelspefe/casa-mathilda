@@ -33,21 +33,27 @@ layout: default
 
     {% if page.language == 'es' %}
     <nav id="rooms-filter">
-      <li><a class="active" href="#" id="terraza">Terraza</a></li>
-      <li><a href="#" id="interiores">Interiores</a></li>
-      <li><a href="#" id="a-la-calle">A la Calle</a></li>
+      <ul>
+        <li><a class="active" href="#" id="terraza">Terraza</a></li>
+        <li><a href="#" id="interiores">Interiores</a></li>
+        <li><a href="#" id="a-la-calle">A la Calle</a></li>
+      </ul>
     </nav>
     {% elsif page.language == 'en' %}
     <nav id="rooms-filter">
-      <li><a class="active" href="#" id="terraza">Terrace</a></li>
-      <li><a href="#" id="interiores">Interior</a></li>
-      <li><a href="#" id="a-la-calle">Street</a></li>
+      <ul>
+        <li><a class="active" href="#" id="terraza">Terrace</a></li>
+        <li><a href="#" id="interiores">Interior</a></li>
+        <li><a href="#" id="a-la-calle">Street</a></li>
+      </ul>
     </nav>
     {% elsif page.language == 'fr' %}
     <nav id="rooms-filter">
-      <li><a class="active" href="#" id="terraza">Terrasse</a></li>
-      <li><a href="#" id="interiores">Intérieurs</a></li>
-      <li><a href="#" id="a-la-calle">Sur la Rue</a></li>
+      <ul>
+        <li><a class="active" href="#" id="terraza">Terrasse</a></li>
+        <li><a href="#" id="interiores">Intérieurs</a></li>
+        <li><a href="#" id="a-la-calle">Sur la Rue</a></li>
+      </ul>
     </nav>
     {% endif %}
 
@@ -227,12 +233,14 @@ layout: default
     <h1>Galería</h1>
     <p>Selecciona</p>
     <nav id="portfolio-filter">
-      <li><a href="" id="all" class="active">Todas</a></li>
-      <li><a href="" id="habitaciones">Habitaciones</a></li>
-      <li><a href="" id="desayuno">Desayuno</a></li>
-      <li><a href="" id="sala">Sala</a></li>
-      <li><a href="" id="entrada">Entrada</a></li>
-      <li><a href="" id="terraza">Terraza</a></li>
+      <ul>
+        <li><a href="" id="all" class="active">Todas</a></li>
+        <li><a href="" id="habitaciones">Habitaciones</a></li>
+        <li><a href="" id="desayuno">Desayuno</a></li>
+        <li><a href="" id="sala">Sala</a></li>
+        <li><a href="" id="entrada">Entrada</a></li>
+        <li><a href="" id="terraza">Terraza</a></li>
+      </ul>
     </nav>
 
     {% elsif page.language == 'en' %}
@@ -240,12 +248,14 @@ layout: default
     <h1>Gallery</h1>
     <p>Select</p>
     <nav id="portfolio-filter">
-      <li><a href="" id="all" class="active">All</a></li>
-      <li><a href="" id="habitaciones">Rooms</a></li>
-      <li><a href="" id="desayuno">Breakfast</a></li>
-      <li><a href="" id="sala">Living Room</a></li>
-      <li><a href="" id="entrada">Reception</a></li>
-      <li><a href="" id="terraza">Terrace</a></li>
+      <ul>
+        <li><a href="" id="all" class="active">All</a></li>
+        <li><a href="" id="habitaciones">Rooms</a></li>
+        <li><a href="" id="desayuno">Breakfast</a></li>
+        <li><a href="" id="sala">Living Room</a></li>
+        <li><a href="" id="entrada">Reception</a></li>
+        <li><a href="" id="terraza">Terrace</a></li>
+      </ul>
     </nav>
 
     {% elsif page.language =='fr' %}
@@ -253,12 +263,14 @@ layout: default
     <h1>Galerie</h1>
     <p>Sélectionner</p>
     <nav id="portfolio-filter">
-      <li><a href="" id="all" class="active">Toutes</a></li>
-      <li><a href="" id="habitaciones">Chambres</a></li>
-      <li><a href="" id="desayuno">Petit Déjenuer</a></li>
-      <li><a href="" id="sala">Salon</a></li>
-      <li><a href="" id="entrada">Réception</a></li>
-      <li><a href="" id="terraza">Terrasse</a></li>
+      <ul>
+        <li><a href="" id="all" class="active">Toutes</a></li>
+        <li><a href="" id="habitaciones">Chambres</a></li>
+        <li><a href="" id="desayuno">Petit Déjenuer</a></li>
+        <li><a href="" id="sala">Salon</a></li>
+        <li><a href="" id="entrada">Réception</a></li>
+        <li><a href="" id="terraza">Terrasse</a></li>
+      </ul>
     </nav>
 
     {% endif %}

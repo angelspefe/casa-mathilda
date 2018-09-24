@@ -3,33 +3,35 @@
   <nav>
 
     {% if page.language == 'en' %}
-
-    <li><a href="/en/#rooms">Rooms</a></li>
-    <li><a href="/en/#info">Info</a></li>
-    <li><a href="/en/#gallery">Gallery</a></li>
-    <li><a href="/en/#contact" class="light">Contact</a></li>
-    <li><a href="/en/press" class="light">Press</a></li>
-    <li><a href="/en/news" class="light">News</a></li>
-
+    <ul>
+      <li><a href="/en/#rooms">Rooms</a></li>
+      <li><a href="/en/#info">Info</a></li>
+      <li><a href="/en/#gallery">Gallery</a></li>
+      <li><a href="/en/#contact" class="light">Contact</a></li>
+      <li><a href="/en/press" class="light">Press</a></li>
+      <li><a href="/en/news" class="light">News</a></li>
+    </ul>
     {% elsif page.language == 'fr' %}
 
-    <li><a href="/fr/#rooms">Chambres</a></li>
-    <li><a href="/fr/#info">Info</a></li>
-    <li><a href="/fr/#gallery">Galerie</a></li>
-    <li><a href="/fr/#contact" class="light">Contact</a></li>
-    <li><a href="/fr/press" class="light">Presse</a></li>
-    <li><a href="/fr/news" class="light">News</a></li>
+    <ul>
+      <li><a href="/fr/#rooms">Chambres</a></li>
+      <li><a href="/fr/#info">Info</a></li>
+      <li><a href="/fr/#gallery">Galerie</a></li>
+      <li><a href="/fr/#contact" class="light">Contact</a></li>
+      <li><a href="/fr/press" class="light">Presse</a></li>
+      <li><a href="/fr/news" class="light">News</a></li>
+    </ul>
 
     {% else %}
     <!-- spanish -->
-
-    <li><a href="/#rooms">Habitaciones</a></li>
-    <li><a href="/#info">Info</a></li>
-    <li><a href="/#gallery">Galería</a></li>
-    <li><a href="/#contact" class="light">Contacto</a></li>
-    <li><a href="/press" class="light">Prensa</a></li>
-    <li><a href="/news" class="light">News</a></li>
-
+    <ul>
+      <li><a href="/#rooms">Habitaciones</a></li>
+      <li><a href="/#info">Info</a></li>
+      <li><a href="/#gallery">Galería</a></li>
+      <li><a href="/#contact" class="light">Contacto</a></li>
+      <li><a href="/press" class="light">Prensa</a></li>
+      <li><a href="/news" class="light">News</a></li>
+    </ul>
     {% endif %}
   </nav>
 
@@ -144,7 +146,7 @@
       <li><a href="/news" class="light">News</a></li>
 
       {% endif %}
-      <ul>
+    </ul>
 
   </div>
 </nav>
