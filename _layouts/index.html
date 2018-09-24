@@ -1,22 +1,24 @@
---- layout: default ---
+---
+layout: default
+---
 
 <!-- - - - - - - - - - - BANNER - - - - - - - - - -  -->
 <div class="banner-slider">
-  <div class="bg-image-slide bg-slide-1">
-    <div class="padded-2 bump-right transbox">
-      <h1>{{page.intro-banner}}</h1>
-    </div>
+<div class="bg-image-slide bg-slide-1">
+  <div class="padded-2 bump-right transbox">
+    <h1>{{page.intro-banner}}</h1>
   </div>
-  <div class="bg-image-slide bg-slide-2">
-    <div class="padded-2 bump-right transbox">
-      <h1>{{page.intro-banner}}</h1>
-    </div>
+</div>
+<div class="bg-image-slide bg-slide-2">
+  <div class="padded-2 bump-right transbox">
+    <h1>{{page.intro-banner}}</h1>
   </div>
-  <div class="bg-image-slide bg-slide-3">
-    <div class="padded-2 bump-right transbox">
-      <h1> {{page.intro-banner}}</h1>
-    </div>
+</div>
+<div class="bg-image-slide bg-slide-3">
+  <div class="padded-2 bump-right transbox">
+    <h1> {{page.intro-banner}}</h1>
   </div>
+</div>
 </div>
 
 
@@ -149,14 +151,15 @@
       <div class="bump-right p-bold padded-bottom">
         {{page.info_html}}
       </div>
-      <div class="bump-right p-bold padded-bottom"><img src="/images/star.png" class="star" alt="important service at casa mathilda"> {{page.reserva_html}}
+      <div class="bump-right p-bold padded-bottom"><img src="/images/star.png" class="star" alt="important service at casa mathilda">
+        {{page.reserva_html}}
       </div>
       <h2>{{page.services-title}}</h2>
       <div class="bump-right padded-bottom">
         {{page.services_html}}
       </div>
 
-      <!-- - - - - - - - - - - Who is Mathilda - - - - - - - - - -  -->
+<!-- - - - - - - - - - - Who is Mathilda - - - - - - - - - -  -->
 
       <!-- this is where you change the image for each language -->
       {% if page.language == 'es' %}
@@ -171,22 +174,19 @@
               <p class="col-12 align-center">
                 {{page.who-is-mathilda}}</p>
               <h5 class="col-12 align-center">— Assumpta Baldó</h5>
-            </div>
-            <!-- close hover div -->
+            </div><!-- close hover div -->
 
-          </div>
-          <!-- close mathilda div -->
+          </div><!-- close mathilda div -->
           <div class="mob-show padded-top">
             <p> {{page.who-is-mathilda}} </p>
             <h5>— Assumpta Baldó</h5>
           </div>
 
 
-        </div>
-        <!-- closes First Column -->
+      </div><!-- closes First Column -->
 
-        <!-- - - - - - - - - - - Second Column - - - - - - - - - -  -->
-        <!-- - - - - - - - - - - Latest News - - - - - - - - - -  -->
+<!-- - - - - - - - - - - Second Column - - - - - - - - - -  -->
+<!-- - - - - - - - - - - Latest News - - - - - - - - - -  -->
 
         <div class="col-5_sm-12 padded-right-0 padded-left-0">
           <div class="bg-teal padded-10 margin-bottom margin-top blog-box">
@@ -212,82 +212,80 @@
           </div>
 
 
-          <!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
-          <div class="testimonial-section padded-5 align-center">
+<!-- - - - - - - - - - - Client Testimonials - - - - - - - - - -  -->
+<div class="testimonial-section padded-5 align-center">
 
-            {% include testimonials.html %}
-
-
-          </div>
-          <!-- - - - - - - - - - - End Testimonial Carousel - - - - - - - - - -  -->
-        </div>
+  {% include testimonials.html %}
 
 
+</div> <!-- - - - - - - - - - - End Testimonial Carousel - - - - - - - - - -  -->
+</div>
+
+
+      </div><!-- this closes the second column -->
+
+  </div>
+
+<!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
+<!-- - - - - - - - - - - Gallery Selector - - - - - - - - - - -  -->
+  <div class="bg-beige padded-8 margin-top link-menu" id="gallery">
+
+    {% if page.language == 'es' %}
+
+    <h1>Galería</h1>
+    <p>Selecciona</p>
+    <nav id="portfolio-filter">
+      <ul>
+        <li><a href="" id="all" class="active">Todas</a></li>
+        <li><a href="" id="habitaciones">Habitaciones</a></li>
+        <li><a href="" id="desayuno">Desayuno</a></li>
+        <li><a href="" id="sala">Sala</a></li>
+        <li><a href="" id="entrada">Entrada</a></li>
+        <li><a href="" id="exterior">Terraza</a></li>
+      </ul>
+    </nav>
+
+    {% elsif page.language == 'en' %}
+
+    <h1>Gallery</h1>
+    <p>Select</p>
+    <nav id="portfolio-filter">
+      <ul>
+        <li><a href="" id="all" class="active">All</a></li>
+        <li><a href="" id="habitaciones">Rooms</a></li>
+        <li><a href="" id="desayuno">Breakfast</a></li>
+        <li><a href="" id="sala">Living Room</a></li>
+        <li><a href="" id="entrada">Reception</a></li>
+        <li><a href="" id="terraza">Terrace</a></li>
+      </ul>
+    </nav>
+
+    {% elsif page.language =='fr' %}
+
+    <h1>Galerie</h1>
+    <p>Sélectionner</p>
+    <nav id="portfolio-filter">
+      <ul>
+        <li><a href="" id="all" class="active">Toutes</a></li>
+        <li><a href="" id="habitaciones">Chambres</a></li>
+        <li><a href="" id="desayuno">Petit Déjenuer</a></li>
+        <li><a href="" id="sala">Salon</a></li>
+        <li><a href="" id="entrada">Réception</a></li>
+        <li><a href="" id="terraza">Terrasse</a></li>
+      </ul>
+    </nav>
+
+    {% endif %}
+
+<!-- - - - - - - - - - - Gallery Grid - - - - - - - - - - -  -->
+    <div class="grid gallery popup-gallery" id="portfolio-grid">
+      {% for item in site.data.gallery %}
+      <div class="col-4_sm-6_xs-12 filterable-item {{item.category}} all">
+        <a href="{{item.image_path}}"><img src="" alt="{{item.image_description}}" class="lazy" data-src="{{item.image_path}}"></a>
       </div>
-      <!-- this closes the second column -->
-
+      {% endfor %}
     </div>
-
-    <!-- - - - - - - - - - - SECTION: GALLERY - - - - - - - - - -  -->
-    <!-- - - - - - - - - - - Gallery Selector - - - - - - - - - - -  -->
-    <div class="bg-beige padded-8 margin-top link-menu" id="gallery">
-
-      {% if page.language == 'es' %}
-
-      <h1>Galería</h1>
-      <p>Selecciona</p>
-      <nav id="portfolio-filter">
-        <ul>
-          <li><a href="" id="all" class="active">Todas</a></li>
-          <li><a href="" id="habitaciones">Habitaciones</a></li>
-          <li><a href="" id="desayuno">Desayuno</a></li>
-          <li><a href="" id="sala">Sala</a></li>
-          <li><a href="" id="entrada">Entrada</a></li>
-          <li><a href="" id="exterior">Terraza</a></li>
-        </ul>
-      </nav>
-
-      {% elsif page.language == 'en' %}
-
-      <h1>Gallery</h1>
-      <p>Select</p>
-      <nav id="portfolio-filter">
-        <ul>
-          <li><a href="" id="all" class="active">All</a></li>
-          <li><a href="" id="habitaciones">Rooms</a></li>
-          <li><a href="" id="desayuno">Breakfast</a></li>
-          <li><a href="" id="sala">Living Room</a></li>
-          <li><a href="" id="entrada">Reception</a></li>
-          <li><a href="" id="terraza">Terrace</a></li>
-        </ul>
-      </nav>
-
-      {% elsif page.language =='fr' %}
-
-      <h1>Galerie</h1>
-      <p>Sélectionner</p>
-      <nav id="portfolio-filter">
-        <ul>
-          <li><a href="" id="all" class="active">Toutes</a></li>
-          <li><a href="" id="habitaciones">Chambres</a></li>
-          <li><a href="" id="desayuno">Petit Déjenuer</a></li>
-          <li><a href="" id="sala">Salon</a></li>
-          <li><a href="" id="entrada">Réception</a></li>
-          <li><a href="" id="terraza">Terrasse</a></li>
-        </ul>
-      </nav>
-
-      {% endif %}
-
-      <!-- - - - - - - - - - - Gallery Grid - - - - - - - - - - -  -->
-      <div class="grid gallery popup-gallery" id="portfolio-grid">
-        {% for item in site.data.gallery %}
-        <div class="col-4_sm-6_xs-12 filterable-item {{item.category}} all">
-          <a href="{{item.image_path}}"><img src="" alt="{{item.image_description}}" class="lazy" data-src="{{item.image_path}}"></a>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
+  </div>
 
 </section>
 
@@ -307,13 +305,13 @@
   </div>
   <div>
 
-    <!-- - - - - - - - - - - Snap Widget - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - Snap Widget - - - - - - - - - - -  -->
     <script src="https://snapwidget.com/js/snapwidget.js"></script>
     <iframe src="https://snapwidget.com/embed/585232" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" title="Follow Casa Mathilda on Instagram @casamathilda"></iframe>
 
   </div>
 
-  <!-- - - - - - - - - - - SECTION: CONTACT - - - - - - - - - -  -->
+<!-- - - - - - - - - - - SECTION: CONTACT - - - - - - - - - -  -->
   <div class="grid-middle-spaceBetween" id="contact">
     <div class="col-6_md-6_xs-12 padded-8">
       <h1>{{page.contact-title}}</h1>
@@ -323,7 +321,7 @@
       </div>
       {{page.contact_html }}
 
-      <!-- - - - - - - - - - - Form - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - Form - - - - - - - - - - -  -->
       <form method="" action="">
         <label for="firstname" class="mob-hide">Tu nombre</label>
         <input type="firstname" name="firstname" placeholder="{{page.contact-name-placeholder}}" required>
@@ -336,7 +334,7 @@
         </div>
       </form>
     </div>
-    <!-- - - - - - - - - - - How to Get There - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - How to Get There - - - - - - - - - - -  -->
 
     <div class="col-4_md-5_xs-12 address-box padded-5">
       <h2 class="align-center">{{page.address-title}}</h2>
@@ -458,7 +456,7 @@
   }
 
 
-  <!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - Testimonial Slider - - - - - - - - - - -  -->
 
   function carousel1() {
     var i;
@@ -473,4 +471,5 @@
     x[slideIndex1 - 1].style.display = "block";
     setTimeout(carousel1, 6500);
   }
+
 </script>
