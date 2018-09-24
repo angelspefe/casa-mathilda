@@ -177,8 +177,10 @@ layout: default
             </div><!-- close hover div -->
 
           </div><!-- close mathilda div -->
-
-          <p class="mob-show padded-top"> {{page.who-is-mathilda}} </p>
+          <div class="mob-show padded-top">
+            <p> {{page.who-is-mathilda}} </p>
+            <h5>— Assumpta Baldó</h5>
+          </div>
 
 
       </div><!-- closes First Column -->
@@ -239,7 +241,7 @@ layout: default
         <li><a href="" id="desayuno">Desayuno</a></li>
         <li><a href="" id="sala">Sala</a></li>
         <li><a href="" id="entrada">Entrada</a></li>
-        <li><a href="" id="terraza">Terraza</a></li>
+        <li><a href="" id="exterior">Terraza</a></li>
       </ul>
     </nav>
 
@@ -279,7 +281,7 @@ layout: default
     <div class="grid gallery popup-gallery" id="portfolio-grid">
       {% for item in site.data.gallery %}
       <div class="col-4_sm-6_xs-12 filterable-item {{item.category}} all">
-        <a href="{{item.image_path}}"><img src="../img/44721746JJ_15_a.jpg" alt="{{item.image_description}}" class="lazy" data-src="{{item.image_path}}"></a>
+        <a href="{{item.image_path}}"><img src="" alt="{{item.image_description}}" class="lazy" data-src="{{item.image_path}}"></a>
       </div>
       {% endfor %}
     </div>
@@ -321,15 +323,12 @@ layout: default
 
 <!-- - - - - - - - - - - Form - - - - - - - - - - -  -->
       <form method="" action="">
-        <!-- <label for="firstname" class="mob-show">Tu nombre</label> -->
-
+        <label for="firstname" class="mob-hide">Tu nombre</label>
         <input type="firstname" name="firstname" placeholder="{{page.contact-name-placeholder}}" required>
-        <!-- <label for="email" class="mob-show">Tu email</label> -->
+        <label for="email" class="mob-hide">Tu email</label>
         <input type="email" name="email" placeholder="{{page.contact-email-placeholder}}" required>
-
         <textarea name="mensaje" form="textarea" placeholder="{{page.contact-message-placeholder}}"></textarea>
-
-        <!-- <label for="comment" class="mob-show">Mensaje</label> -->
+        <label for="comment" class="mob-hide">Mensaje</label>
         <div class="align-center button-2">
           <input type="submit" value="{{page.contact-send-button}}"></input>
         </div>

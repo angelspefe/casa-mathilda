@@ -28,17 +28,17 @@
 - category: sala
   image_path: /images/sala-5.jpg
   image_description: sala casa mathilda
-- category: terraza
-  image_path: /images/terraza-1.jpg
+- category: exterior
+  image_path: /images/exterior-1.jpg
   image_description: terraza casa mathilda
-- category: terraza
-  image_path: /images/terraza-2.jpg
+- category: exterior
+  image_path: /images/exterior-2.jpg
   image_description: terraza casa mathilda
-- category: terraza
-  image_path: /images/terraza-3.jpg
+- category: exterior
+  image_path: /images/exterior-3.jpg
   image_description: terraza casa mathilda
-- category: terraza
-  image_path: /images/terraza-4.jpg
+- category: exterior
+  image_path: /images/exterior-4.jpg
   image_description: terraza casa mathilda
 - category: habitaciones
   image_path: /images/rooms-1.jpg
