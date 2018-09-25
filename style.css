@@ -173,7 +173,7 @@ h4 {
   text-transform: uppercase;
   font-size: 1rem;
   padding-bottom: 0;
-  line-height: 0.5
+  line-height: 1.5
 }
 
 h5 {
@@ -298,6 +298,18 @@ h5 {
   background-color: #879D99;
 }
 
+.gallery img {
+  padding: 2%;
+}
+
+.mfp-counter, .mfp-s-loading { /* counter for zoom-in gallery */
+  display:none;
+  }
+
+
+  /*----------- Who is Mathilda -----------*/
+
+
 .postal-mathilda {
   background-size: contain;
   background-repeat: no-repeat;
@@ -306,29 +318,39 @@ h5 {
   position: relative;
 }
 
+.postal-mathilda p {
+  font-family: 'Special Elite', cursive;
+}
+
+.postal-mathilda h5 {
+  font-family: 'Homemade Apple', cursive;
+  padding-bottom:0;
+}
 
 .postal-mathilda .show-on-hover {
-  background-color: rgba(222, 189, 49, 0.9);
+  background-color: rgba(218, 237, 234, 0.9);
+  border: solid 15px #efece4;
   padding: 1.5rem;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: 0.5s;
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  -webkit-transform: rotate(-5deg) ; /* Safari */
+  transform: rotate(-5deg);
 }
 
 .postal-mathilda .show-on-hover:hover {
   opacity: 1;
 }
 
-.gallery img {
-  padding: 2%;
+.postal-mathilda img {
+  width:100%;
 }
 
-.mfp-counter, .mfp-s-loading { /* counter for zoom-in gallery */
-  display:none;
-  }
+
 
 /*----------- NAVIGATION -----------*/
 
@@ -1151,7 +1173,7 @@ hr {
   }
 
   .postal-mathilda {
-    max-width:70%;
+    max-width:80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1176,6 +1198,15 @@ hr {
     opacity: 0;
     display: none;
   }
+
+  .postal-mathilda-mob-text p {
+    font-family: 'Special Elite', cursive;
+  }
+
+  .postal-mathilda-mob-text h5 {
+    font-family: 'Homemade Apple', cursive;
+  }
+
   section {
     padding: 30px 5% 0 5%;
   }
