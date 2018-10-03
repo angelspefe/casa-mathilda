@@ -13,9 +13,9 @@
 - category: terraza
   image_path: /images/exterior-1.jpg
   image_description: terraza casa mathilda
-- category: entorno
-  image_path: /images/entorno-1.jpg
-  image_description: entorno barcelona casa mathilda
+- category: terraza
+  image_path: /images/exterior-2.jpg
+  image_description: terraza casa mathilda
 - category:
   image_path: /images/rooms-2.jpg
   image_description: habitacion casa mathilda
