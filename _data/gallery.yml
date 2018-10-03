@@ -38,11 +38,12 @@
   image_path: /images/sala-1.jpg
   image_description: sala casa mathilda
 - category:
-  image_path: /images/entorno-2.jpg
+  image_path: /images/entorno-1.jpg
   image_description: entorno barcelona casa mathilda
 - category:
-  image_path: /images/entorno-3.jpg
+  image_path: /images/entorno-2.jpg
   image_description: entorno barcelona casa mathilda
+
 - category:
   image_path: /images/sala-2.jpg
   image_description: sala casa mathilda
@@ -52,13 +53,16 @@
 - category:
   image_path: /images/rooms-5.jpg
   image_description: habitacion casa mathilda
-
+- category: entrada
+  image_path: /images/entrada-5.jpg
+  image_description: entrada casa mathilda
 - category:
   image_path: /images/rooms-6.jpg
   image_description: habitacion casa mathilda
 - category: entrada
-  image_path: /images/entrada-5.jpg
+  image_path: /images/entrada-6.jpg
   image_description: entrada casa mathilda
+
 - category:
   image_path: /images/entorno-4.jpg
   image_description: entorno barcelona casa mathilda
@@ -80,9 +84,7 @@
 - category:
   image_path: /images/rooms-9.jpg
   image_description: habitacion casa mathilda
-- category: entrada
-  image_path: /images/entrada-6.jpg
-  image_description: entrada casa mathilda
+
 - category:
   image_path: /images/sala-3.jpg
   image_description: sala casa mathilda
@@ -107,3 +109,9 @@
 - category:
   image_path: /images/exterior-4.jpg
   image_description: terraza casa mathilda
+
+
+
+  - category:
+    image_path: /images/entorno-3.jpg
+    image_description: entorno barcelona casa mathilda
