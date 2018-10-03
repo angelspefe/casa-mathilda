@@ -5,104 +5,107 @@
   image_path: /images/desayuno-1.jpg
   image_description: desayuno casa mathilda
 - category: desayuno
-  image_path: /images/desayuno-4.jpg
-  image_description: desayuno casa mathilda
-- category: desayuno
   image_path: /images/desayuno-2.jpg
   image_description: desayuno casa mathilda
 - category: desayuno
   image_path: /images/desayuno-3.jpg
   image_description: desayuno casa mathilda
-- category:
+- category: desayuno
+  image_path: /images/desayuno-4.jpg
+  image_description: desayuno casa mathilda
+- category: entrada
+  image_path: /images/entrada-1.jpg
+  image_description: entrada casa mathilda
+- category: entrada
   image_path: /images/entrada-2.jpg
   image_description: entrada casa mathilda
-- category:
+- category: entrada
   image_path: /images/entrada-3.jpg
   image_description: entrada casa mathilda
-- category:
+- category: entrada
   image_path: /images/entrada-4.jpg
   image_description: entrada casa mathilda
-- category:
+- category: entrada
   image_path: /images/entrada-5.jpg
   image_description: entrada casa mathilda
-- category:
+- category: entrada
   image_path: /images/entrada-6.jpg
   image_description: entrada casa mathilda
-- category:
+- category: entrada
   image_path: /images/entrada-7.jpg
   image_description: entrada casa mathilda
-- category:
+- category: entrada
   image_path: /images/entrada-8.jpg
   image_description: entrada casa mathilda
-- category:
+- category: sala
   image_path: /images/sala-1.jpg
   image_description: sala casa mathilda
-- category:
+- category: sala
   image_path: /images/sala-2.jpg
   image_description: sala casa mathilda
-- category:
+- category: sala
   image_path: /images/sala-3.jpg
   image_description: sala casa mathilda
-- category:
+- category: sala
   image_path: /images/sala-4.jpg
   image_description: sala casa mathilda
-- category:
+- category: sala
   image_path: /images/sala-5.jpg
   image_description: sala casa mathilda
-- category:
+- category: exterior
   image_path: /images/exterior-1.jpg
   image_description: terraza casa mathilda
-- category:
+- category: exterior
   image_path: /images/exterior-2.jpg
   image_description: terraza casa mathilda
-- category:
+- category: exterior
   image_path: /images/exterior-3.jpg
   image_description: terraza casa mathilda
-- category:
+- category: exterior
   image_path: /images/exterior-4.jpg
   image_description: terraza casa mathilda
-- category:
+- category: habitaciones
   image_path: /images/rooms-1.jpg
   image_description: habitacion casa mathilda
-- category:
+- category: habitaciones
   image_path: /images/rooms-2.jpg
   image_description: habitacion casa mathilda
-- category:
+- category: habitaciones
   image_path: /images/rooms-3.jpg
   image_description: habitacion casa mathilda
-- category:
+- category: habitaciones
   image_path: /images/rooms-4.jpg
   image_description: habitacion casa mathilda
-- category:
+- category: habitaciones
   image_path: /images/rooms-5.jpg
   image_description: habitacion casa mathilda
-- category:
+- category: habitaciones
   image_path: /images/rooms-6.jpg
   image_description: habitacion casa mathilda
-- category:
+- category: habitaciones
   image_path: /images/rooms-7.jpg
   image_description: habitacion casa mathilda
-- category:
+- category: habitaciones
   image_path: /images/rooms-8.jpg
   image_description: habitacion casa mathilda
-- category:
+- category: habitaciones
   image_path: /images/rooms-9.jpg
   image_description: habitacion casa mathilda
-- category:
+- category: habitaciones
   image_path: /images/rooms-10.jpg
   image_description: habitacion casa mathilda
-- category:
+- category: entorno
   image_path: /images/entorno-1.jpg
   image_description: entorno barcelona casa mathilda
-- category:
+- category: entorno
   image_path: /images/entorno-2.jpg
   image_description: entorno barcelona casa mathilda
-- category:
+- category: entorno
   image_path: /images/entorno-3.jpg
   image_description: entorno barcelona casa mathilda
-- category:
+- category: entorno
   image_path: /images/entorno-4.jpg
   image_description: entorno barcelona casa mathilda
-- category:
+- category: entorno
   image_path: /images/entorno-5.jpg
   image_description: entorno barcelona casa mathilda
