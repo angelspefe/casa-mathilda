@@ -1,42 +1,42 @@
-- title: The Times
-  featured_image: /uploads/the-times-portada-1.jpg
-  pdf_path: /uploads/the-times.jpg
 - title: Elle Deco (UK)
-  featured_image: /uploads/elle-deco-uk-portadac-1.jpg
-  pdf_path: /uploads/elle-deco-interior.jpg
+  featured_image: /uploads/elle-1.jpg
+  pdf_path: /uploads/elle-interior.jpg
 - title: L'Officiel Voyage
-  featured_image: /uploads/l-officiel-voyage-portada-1.jpg
-  pdf_path: /uploads/L_OFICCIEL VOYAGE  Interior .jpg
-- title: Interiores
-  featured_image: /uploads/interiores-digital-portada-2.jpg
-  pdf_path: /uploads/interiores-interior.jpg
+  featured_image: /uploads/lofficiel-2.jpg
+  pdf_path: /uploads/lofficiel-interior.jpg
+- title: The Times
+  featured_image: /uploads/times-3.jpg
+  pdf_path: /uploads/times-interior.jpg
 - title: El Mercurio
-  featured_image: /uploads/el-mercurio-portada-1.jpg
-  pdf_path: /uploads/el-mercurio-interior.jpg
-- title: Eaux Luxury Lifestyle (UK)
-  featured_image: /uploads/eaux-luxury-portada-1.jpg
-  pdf_path: /uploads/eaux-luxury-lifestyle-u-k-.jpg
+  featured_image: /uploads/mercurio-4.jpg
+  pdf_path: /uploads/mercurio-interior.jpg
 - title: Wallpaper
-  featured_image: /uploads/wallpaper-digital-edition-1.jpg
-  pdf_path: /uploads/Wall PAper. Edició digital.png
-- title: Air Baltic
-  featured_image: /uploads/air-baltic-portada-set--2917.jpg
-  pdf_path: /uploads/AIR BALTIC interior  .jpg
-- title: Travelicious
-  featured_image: /uploads/travelicious-blog-portada-1.jpg
-  pdf_path: /uploads/TRAVELICIOUS BLOG.jpg
-- title: Lecturas
-  featured_image: /uploads/lecturas-portada.jpg
-  pdf_path: /uploads/lecturas-interior.jpg
-- title: Good2b
-  featured_image: /uploads/good2be-portada-1.jpg
-  pdf_path: /uploads/good2be-web.jpg
+  featured_image: /uploads/wallpaper-5.jpg
+  pdf_path: /uploads/wallpaper-interior.png
 - title: Divinity Magazine
-  featured_image: /uploads/divinity-magazine-portada-1.jpg
-  pdf_path: /uploads/divinity-magazine-interior.jpg
-- title: Clara
-  featured_image: /uploads/clara-portada-1.jpg
-  pdf_path: /uploads/clara-interior.jpg
+  featured_image: /uploads/divinity-6.jpg
+  pdf_path: /uploads/divinity-interior.jpg
+- title: Air Baltic
+  featured_image: /uploads/air-baltic-7.jpg
+  pdf_path: /uploads/air-baltic-interior.jpg
 - title: Casa Viva
-  featured_image: /uploads/casa-viva-portada-1.jpg
-  pdf_path: /uploads/casa-viva-interior.jpg
+  featured_image: /uploads/casaviva-8.jpg
+  pdf_path: /uploads/casaviva-interior.jpg
+- title: Clara
+  featured_image: /uploads/clara-9.jpg
+  pdf_path: /uploads/clara-interior.jpg
+- title: Lecturas
+  featured_image: /uploads/lecturas-10.jpg
+  pdf_path: /uploads/lecturas-interior.jpg
+- title: Eaux Luxury Lifestyle (UK)
+  featured_image: /uploads/eaux-11.jpg
+  pdf_path: /uploads/eaux-interior.jpg
+- title: Good2b
+  featured_image: /uploads/good2b-12.jpg
+  pdf_path: /uploads/good2b-interior.jpg
+- title: Interiores
+  featured_image: /uploads/interiores-13.jpg
+  pdf_path: /uploads/interiores-interior.jpg
+- title: Travelicious
+  featured_image: /uploads/travelicious-14.jpg
+  pdf_path: /uploads/travelicious-interior.jpg

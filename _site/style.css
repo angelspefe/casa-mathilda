@@ -514,6 +514,10 @@ footer nav a:hover, .copyright a:hover {
   background-image: url(/images/casa-mathilda-banner-3.jpg);
 }
 
+.bg-slide-4 {
+  background-image: url(/images/casa-mathilda-banner-4.jpg);
+}
+
 /*----------- Pop Up Room Details -----------*/
 
 /* this styles the active link for the room navigation */
