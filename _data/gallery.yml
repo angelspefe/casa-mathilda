@@ -31,6 +31,12 @@
 - category:
   image_path: /images/desayuno-2.jpg
   image_description: desayuno casa mathilda
+- category: entrada
+  image_path: /images/entrada-4.jpg
+  image_description: entrada casa mathilda
+- category:
+  image_path: /images/sala-1.jpg
+  image_description: sala casa mathilda
 - category:
   image_path: /images/entorno-2.jpg
   image_description: entorno barcelona casa mathilda
@@ -46,12 +52,7 @@
 - category:
   image_path: /images/rooms-5.jpg
   image_description: habitacion casa mathilda
-- category: entrada
-  image_path: /images/entrada-4.jpg
-  image_description: entrada casa mathilda
-- category:
-  image_path: /images/sala-1.jpg
-  image_description: sala casa mathilda
+
 - category:
   image_path: /images/rooms-6.jpg
   image_description: habitacion casa mathilda
