@@ -1,4 +1,4 @@
-popup-turned-on: true
+popup-turned-on: false
 title-es: Promoción de Verano
 body-es: Alójate 5 noches y disfruta de un 10% de descuento.
 title-en: Summer Promo
@@ -6,7 +6,6 @@ body-en: Stay 5 nights and enjoy 10% off.
 title-fr: Promo d'Été
 body-fr: Séjournez 5 nuits et profitez d'une réduction de 10%.
 featured_image: /uploads/bg-popup.jpg
-
 _comments:
   title-es: Títol de la promoció (Español)
   body-es: Explicació de la promoció (Español)
