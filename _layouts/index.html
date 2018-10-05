@@ -286,7 +286,7 @@ layout: default
     {% endif %}
 
 <!-- - - - - - - - - - - Gallery Grid - - - - - - - - - - -  -->
-    <div class="grid gallery popup-gallery" id="portfolio-grid">
+    <div class="grid gallery" id="portfolio-grid">
       {% for item in site.data.gallery %}
       <div class="col-4_sm-6_xs-12 filterable-item {{item.category}} all">
         <a href="{{item.image_path}}"><img src="" alt="{{item.image_description}}" class="lazy" data-src="{{item.image_path}}"></a>
