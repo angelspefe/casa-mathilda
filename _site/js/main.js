@@ -178,7 +178,7 @@ $(".burger-button").click(function() {
 // - - - - - - - - MAGNIFIC POPUP
 
 $(document).ready(function() {
-  $("launch-popup").on('load', function() {
+  $(window).on('load', function() {
     var now, lastDatePopupShowed;
     now = new Date();
 
