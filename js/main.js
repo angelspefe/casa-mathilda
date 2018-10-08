@@ -182,17 +182,17 @@ $(document).ready(function() {
     var now, lastDatePopupShowed;
     now = new Date();
 
-    if (localStorage.getItem('lastDatePopupShowed') !== null) {
+    if (localStorage.getItem('lastDatePopupShowed') == null) {
       lastDatePopupShowed = new Date(parseInt(localStorage.getItem('lastDatePopupShowed')));
     }
 
     if (((now - lastDatePopupShowed) >= (15 * 86400000)) || !lastDatePopupShowed) {
       $.magnificPopup.open({
         items: {
-          src: '#launch-popup'
-        },
-        type: 'inline'
-      }, 0);
+          src: '#launch-popup',
+          type: 'inline'
+        }
+      });
 
       localStorage.setItem('lastDatePopupShowed', now);
     }
