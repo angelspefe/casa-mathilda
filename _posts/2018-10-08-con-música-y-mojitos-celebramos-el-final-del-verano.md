@@ -6,7 +6,7 @@ blurb: "Así han decidido celebrar el fin del verano Iris y Angie, FIESTÓN EN L
 featured_image: /uploads/blog-festa-4.jpg
 ---
 
-As&iacute; han decidido celebrar el fin del verano Iris y Angie, FIEST&Oacute;N EN LA TERRAZA.&nbsp; Pasamos del “solo unos pocos” a “parece que haremos lleno”. Pero es que no hay para menos! Duo estupendo de m&uacute;sicos, un par de camareros que quitan el aliento, copas y mojitos a buen precio y muchas ganas de pasarlo bien. Hasta Carlota se lanz&oacute; micr&oacute;fono en mano a cantar para la audiencia! Algunos hu&eacute;spedes se han unido encantados y han hecho amigos en Barcelona!!!
+Así han decidido celebrar el fin del verano Iris y Angie, FIESTÓN EN LA TERRAZA.  Pasamos del “solo unos pocos” a “parece que haremos lleno”. Pero es que no hay para menos! Duo estupendo de músicos, un par de camareros que quitan el aliento, copas y mojitos a buen precio y muchas ganas de pasarlo bien. Hasta Carlota se lanzó micrófono en mano a cantar para la audiencia! Algunos huéspedes se han unido encantados y han hecho amigos en Barcelona!!!
 
 Felicidades chicas!
 
