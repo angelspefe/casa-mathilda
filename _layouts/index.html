@@ -331,9 +331,9 @@ popup-turned-on: true
       {{page.contact_html }}
 
 <!-- - - - - - - - - - - Form - - - - - - - - - - -  -->
-      <form method="" action="">
+      <form method="post" action="https://formspree.io/info@casamathilda.com">
         <label for="firstname" class="mob-hide">Tu nombre</label>
-        <input type="firstname" name="firstname" placeholder="{{page.contact-name-placeholder}}" required>
+        <input type="firstname" name="nombre" placeholder="{{page.contact-name-placeholder}}" required>
         <label for="email" class="mob-hide">Tu email</label>
         <input type="email" name="email" placeholder="{{page.contact-email-placeholder}}" required>
         <textarea name="mensaje" form="textarea" placeholder="{{page.contact-message-placeholder}}"></textarea>

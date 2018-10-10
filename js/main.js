@@ -182,7 +182,7 @@ $(document).ready(function() {
     var now, lastDatePopupShowed;
     now = new Date();
 
-    if (localStorage.getItem('lastDatePopupShowed') == null) {
+    if (localStorage.getItem('lastDatePopupShowed') !== null) {
       lastDatePopupShowed = new Date(parseInt(localStorage.getItem('lastDatePopupShowed')));
     }
 
