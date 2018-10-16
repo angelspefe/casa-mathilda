@@ -353,15 +353,37 @@ h5 {
 /*----------- Reserva Completa -----------*/
 
 .box-reserva {
-  background-color: #efece4;
-  padding-bottom: 0 !important;
-  padding: 5% 5% 5% 5%;
-  margin-bottom: 10%;
+  background-color: #efece4 !important;
+  padding-bottom: 0 !important;
+  padding: 5% 5% 5% 5% !important;
+  margin-bottom: 10% !important;
 }
 
 .box-reserva p {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
+
+/*----------- Loading Screen -----------*/
+
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: block;
+   background-color: #fff;
+   z-index: 99;
+   text-align: center;
+}
+
+#loading-image {
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  z-index: 100;
+}
+
 
 /*----------- NAVIGATION -----------*/
 
