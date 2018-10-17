@@ -5,6 +5,30 @@ language: es
 <section class="bg-beige">
 
 
+  <form method="post" action="https://formspree.io/angels@loveiscreative.com">
+    <label for="firstname" class="mob-hide">Tu nombre</label>
+    <input type="firstname" name="nombre" placeholder="{{page.contact-name-placeholder}}" required>
+    <label for="email" class="mob-hide">Tu email</label>
+    <input type="email" name="email" placeholder="{{page.contact-email-placeholder}}" required>
+    <textarea name="mensaje" form="textarea" placeholder="{{page.contact-message-placeholder}}"></textarea>
+    <label for="comment" class="mob-hide">Mensaje</label>
+    <div class="align-center button-2">
+      {% if page.language == 'es' %}
+      <!-- <input type="submit" value="{{page.contact-send-button}}"></input> -->
+      <input type="submit" value="Enviar" class="btn"> <input type="hidden" name="_next" value="/thank-you">
+      {% elsif page.language == 'en' %}
+      <!-- <input type="submit" value="{{page.contact-send-button}}"></input> -->
+      <input type="submit" value="Send" class="btn"> <input type="hidden" name="_next" value="/thank-you">
+      {% elsif page.language == 'fr' %}
+      <!-- <input type="submit" value="{{page.contact-send-button}}"></input> -->
+      <input type="submit" value="Envoyer" class="btn"> <input type="hidden" name="_next" value="/thank-you">
+      {% endif %}
+    </div>
+  </form>
+
+
+
+
   <h2 class="w3-center">Manual Slideshow</h2>
 
 <div class="w3-content w3-display-container">

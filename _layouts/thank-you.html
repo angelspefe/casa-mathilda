@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<!-- - - - - - - - - - - HEADER - - - - - - - - - -  -->
+<div class="body-content">
+  <section class="bg-beige margin-top">
+      <div class="padded-top">
+      </div>
+
+<!-- - - - - - - - - - - BODY - - - - - - - - - -  -->
+
+{% if page.language == 'es' %}
+<h2 class="align-center">Gracias por tu mensaje</h2>
+<p class="align-center padded-bottom">Nos pondremos en contacto contigo muy pronto.</p>
+
+<div class="button-1 align-center">
+  <a href="/">Atrás<img class="arrow" src="/images/right-arrow.svg" alt="right arrow"></a>
+</div>
+
+{% elsif page.language == 'en' %}
+<h2 class="align-center">Thank you for contacting us</h2>
+<p class="align-center padded-bottom">We'll get back to you very soon.</p>
+
+<div class="button-1 align-center">
+  <a href="/">Back<img class="arrow" src="/images/right-arrow.svg" alt="right arrow"></a>
+</div>
+
+
+{% elsif page.language == 'fr' %}
+<h2 class="align-center">Merci de nous contacter</h2>
+<p class="align-center padded-bottom">Nous vous contacterons bientôt.</p>
+
+<div class="button-1 align-center">
+  <a href="/">Retourner<img class="arrow" src="/images/right-arrow.svg" alt="right arrow"></a>
+</div>
+
+{% endif %}
+
+
+    </section>
+</div>
