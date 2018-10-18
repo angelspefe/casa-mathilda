@@ -13,7 +13,9 @@ $('document').ready(function(){
         progress     = 0, // точка отсчета
         imgSum       = 5, // количество картинок
         loadedImg    = 0, // счетчик загрузки картинок
-        $loader = preloader.find('.loader');
+        loader = preloader.find('.loader');
+        str = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>'; 
+        jQuery(str).insertAfter(loader);
         /*var p = document.createElement('img');
         p.src="/images/loader.gif";
         preloader.append(p);*/
@@ -33,7 +35,7 @@ $('document').ready(function(){
 
         for (var i = 0; i < scriptsCount; i++) { // создаем клоны изображений
           document.scripts[i].onload = img_load;
-          document.scripts[i].onerror    = img_load;
+          document.scripts[i].onerror = img_load;
       }
 
 
@@ -41,9 +43,9 @@ $('document').ready(function(){
             progress += percent;
             loadedImg++;
             console.log(loadedImg);
-            $loader.html(progress.toFixed(0) + '%')
+            loader.html(progress.toFixed(0) + '%')
             if (progress >= 100 || loadedImg == imagesCount) {
-                preloader.delay(400).fadeOut('slow');
+               // preloader.delay(400).fadeOut('slow');
             }
            
         }
