@@ -4,9 +4,57 @@ $('document').ready(function(){
   var myLazyLoad = new LazyLoad({
       elements_selector: ".lazy"
     });
+    
+
+    var preloader    = $('.loaderArea'), // селектор прелоадера
+        imagesCount  = $('img').length, // количество изображений
+        scriptsCount = $('script').length,
+        percent      = 100 / (imagesCount + scriptsCount), // количество % на одну картинку
+        progress     = 0, // точка отсчета
+        imgSum       = 5, // количество картинок
+        loadedImg    = 0, // счетчик загрузки картинок
+        $loader = preloader.find('.loader');
+        /*var p = document.createElement('img');
+        p.src="/images/loader.gif";
+        preloader.append(p);*/
+        console.log(imagesCount + " " + scriptsCount + " " + percent);
+
+
+    if (imagesCount >= imgSum && imagesCount > 0) {
+
+        for (var i = 0; i < imagesCount; i++) { // создаем клоны изображений
+            var img_copy        = new Image();
+            img_copy.src        = document.images[i].src;
+            img_copy.onload     = img_load;
+            img_copy.onerror    = img_load;
+
+        }
+
+
+        for (var i = 0; i < scriptsCount; i++) { // создаем клоны изображений
+          document.scripts[i].onload = img_load;
+          document.scripts[i].onerror    = img_load;
+      }
+
+
+        function img_load () {
+            progress += percent;
+            loadedImg++;
+            console.log(loadedImg);
+            $loader.html(progress.toFixed(0) + '%')
+            if (progress >= 100 || loadedImg == imagesCount) {
+                preloader.delay(400).fadeOut('slow');
+            }
+           
+        }
+    } else {
+        preloader.remove();
+    }
+  
 });
 
 // - - - - - - - - - - -
+
 
 
 
