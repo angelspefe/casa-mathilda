@@ -10,6 +10,49 @@ $('document').ready(function(){
 
 
 
+    var preloader    = $('.loaderArea'), // селектор прелоадера
+        imagesCount  = $('img').length, // количество изображений
+        percent      = 100 / (imagesCount), // количество % на одну картинку
+        progress     = 0, // точка отсчета
+        imgSum       = 5, // количество картинок
+        loadedImg    = 0, // счетчик загрузки картинок
+        loader = preloader.find('.loader');
+        str = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>'; 
+        jQuery(str).insertAfter(loader);
+        /*var p = document.createElement('img');
+        p.src="/images/loader.gif";
+        preloader.append(p);*/
+
+
+    if (imagesCount >= imgSum && imagesCount > 0) {
+
+        for (var i = 0; i < imagesCount; i++) { // создаем клоны изображений
+            var img_copy        = new Image();
+            img_copy.src        = document.images[i].src;
+            img_copy.onload     = img_load;
+            img_copy.onerror    = img_load;
+
+        }
+
+
+        function img_load () {
+            progress += percent;
+            loadedImg++;
+            console.log(loadedImg);
+            loader.html(progress.toFixed(0) + '%')
+            if (progress >= 100 || loadedImg == imagesCount) {
+                preloader.delay(400).fadeOut('slow');
+            }
+           
+        }
+    } else {
+        preloader.remove();
+    }
+  
+});
+
+
+
 // has jquery as a dependcy
 
 $(document).ready(function() {
