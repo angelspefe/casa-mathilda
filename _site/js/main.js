@@ -4,7 +4,11 @@ $('document').ready(function(){
   var myLazyLoad = new LazyLoad({
       elements_selector: ".lazy"
     });
-    
+
+
+// - - - - - - - - - - -
+
+
 
     var preloader    = $('.loaderArea'), // селектор прелоадера
         imagesCount  = $('img').length, // количество изображений
@@ -46,9 +50,6 @@ $('document').ready(function(){
     }
   
 });
-
-// - - - - - - - - - - -
-
 
 
 
