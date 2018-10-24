@@ -17,7 +17,7 @@ layout: default
       {% for press in site.data.press %}
 
       <div class="col-3_sm-6_xs-12 padded-5">
-        <img src="" alt="{{press.title}}" data-src="{{press.featured_image}}">
+        <img src="{{press.featured_image}}" alt="{{press.title}}">
         <div class="align-center button-2"><a href="{{press.pdf_path}}" target="_blank">
 
         {% if page.language == 'en' %}
