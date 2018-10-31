@@ -1,6 +1,6 @@
 permalink: /:year/:title/
 
-image_types:
+image_type:
   - entrada
   - desayuno
   - sala
