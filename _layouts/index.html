@@ -337,8 +337,8 @@ popup-turned-on: true
         <input type="firstname" name="nombre" placeholder="{{page.contact-name-placeholder}}" required>
         <label for="email" class="mob-hide">Tu email</label>
         <input type="email" name="email" placeholder="{{page.contact-email-placeholder}}" required>
-        <textarea name="mensaje" form="textarea" placeholder="{{page.contact-message-placeholder}}"></textarea>
-        <label for="comment" class="mob-hide">Mensaje</label>
+        <textarea name="message" form="textarea" placeholder="{{page.contact-message-placeholder}}"></textarea>
+        <label for="comment" class="mob-hide">Mensaje</label>        
         <div class="align-center button-2">
           {% if page.language == 'es' %}
           <!-- <input type="submit" value="{{page.contact-send-button}}"></input> -->
@@ -350,6 +350,7 @@ popup-turned-on: true
           <!-- <input type="submit" value="{{page.contact-send-button}}"></input> -->
           <input type="submit" value="Envoyer" class="btn"> <input type="hidden" name="_next" value="/thank-you">
           {% endif %}
+
         </div>
       </form>
     </div>
