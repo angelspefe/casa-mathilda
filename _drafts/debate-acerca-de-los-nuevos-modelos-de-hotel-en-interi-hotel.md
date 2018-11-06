@@ -2,6 +2,8 @@
 title: Debate acerca de los nuevos modelos de hotel en INTERI HOTEL
 layout: post
 categories:
-blurb: "Acaba el verano y con el fresquito llega La MERCÈ!\_ El pregón marca el inicio de las fiestas con una más que variada oferta de actos culturales, musicales, teatro y danza. Una buena oportunidad para ver\_ los tradicionales\_ “correfoc” y “castellers” , espectáculos en playas y en muchos de los parques de la ciudad. Hay de todo y para todos, edades y estilos diversos."
-featured_image: /uploads/blog-la-merce.jpg
+blurb: Del 24 al 26 de Octubre se celebró en Barcelona el evento InteriHotel
+featured_image: /uploads/667-evento-interihotel-phovento-barcelona-octubre-2018.jpg
 ---
+
+Del 24 al 26 de Octubre se celebr&oacute; en Barcelona el Evento InteriHotel a la que han acudido m&aacute;s de 200 marcas especializadas en Contract e interiorismo de hoteles. En ella participamos en un interesante debate acerca de los nuevos modelos de hotel Iniciado con una muy interesante charla de Pepa Casado sobre las tendencias, de c&oacute;mo van a ser los nuevos establecimientos en un futuro no muy lejano.&nbsp;&nbsp;
