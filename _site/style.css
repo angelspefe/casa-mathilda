@@ -277,7 +277,7 @@ h5 {
   right: 0;
   top: 0;
   padding: 2% 2% 2% 2%;
-  z-index: 99;
+  z-index: 999;
 }
 
 .transbox {
@@ -699,6 +699,7 @@ footer nav a:hover, .copyright a:hover {
 }
 
 .room-left-button, .room-right-button {
+  cursor: pointer;
   z-index: 99;
   position: absolute;
   border: none;
