@@ -206,13 +206,6 @@ h5 {
   font-weight: 300;
 }
 
-.highlighted {
-  color:#DEBD31 !important;
-  text-decoration:underline;
-  padding-top: 1em;
-  padding-bottom:1em;
-}
-
 .bg-teal p, .bg-teal h1, .bg-teal h2, .bg-teal h3 {
   color: #fff;
 }
@@ -249,6 +242,17 @@ h5 {
 .link-menu a:hover,
 .post_navigation a:hover {
   color: #DEBD31;
+  transition: 0.7s;
+}
+
+.highlighted {
+  color:#DEBD31 !important;
+  padding-top: 1em;
+  padding-bottom:1em;
+}
+
+.highlighted:hover {
+  color:#546461 !important;
   transition: 0.7s;
 }
 
