@@ -12,4 +12,4 @@ Y nos entran ganas de repetir\! Esta vez como el tiempo nos lo permite recibimos
 
 Habr&aacute; pr&oacute;xima edici&oacute;n en breve. Os mantendremos informados.
 
-![](/uploads/img-8682.jpg)![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2P4////fwAJ+wP9BUNFygAAAABJRU5ErkJggg==){: .cms-image-placeholder}
+![](/uploads/img-8682.jpg)![](/uploads/img-5987.jpg)![](/uploads/img-5888.jpg)![](/uploads/img-6292.jpg)
