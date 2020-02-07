@@ -2,9 +2,6 @@
 title: Vitbot in Mathilda.
 layout: post
 categories:
-  - vidasaludable
-  - ecologia
-  - plasticfree
 blurb: La botella inspirada en la naturaleza ahora en  Mathilda
 featured_image: /uploads/img-4262.jpg
 ---
@@ -18,5 +15,7 @@ Inspiradas en la naturaleza, las botellas Vitbot est&aacute;n dise&ntilde;adas &
 La filosof&iacute;a de las Vitbot encaja a la perfecci&oacute;n en Casa Mathilda. Es por ello que las hemos incorporado a todas nuestras habitaciones para que nos ayuden a hacer vuestra estancia m&aacute;s agradable y evitemos el uso de las botellas de pl&aacute;stico en nuestros desplazamientos.
 
 Gracias Vitbot por mejorar nuestras vidas
+
+&nbsp;
 
 &nbsp;&nbsp;
