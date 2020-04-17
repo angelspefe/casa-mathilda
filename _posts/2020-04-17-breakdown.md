@@ -15,7 +15,9 @@ Ni en nuestra peor pesadilla pod&iacute;amos imaginar que de la noche a la ma&nt
 
 Ha pasado m&aacute;s de un mes desde el inicio del confinamiento y en nuestro pa&iacute;s la situaci&oacute;n ha mejorado considerablemente en lo que a enfermos se refiere. &nbsp; Aunque el virus no tiene todav&iacute;a tratamiento as&iacute; que la &uacute;nica forma de no contagiarse es el aislamiento.
 
-Por eso seguimos cerrados a d&iacute;a de hoy. A la espera de que la situaci&oacute;n est&eacute; controlada, nos estamos preparando para tener lista nuestra "casa" .&nbsp; &nbsp; Esperamos que pronto volvamos a tener la visita de nuevos hu&eacute;spedes que se sentir&aacute;n tranquilos con nosotros y en nuestra ciudad,&nbsp; porqu&eacute; haremos todo lo necesario para garantizar nuestra seguridad y la de nuestros visitantes.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **Porque no hay virus que pueda acabar &nbsp;con nuestras ganas de cultura y conocimiento y mucho menos con nuestro esp&iacute;ritu viajero.**
+Por eso seguimos cerrados a d&iacute;a de hoy. A la espera de que la situaci&oacute;n est&eacute; controlada, nos estamos preparando para tener lista nuestra "casa" .&nbsp; &nbsp; Esperamos que pronto volvamos a tener la visita de nuevos hu&eacute;spedes que se sentir&aacute;n tranquilos con nosotros y en nuestra ciudad,&nbsp; porqu&eacute; haremos todo lo necesario para garantizar nuestra seguridad y la de nuestros visitantes.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+**Porque no hay virus que pueda acabar &nbsp;con nuestras ganas de cultura y conocimiento y mucho menos con nuestro esp&iacute;ritu viajero.**
 
 **TENEMOS MUCHAS GANAS DE VEROS DE NUEVO MUY PRONTO.**
 
