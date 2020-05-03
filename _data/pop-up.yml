@@ -7,8 +7,8 @@ body-fr:
 featured_image: /uploads/bg-popup.jpg
 _comments:
   title-es: Títol de la promoció (Español)
-  body-es: Explicació de la promoció (Español)
+  body-es_html: Explicació de la promoció (Español)
   title-en: Títol de la promoció (English)
-  body-en: Explicació de la promoció (English)
+  body-en_html: Explicació de la promoció (English)
   title-fr: Títol de la promoció (Français)
-  body-fr: Explicació de la promoció (Français)
+  body-fr_html: Explicació de la promoció (Français)

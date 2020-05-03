@@ -17,7 +17,7 @@ $('document').ready(function(){
         imgSum       = 5, // количество картинок
         loadedImg    = 0, // счетчик загрузки картинок
         loader = preloader.find('.loader');
-        str = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>'; 
+        str = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';
         jQuery(str).insertAfter(loader);
         /*var p = document.createElement('img');
         p.src="/images/loader.gif";
@@ -43,12 +43,12 @@ $('document').ready(function(){
             if (progress >= 100 || loadedImg == imagesCount) {
                 preloader.delay(400).fadeOut('slow');
             }
-           
+
         }
     } else {
         preloader.remove();
     }
-  
+
 });
 
 
@@ -242,7 +242,6 @@ $(document).ready(function() {
     }
   });
 });
-
 
 
 // - - - - - - - - COOKIES CONSENT
