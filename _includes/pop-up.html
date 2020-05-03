@@ -6,21 +6,21 @@
   <div class="bg-image padded-8" style="background-image:url({{site.data.pop-up.featured_image}});">
     {% if page.language == 'en' %}
     <h2> {{site.data.pop-up.title-en}} </h2>
-    <p> {{site.data.pop-up.body-en}}</p>
+    <p> {{site.data.pop-up.body-en_html}}</p>
     <!-- <div class="button-1 button-ochre align-center">
       <a href="#" target="_blank">Book Now<img src="/images/right-arrow.svg" alt="right arrow"></a>
     </div> -->
 
     {% elsif page.language == 'fr' %}
     <h2> {{site.data.pop-up.title-fr}} </h2>
-    <p> {{site.data.pop-up.body-fr}}</p>
+    <p> {{site.data.pop-up.body-fr_html}}</p>
     <!-- <div class="button-1 button-ochre align-center">
       <a href="#" target="_blank">Réserver<img src="/images/right-arrow.svg" alt="right arrow"></a>
     </div> -->
 
     {% else %}
     <h2> {{site.data.pop-up.title-es}} </h2>
-    <p> {{site.data.pop-up.body-es}}</p>
+    <p> {{site.data.pop-up.body-es_html}}</p>
     <!-- <div class="button-1 button-ochre align-center">
       <a href="#" target="_blank">Reserva Ahora<img src="/images/right-arrow.svg" alt="right arrow"></a>
     </div> -->
