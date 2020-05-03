@@ -5,14 +5,14 @@ body-es_html: >-
   f&iacute;sico de documentos</p><p>Desayuno privado</p>
 title-en: NEW MEASURES AGAINST COVID'19. To protect yours and our health
 body-en_html: >-
-  <ul><li>Limpieza con Ozono en todo el hotel</li><li>Uso de mascarillas y
-  guantes en las zonas comunes</li><li>Check-in digital y autom&aacute;tico, sin
-  intercambio f&iacute;sico de documentos</li><li>Desayuno privado</li></ul>
+  <p>Limpieza con Ozono en todo el hotel</p><p>Uso de mascarillas y guantes en
+  las zonas comunes</p><p>Check-in digital y autom&aacute;tico, sin intercambio
+  f&iacute;sico de documentos</p><p>Desayuno privado</p>
 title-fr: NOUVELLES MESURES COVID'19. Nous protégerons notre santé et la vôtre.
 body-fr_html: >-
-  <ul><li>Limpieza con Ozono en todo el hotel</li><li>Uso de mascarillas y
-  guantes en las zonas comunes</li><li>Check-in digital y autom&aacute;tico, sin
-  intercambio f&iacute;sico de documentos</li><li>Desayuno privado</li></ul>
+  <p>Limpieza con Ozono en todo el hotel</p><p>Uso de mascarillas y guantes en
+  las zonas comunes</p><p>Check-in digital y autom&aacute;tico, sin intercambio
+  f&iacute;sico de documentos</p><p>Desayuno privado</p>
 featured_image: /uploads/bg-popup.jpg
 _comments:
   title-es: Títol de la promoció (Español)
