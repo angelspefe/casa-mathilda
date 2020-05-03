@@ -1,16 +1,18 @@
 title-es: NUEVAS MEDIDAS COVID'19.  Vamos a proteger nuestra salud y la vuestra.
 body-es_html: >-
-  Limpieza con Ozono en todo el hotel. Uso recomendado de mascarillas y guantes
-  en zonas comunes. Desayunos individualizados. Check in digital/on line.
+  <ul><li>Limpieza con Ozono en todo el hotel</li><li>Uso de mascarillas y
+  guantes en las zonas comunes</li><li>Check-in digital y autom&aacute;tico, sin
+  intercambio f&iacute;sico de documentos</li><li>Desayuno privado</li></ul>
 title-en: NEW MEASURES AGAINST COVID'19. To protect yours and our health
 body-en_html: >-
-  Ozone cleaning.  Face masks and gloves in all common areas are recommended.
-  Individualised Breakfast. Digital Check-in/ on line
+  <ul><li>Limpieza con Ozono en todo el hotel</li><li>Uso de mascarillas y
+  guantes en las zonas comunes</li><li>Check-in digital y autom&aacute;tico, sin
+  intercambio f&iacute;sico de documentos</li><li>Desayuno privado</li></ul>
 title-fr: NOUVELLES MESURES COVID'19. Nous protégerons notre santé et la vôtre.
 body-fr_html: >-
-  Nettoyage à l'ozone dans tout l'hôtel. Utilisation recommandée de masques et
-  de gants dans les zones communes. Petits déjeuners individualisés.
-  Enregistrement numérique / en ligne.
+  <ul><li>Limpieza con Ozono en todo el hotel</li><li>Uso de mascarillas y
+  guantes en las zonas comunes</li><li>Check-in digital y autom&aacute;tico, sin
+  intercambio f&iacute;sico de documentos</li><li>Desayuno privado</li></ul>
 featured_image: /uploads/bg-popup.jpg
 _comments:
   title-es: Títol de la promoció (Español)
