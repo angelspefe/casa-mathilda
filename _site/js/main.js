@@ -230,7 +230,7 @@ $(window).on('load', function() {
     lastDatePopupShowed = new Date(parseInt(localStorage.getItem('lastDatePopupShowed')));
   }
 
-  if (((now - lastDatePopupShowed) >= (1 * 86400000)) || !lastDatePopupShowed) {
+  if (((now - lastDatePopupShowed) >= (15 * 86400000)) || !lastDatePopupShowed) {
     $.magnificPopup.open({
       items: {
         src: '#launch-popup',
