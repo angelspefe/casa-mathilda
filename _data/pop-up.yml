@@ -3,17 +3,13 @@ body-es_html: >-
   <p>MEJOR PRECIO GARANTIZADO</p><p>10% DESCUENTO PARA RESERVAS DE MAS DE 3
   NOCHES</p><p>DESAYUNO TARIFA ESPECIAL WEB</p><p>Y TODAS LAS MEDIDAS NECESARIAS
   PARA PREVENCION COVID&acute;19</p>
-title-en: NEW MEASURES AGAINST COVID'19. To protect yours and our health
+title-en: BOOKING IS ALWAYS BETTER IN OUR WEBSITE!
 body-en_html: >-
-  <p>Ozono cleaning in all areas</p><p>Mask and gloves must be used in all
-  common areas</p><p>Automatic Check -in , no need to touch any
-  paper</p><p>Individual Breakfast/Room service</p>
+  <p>BEST RATES ALWAYS&nbsp;</p><p>10% DISCOUNT FOR 3 NIGHTS OR LONGER
+  STAY</p><p>SPECIAL REDUCED PRICE FOR BREAKFAST&nbsp;</p><p>ALL MEASURES FOR
+  COVID'19</p>
 title-fr: NOUVELLES MESURES COVID'19. Nous protégerons notre santé et la vôtre.
-body-fr_html: >-
-  <p>Nettoyage &agrave; l'ozone dans tous les espaces</p><p>Masque et gants
-  doivent &ecirc;tre utilis&eacute;s dans toutes les zones
-  communes</p><p>Enregistrement automatique, pas besoin de toucher des
-  documents</p><p>Petit d&eacute;jeuner individuel / Room service</p>
+body-fr_html: <p>&nbsp;</p><p>&nbsp;</p><p>MESURES COVID'19&nbsp;</p>
 featured_image: /uploads/bg-popup.jpg
 _comments:
   title-es: Títol de la promoció (Español)
