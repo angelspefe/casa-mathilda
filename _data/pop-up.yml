@@ -8,8 +8,11 @@ body-en_html: >-
   <p>BEST RATES ALWAYS&nbsp;</p><p>10% DISCOUNT FOR 3 NIGHTS OR LONGER
   STAY</p><p>SPECIAL REDUCED PRICE FOR BREAKFAST&nbsp;</p><p>ALL MEASURES FOR
   COVID'19</p>
-title-fr: NOUVELLES MESURES COVID'19. Nous protégerons notre santé et la vôtre.
-body-fr_html: <p>&nbsp;</p><p>&nbsp;</p><p>MESURES COVID'19&nbsp;</p>
+title-fr: LA MEILLEURE RÉSERVATION TOUJOURS SUR NOTRE SITE!
+body-fr_html: >-
+  <p>TOUJOURS LES MEILLEURS TARIFS&nbsp;</p><p>10% DE R&Eacute;DUCTION POUR 3
+  NUITS OU PLUS DE S&Eacute;JOUR</p><p>PRIX R&Eacute;DUIT SP&Eacute;CIAL POUR LE
+  PETIT D&Eacute;JEUNER</p><p>MESURES DE PREVENTION DES COVID'19&nbsp;</p>
 featured_image: /uploads/bg-popup.jpg
 _comments:
   title-es: Títol de la promoció (Español)
