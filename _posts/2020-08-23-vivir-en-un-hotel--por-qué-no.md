@@ -1,11 +1,11 @@
 ---
-title: TU CASA AHORA MAS QUE NUNCA
+title: VIVIR EN UN HOTEL. Por qué no?
 layout: post
 categories:
   - Hoteles
   - barcelona
   - niceplacestobe
-blurb: Vivir en un Hotel? Porqué no!
+blurb: Tu "Casa" ahora mas que nunca!
 featured_image: /uploads/13-sala.jpg
 ---
 
